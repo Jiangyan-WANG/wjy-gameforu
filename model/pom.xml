@@ -25,6 +25,7 @@
             <scope>provided </scope>
         </dependency>
 
+<!--        swagger integrated and enhanced in java-->
         <dependency>
             <groupId>com.github.xiaoymin</groupId>
             <artifactId>knife4j-spring-boot-starter</artifactId>
