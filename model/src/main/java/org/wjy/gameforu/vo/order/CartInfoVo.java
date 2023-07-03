@@ -1,7 +1,7 @@
 package org.wjy.gameforu.vo.order;
 
-import com.atguigu.ssyx.model.activity.ActivityRule;
-import com.atguigu.ssyx.model.order.CartInfo;
+import org.wjy.gameforu.model.activity.ActivityRule;
+import org.wjy.gameforu.model.order.CartInfo;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 

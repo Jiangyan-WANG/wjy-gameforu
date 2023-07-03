@@ -1,9 +1,9 @@
 package org.wjy.gameforu.vo.order;
 
-import com.atguigu.ssyx.model.activity.CouponInfo;
-import com.atguigu.ssyx.vo.user.LeaderAddressVo;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
+import org.wjy.gameforu.model.activity.CouponInfo;
+import org.wjy.gameforu.vo.user.LeaderAddressVo;
 
 import java.io.Serializable;
 import java.math.BigDecimal;

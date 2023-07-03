@@ -1,10 +1,10 @@
 package org.wjy.gameforu.vo.activity;
 
-import com.atguigu.ssyx.model.activity.ActivityRule;
-import com.atguigu.ssyx.model.activity.ActivitySku;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
+import org.wjy.gameforu.model.activity.ActivityRule;
+import org.wjy.gameforu.model.activity.ActivitySku;
 
 import java.io.Serializable;
 import java.util.List;

@@ -1,10 +1,10 @@
 package org.wjy.gameforu.model.order;
 
-import com.atguigu.ssyx.model.base.BaseEntity;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
+import org.wjy.gameforu.model.base.BaseEntity;
 
 import java.math.BigDecimal;
 import java.util.Date;

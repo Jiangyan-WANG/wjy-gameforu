@@ -1,6 +1,6 @@
 package org.wjy.gameforu.model.sys;
 
-import com.atguigu.ssyx.model.base.BaseEntity;
+import org.wjy.gameforu.model.base.BaseEntity;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableName;
 import io.swagger.annotations.ApiModel;

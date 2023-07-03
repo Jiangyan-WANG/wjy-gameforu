@@ -17,13 +17,13 @@ import java.util.Map;
 @Data
 public class BaseEntity implements Serializable {
 
-    @ApiModelProperty(value = "id")
-    @TableId(type = IdType.AUTO)
+    @ApiModelProperty(value = "id") //swagger: desc for attribute
+    @TableId(type = IdType.AUTO) //mp: primary key and type (AUTO auto_increment)
     private Long id;
 
     @ApiModelProperty(value = "创建时间")
-    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
-    @TableField("create_time")
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss") //jackson: time format
+    @TableField("create_time") //mp:table field
     private Date createTime;
 
     @ApiModelProperty(value = "更新时间")
@@ -32,8 +32,8 @@ public class BaseEntity implements Serializable {
     private Date updateTime;
 
     @ApiModelProperty(value = "逻辑删除(1:已删除，0:未删除)")
-    @JsonIgnore
-    @TableLogic
+    @JsonIgnore //ignore when serialize
+    @TableLogic //mp: change delete to update field
     @TableField("is_deleted")
     private Integer isDeleted;
 

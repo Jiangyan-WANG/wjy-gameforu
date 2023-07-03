@@ -1,10 +1,10 @@
 package org.wjy.gameforu.vo.product;
 
-import com.atguigu.ssyx.model.product.*;
-import com.atguigu.ssyx.model.product.SkuAttrValue;
-import com.atguigu.ssyx.model.product.SkuImage;
-import com.atguigu.ssyx.model.product.SkuInfo;
-import com.atguigu.ssyx.model.product.SkuPoster;
+import org.wjy.gameforu.model.product.*;
+import org.wjy.gameforu.model.product.SkuAttrValue;
+import org.wjy.gameforu.model.product.SkuImage;
+import org.wjy.gameforu.model.product.SkuInfo;
+import org.wjy.gameforu.model.product.SkuPoster;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 

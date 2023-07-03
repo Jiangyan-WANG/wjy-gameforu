@@ -7,8 +7,8 @@ import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
 @Data
-@ApiModel(description = "MqRepeatRecord")
-@TableName("mq_repeat_record")
+@ApiModel(description = "MqRepeatRecord") //swagger: desc
+@TableName("mq_repeat_record") //mp: table name
 public class MqRepeatRecord extends BaseEntity {
 
 	private static final long serialVersionUID = 1L;

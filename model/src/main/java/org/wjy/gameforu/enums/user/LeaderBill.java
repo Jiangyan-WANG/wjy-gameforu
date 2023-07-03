@@ -1,7 +1,7 @@
 package org.wjy.gameforu.enums.user;
 
-import com.atguigu.ssyx.enums.BillType;
-import com.atguigu.ssyx.model.base.BaseEntity;
+import org.wjy.gameforu.enums.BillType;
+import org.wjy.gameforu.model.base.BaseEntity;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableName;
 import io.swagger.annotations.ApiModel;

@@ -1,12 +1,12 @@
 package org.wjy.gameforu.model.activity;
 
-import com.atguigu.ssyx.enums.CouponRangeType;
-import com.atguigu.ssyx.model.base.BaseEntity;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableName;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
+import org.wjy.gameforu.enums.CouponRangeType;
+import org.wjy.gameforu.model.base.BaseEntity;
 
 /**
  * <p>

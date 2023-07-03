@@ -1,6 +1,6 @@
 package org.wjy.gameforu.vo.order;
 
-import com.atguigu.ssyx.enums.OrderStatus;
+import org.wjy.gameforu.enums.OrderStatus;
 import lombok.Data;
 import io.swagger.annotations.ApiModelProperty;
 

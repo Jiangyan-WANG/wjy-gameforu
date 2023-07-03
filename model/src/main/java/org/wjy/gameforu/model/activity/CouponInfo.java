@@ -1,14 +1,14 @@
 package org.wjy.gameforu.model.activity;
 
-import com.atguigu.ssyx.enums.CouponRangeType;
-import com.atguigu.ssyx.enums.CouponType;
-import com.atguigu.ssyx.model.base.BaseEntity;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
+import org.wjy.gameforu.enums.CouponRangeType;
+import org.wjy.gameforu.enums.CouponType;
+import org.wjy.gameforu.model.base.BaseEntity;
 
 import java.math.BigDecimal;
 import java.util.Date;

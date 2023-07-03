@@ -1,6 +1,6 @@
 package org.wjy.gameforu.vo.order;
 
-import com.atguigu.ssyx.enums.SkuType;
+import org.wjy.gameforu.enums.SkuType;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
