@@ -1,4 +1,4 @@
-package org.wjy.gameforu.enums.user;
+package org.wjy.gameforu.model.user;
 
 import org.wjy.gameforu.model.base.BaseEntity;
 import com.baomidou.mybatisplus.annotation.TableField;
