@@ -9,9 +9,7 @@ import org.springframework.web.bind.annotation.*;
 import org.wjy.gameforu.acl.service.GameService;
 import org.wjy.gameforu.common.result.Result;
 import org.wjy.gameforu.model.gameforu.Game;
-import org.wjy.gameforu.model.gameforu.User;
 import org.wjy.gameforu.vo.gameforu.GameQueryVo;
-import org.wjy.gameforu.vo.gameforu.UserQueryVo;
 
 import java.util.List;
 
