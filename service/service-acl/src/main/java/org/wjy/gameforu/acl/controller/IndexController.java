@@ -1,5 +1,6 @@
 package org.wjy.gameforu.acl.controller;
 
+import io.swagger.annotations.Api;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -9,6 +10,7 @@ import org.wjy.gameforu.common.result.Result;
 import java.util.HashMap;
 import java.util.Map;
 
+@Api(tags = "admin access control list")
 @RestController
 @RequestMapping("/admin/acl/index")
 public class IndexController {

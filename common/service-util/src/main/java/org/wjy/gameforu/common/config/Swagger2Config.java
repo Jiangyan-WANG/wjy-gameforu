@@ -89,7 +89,7 @@ public class Swagger2Config {
     private ApiInfo webApiInfo(){
         return new ApiInfoBuilder()
                 .title("网站-API文档")
-                .description("本文档描述了GameForU ACL微服务接口定义")
+                .description("本文档描述了GameForU服务接口定义")
                 .version("1.0")
                 //联系方式
                 .contact(new Contact("J Wang", "", "jxw1466@alumni.bham.ac.uk"))
@@ -103,7 +103,7 @@ public class Swagger2Config {
     private ApiInfo adminApiInfo(){
         return new ApiInfoBuilder()
                 .title("后台管理系统-API文档")
-                .description("本文档描述了尚上优选后台系统服务接口定义")
+                .description("本文档描述了GameForU后台系统服务接口定义")
                 .version("1.0")
                 .contact(new Contact("J Wang", "", "jxw1466@alumni.bham.ac.uk"))
                 .build();
