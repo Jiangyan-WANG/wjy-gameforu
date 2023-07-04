@@ -24,7 +24,7 @@ import java.util.List;
 public class Swagger2Config {
 
     /**
-     * api for web user
+     * api config for web user
      * @return
      */
     @Bean
@@ -46,7 +46,7 @@ public class Swagger2Config {
                 .apiInfo(webApiInfo())
                 .select()
                 // regex to constraint: only show api start with /api/
-                .apis(RequestHandlerSelectors.basePackage("com.atguigu.ssyx"))
+                .apis(RequestHandlerSelectors.basePackage("org.wjy.gameforu"))
                 .paths(PathSelectors.regex("/api/.*"))
                 .build()
                 .globalOperationParameters(pars);
@@ -54,7 +54,7 @@ public class Swagger2Config {
     }
 
     /**
-     * api for admin
+     * api config for admin
      * @return
      */
     @Bean
@@ -75,28 +75,37 @@ public class Swagger2Config {
                 .apiInfo(adminApiInfo())
                 .select()
                 // only show path with /admin/
-                .apis(RequestHandlerSelectors.basePackage("com.atguigu.ssyx"))
+                .apis(RequestHandlerSelectors.basePackage("org.wjy.gameforu"))
                 .paths(PathSelectors.regex("/admin/.*"))
                 .build()
                 .globalOperationParameters(pars);
         return adminApi;
     }
 
+    /**
+     * api info
+     * @return
+     */
     private ApiInfo webApiInfo(){
         return new ApiInfoBuilder()
                 .title("网站-API文档")
-                .description("本文档描述了尚上优选网站微服务接口定义")
+                .description("本文档描述了GameForU ACL微服务接口定义")
                 .version("1.0")
-                .contact(new Contact("atguigu", "http://atguigu.com", "atguigu"))
+                //联系方式
+                .contact(new Contact("J Wang", "", "jxw1466@alumni.bham.ac.uk"))
                 .build();
     }
 
+    /**
+     * api info
+     * @return
+     */
     private ApiInfo adminApiInfo(){
         return new ApiInfoBuilder()
                 .title("后台管理系统-API文档")
                 .description("本文档描述了尚上优选后台系统服务接口定义")
                 .version("1.0")
-                .contact(new Contact("atguigu", "http://atguigu.com", "atguigu"))
+                .contact(new Contact("J Wang", "", "jxw1466@alumni.bham.ac.uk"))
                 .build();
     }
 }

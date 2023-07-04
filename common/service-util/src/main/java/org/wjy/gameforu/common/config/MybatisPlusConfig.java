@@ -29,8 +29,8 @@ public class MybatisPlusConfig {
      * 但是目前，为了避免缓存出现问题最好还是把这个方法写上，
      * 这个报错对整体代码没有太大的影响…
      */
-    @Bean
-    public ConfigurationCustomizer configurationCustomizer() {
-        return configuration -> configuration.setUseDeprecatedExecutor(false);
-    }
+//    @Bean
+//    public ConfigurationCustomizer configurationCustomizer() {
+//        return configuration -> configuration.setUseDeprecatedExecutor(false);
+//    }
 }

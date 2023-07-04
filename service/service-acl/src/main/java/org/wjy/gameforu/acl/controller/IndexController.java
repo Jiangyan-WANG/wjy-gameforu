@@ -19,7 +19,7 @@ public class IndexController {
     /**
      * login
      */
-    @PostMapping("/login")
+    @PostMapping("login")
      public Result login(){
         // return token
         Map<String, String> map = new HashMap<>();
@@ -30,7 +30,7 @@ public class IndexController {
     /**
      * get info of users
      */
-    @GetMapping("/info")
+    @GetMapping("info")
     public Result info(){
         // return name and avatar
         Map<String, String> map = new HashMap<>();
@@ -42,7 +42,7 @@ public class IndexController {
     /**
      * logout
      */
-    @PostMapping("/logout")
+    @PostMapping("logout")
     public Result logout(){
 
         return Result.ok(null);
