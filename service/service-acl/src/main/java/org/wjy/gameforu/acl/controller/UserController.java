@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.wjy.gameforu.acl.service.UserService;
 import org.wjy.gameforu.common.result.Result;
+import org.wjy.gameforu.common.utils.MD5;
 import org.wjy.gameforu.model.gameforu.User;
 import org.wjy.gameforu.vo.gameforu.UserQueryVo;
 
@@ -61,6 +62,11 @@ public class UserController {
     @ApiOperation("add user")
     @PostMapping("/add")
     private Result add(@RequestBody User user){
+        /**
+         * 密码加密
+         */
+        String password = user.getPassword();
+        user.setPassword(MD5.encrypt(password));
         boolean is_succeed =  userService.save(user);
         if(is_succeed) {
 
