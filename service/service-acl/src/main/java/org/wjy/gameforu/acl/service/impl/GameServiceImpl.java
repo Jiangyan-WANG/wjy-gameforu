@@ -6,9 +6,13 @@ import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
+import org.wjy.gameforu.acl.mapper.GameMapper;
 import org.wjy.gameforu.acl.mapper.UserMapper;
+import org.wjy.gameforu.acl.service.GameService;
 import org.wjy.gameforu.acl.service.UserService;
+import org.wjy.gameforu.model.gameforu.Game;
 import org.wjy.gameforu.model.gameforu.User;
+import org.wjy.gameforu.vo.gameforu.GameQueryVo;
 import org.wjy.gameforu.vo.gameforu.UserQueryVo;
 
 /**
@@ -17,23 +21,23 @@ import org.wjy.gameforu.vo.gameforu.UserQueryVo;
  * no need to inject use Autowired here again
  */
 @Service
-public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements UserService {
+public class GameServiceImpl extends ServiceImpl<GameMapper, Game> implements GameService {
     @Override
-    public IPage selectRolePage(Page<User> pageParam, UserQueryVo userQueryVo) {
+    public IPage selectRolePage(Page<Game> pageParam, GameQueryVo gameQueryVo) {
         //1 get condition
-        String userName = userQueryVo.getUserName();
+        String gameName = gameQueryVo.getGameName();
 
         //mp conditional object
-        LambdaQueryWrapper<User> wrapper = new LambdaQueryWrapper<>();
+        LambdaQueryWrapper<Game> wrapper = new LambdaQueryWrapper<>();
         //2 if condition not null, wrap search condition
-        if(!StringUtils.isEmpty(userName)){
+        if(!StringUtils.isEmpty(gameName)){
             // method ref，condition. likely search
-            // username like ?, userName in sql
-            wrapper.like(User::getUsername, userName);
+            // username like ?, gameName in sql
+            wrapper.like(Game::getName, gameName);
         }
         // pagination
-        IPage<User> gfuUserPage = baseMapper.selectPage(pageParam, wrapper);
+        IPage<Game> gamePage = baseMapper.selectPage(pageParam, wrapper);
         //3 else return all
-        return gfuUserPage ;
+        return gamePage ;
     }
 }

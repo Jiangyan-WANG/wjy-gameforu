@@ -8,19 +8,19 @@ import java.io.Serializable;
 
 /**
  * <p>
- * Gfu用户查询实体
+ * game view object, which constraint the front-end params
  * </p>
  *
  * @author jy
  * @since 2019-11-08
  */
 @Data
-@ApiModel(description = "用户查询实体")
-public class GfuUserQueryVo implements Serializable {
+@ApiModel(description = "game search entity")
+public class GameQueryVo implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
-    @ApiModelProperty(value = "角色名称")
-    private String userName;
+    @ApiModelProperty(value = "game name")
+    private String gameName;
 
 }

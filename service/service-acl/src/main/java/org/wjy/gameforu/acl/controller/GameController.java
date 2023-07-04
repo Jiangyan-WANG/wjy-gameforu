@@ -6,27 +6,29 @@ import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import org.wjy.gameforu.acl.service.UserService;
+import org.wjy.gameforu.acl.service.GameService;
 import org.wjy.gameforu.common.result.Result;
+import org.wjy.gameforu.model.gameforu.Game;
 import org.wjy.gameforu.model.gameforu.User;
+import org.wjy.gameforu.vo.gameforu.GameQueryVo;
 import org.wjy.gameforu.vo.gameforu.UserQueryVo;
 
 import java.util.List;
 
 /**
- * User Controller
+ * Game Controller
  */
-@Api(tags = "user management")
+@Api(tags = "game management")
 @RestController
-@RequestMapping("/admin/acl/user")
+@RequestMapping("/admin/acl/game")
 @CrossOrigin
-public class UserController {
+public class GameController {
 
     /**
      * inject service
      */
     @Autowired
-    private UserService userService;
+    private GameService gameService;
 
     //1 user list
     /**
@@ -34,18 +36,18 @@ public class UserController {
      * current page
      * limit item per page
      */
-    @ApiOperation("user list of pagination")
+    @ApiOperation("game list of pagination")
     @GetMapping("{current}/{limit}")
     public Result  pageList(@PathVariable Integer current,
                             @PathVariable Integer limit,
-                            UserQueryVo userQueryVo) {
+                            GameQueryVo gameQueryVo) {
 
         //1 create page
-        Page<User> pageParam = new Page<>(current,limit);
+        Page<Game> pageParam = new Page<>(current,limit);
 
         //2 service to search, return Page object
 
-        IPage<User> pageModel = userService.selectRolePage(pageParam, userQueryVo);
+        IPage<Game> pageModel = gameService.selectRolePage(pageParam, gameQueryVo);
 
         return Result.ok(pageModel);
     }
@@ -54,14 +56,14 @@ public class UserController {
     @ApiOperation("search by id")
     @GetMapping("get/{id}")
     public Result get(@PathVariable Integer id){
-        User gUser = userService.getById(id);
-        return Result.ok(gUser);
+        Game game = gameService.getById(id);
+        return Result.ok(game);
     }
     //3 add user
-    @ApiOperation("add user")
+    @ApiOperation("add game")
     @PostMapping("/add")
-    private Result add(@RequestBody User user){
-        boolean is_succeed =  userService.save(user);
+    private Result add(@RequestBody Game game){
+        boolean is_succeed =  gameService.save(game);
         if(is_succeed) {
 
             return Result.ok(null);
@@ -70,10 +72,10 @@ public class UserController {
         }
     }
     //4 update user
-    @ApiOperation("update user")
+    @ApiOperation("update game")
     @PutMapping("update")
-    public Result update(@RequestBody User user){
-        boolean is_succeed = userService.updateById(user);
+    public Result update(@RequestBody Game game){
+        boolean is_succeed = gameService.updateById(game);
         if(is_succeed){
             return Result.ok(null);
         }else{
@@ -85,7 +87,7 @@ public class UserController {
     @ApiOperation("delete by id")
     @DeleteMapping("remove/{id}")
     public Result delete(@PathVariable Integer id){
-        boolean is_succeed = userService.removeById(id);
+        boolean is_succeed = gameService.removeById(id);
         if(is_succeed){
             return Result.ok(null);
         }else{
@@ -97,7 +99,7 @@ public class UserController {
     @ApiOperation("delete by Id list")
     @DeleteMapping("batchRemove")
     public Result deletes(@RequestBody List<Integer> idList){
-        boolean is_succeed = userService.removeByIds(idList);
+        boolean is_succeed = gameService.removeByIds(idList);
         if(is_succeed){
             return Result.ok(null);
         }else{
