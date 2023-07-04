@@ -6,9 +6,9 @@ import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
-import org.wjy.gameforu.acl.mapper.RoleMapper;
-import org.wjy.gameforu.acl.service.RoleService;
-import org.wjy.gameforu.model.gameforu.GfuUser;
+import org.wjy.gameforu.acl.mapper.UserMapper;
+import org.wjy.gameforu.acl.service.UserService;
+import org.wjy.gameforu.model.gameforu.User;
 import org.wjy.gameforu.vo.gameforu.GfuUserQueryVo;
 
 /**
@@ -17,22 +17,22 @@ import org.wjy.gameforu.vo.gameforu.GfuUserQueryVo;
  * no need to inject use Autowired here again
  */
 @Service
-public class RoleServiceImpl extends ServiceImpl<RoleMapper, GfuUser> implements RoleService {
+public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements UserService {
     @Override
-    public IPage selectRolePage(Page<GfuUser> pageParam, GfuUserQueryVo gfuUserQueryVo) {
+    public IPage selectRolePage(Page<User> pageParam, GfuUserQueryVo gfuUserQueryVo) {
         //1 get condition
         String userName = gfuUserQueryVo.getUserName();
 
         //mp conditional object
-        LambdaQueryWrapper<GfuUser> wrapper = new LambdaQueryWrapper<>();
+        LambdaQueryWrapper<User> wrapper = new LambdaQueryWrapper<>();
         //2 if condition not null, wrap search condition
         if(!StringUtils.isEmpty(userName)){
             // method ref，condition. likely search
             // username like ?, userName in sql
-            wrapper.like(GfuUser::getUsername, userName);
+            wrapper.like(User::getUsername, userName);
         }
         // pagination
-        IPage<GfuUser> gfuUserPage = baseMapper.selectPage(pageParam, wrapper);
+        IPage<User> gfuUserPage = baseMapper.selectPage(pageParam, wrapper);
         //3 else return all
         return gfuUserPage ;
     }

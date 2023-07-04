@@ -1,6 +1,5 @@
 package org.wjy.gameforu.model.gameforu;
 
-import com.alibaba.fastjson2.JSONArray;
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
@@ -9,12 +8,13 @@ import com.baomidou.mybatisplus.extension.handlers.JacksonTypeHandler;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
-import org.wjy.gameforu.model.base.BaseEntity;
+
+import java.util.List;
 
 @Data
 @ApiModel(description = "User")
-@TableName("user")
-public class GfuUser{
+@TableName(value="user", autoResultMap = true)
+public class User {
 
 	/**
 	 * serialVersionUID促进序列化数据的版本控制。
@@ -43,11 +43,11 @@ public class GfuUser{
 
 	@ApiModelProperty(value = "email")
 	@TableField("email")
-	private String photoUrl;
+	private String email;
 
 	@ApiModelProperty(value = "preferences")
 	@TableField(value="preferences",typeHandler = JacksonTypeHandler.class)
-	private JSONArray preferences;
+	private List<String> preferences;
 
 	@ApiModelProperty(value = "role ['admin' or 'user']")
 	@TableField("role")
