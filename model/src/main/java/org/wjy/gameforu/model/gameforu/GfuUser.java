@@ -5,6 +5,7 @@ import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
+import com.baomidou.mybatisplus.extension.handlers.JacksonTypeHandler;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
@@ -41,11 +42,11 @@ public class GfuUser{
 	private String phoneNumber;
 
 	@ApiModelProperty(value = "email")
-	@TableField("photo_url")
+	@TableField("email")
 	private String photoUrl;
 
 	@ApiModelProperty(value = "preferences")
-	@TableField("preferences")
+	@TableField(value="preferences",typeHandler = JacksonTypeHandler.class)
 	private JSONArray preferences;
 
 	@ApiModelProperty(value = "role ['admin' or 'user']")
