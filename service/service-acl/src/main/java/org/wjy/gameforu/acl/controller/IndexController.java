@@ -1,6 +1,7 @@
 package org.wjy.gameforu.acl.controller;
 
 import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -21,6 +22,7 @@ public class IndexController {
     /**
      * login
      */
+    @ApiOperation("login")
     @PostMapping("login")
      public Result login(){
         // return token
@@ -32,6 +34,7 @@ public class IndexController {
     /**
      * get info of users
      */
+    @ApiOperation("user info")
     @GetMapping("info")
     public Result info(){
         // return name and avatar
@@ -44,6 +47,7 @@ public class IndexController {
     /**
      * logout
      */
+    @ApiOperation("logout")
     @PostMapping("logout")
     public Result logout(){
 

@@ -13,7 +13,7 @@ import org.wjy.gameforu.model.base.BaseEntity;
 @Data
 @ApiModel(description = "User")
 @TableName("user")
-public class GfuUser extends BaseEntity {
+public class GfuUser{
 
 	/**
 	 * serialVersionUID促进序列化数据的版本控制。

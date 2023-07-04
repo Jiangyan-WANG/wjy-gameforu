@@ -7,6 +7,7 @@ import com.baomidou.mybatisplus.extension.plugins.inner.PaginationInnerIntercept
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @Configuration
 @MapperScan("org.wjy.gameforu.*.mapper")
@@ -29,8 +30,8 @@ public class MybatisPlusConfig {
      * 但是目前，为了避免缓存出现问题最好还是把这个方法写上，
      * 这个报错对整体代码没有太大的影响…
      */
-//    @Bean
-//    public ConfigurationCustomizer configurationCustomizer() {
-//        return configuration -> configuration.setUseDeprecatedExecutor(false);
-//    }
+    @Bean
+    public ConfigurationCustomizer configurationCustomizer() {
+        return configuration -> configuration.setUseDeprecatedExecutor(false);
+    }
 }
