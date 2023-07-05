@@ -13,7 +13,7 @@
     <artifactId>service</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>service-acl</module>
+        <module>service-admin</module>
     </modules>
 
     <dependencies>
