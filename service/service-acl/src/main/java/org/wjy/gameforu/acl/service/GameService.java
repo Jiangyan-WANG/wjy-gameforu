@@ -9,6 +9,8 @@ import org.wjy.gameforu.model.gameforu.User;
 import org.wjy.gameforu.vo.gameforu.GameQueryVo;
 import org.wjy.gameforu.vo.gameforu.UserQueryVo;
 
+import java.util.Map;
+
 /**
  * RoleService need to extend the Iservice interface of mp
  * entity class User is set
@@ -26,4 +28,5 @@ public interface GameService extends IService<Game> {
      * @return
      */
     IPage selectGamePage(Page<Game> pageParam, GameQueryVo gameQueryVo);
+
 }

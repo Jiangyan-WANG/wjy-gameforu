@@ -10,6 +10,7 @@ import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 import org.springframework.web.bind.annotation.*;
 import org.wjy.gameforu.acl.service.GameService;
+import org.wjy.gameforu.acl.service.GenreService;
 import org.wjy.gameforu.common.result.Result;
 import org.wjy.gameforu.model.gameforu.Game;
 import org.wjy.gameforu.model.gameforu.SteamGame;
@@ -38,6 +39,30 @@ public class GameController {
     //线程池
     @Autowired
     private ThreadPoolTaskExecutor threadPoolTaskExecutor;
+
+    @Autowired
+    private GenreService genreService;
+
+    @ApiOperation("get game genres")
+    @GetMapping("/gamegenre/{gid}")
+     public Result gemeGenre(@PathVariable Integer gid){
+        Map<String,Object> map =  genreService.getGenreByGameId(gid);
+        return Result.ok(map);
+    }
+
+    /**
+     * set genre for specific game
+     * @param gid game id
+     * @param genids genre id list
+     * @return
+     */
+    @ApiOperation("set game genres")
+    @PostMapping("/setGamegenre")
+    public Result setGameGenre(@RequestParam Integer gid,
+                                @RequestParam List<Integer> genids){
+        genreService.saveGameGenre(gid, genids);
+        return Result.ok(null);
+    }
 
     // import from steam json db
     @ApiOperation("import steam data")
