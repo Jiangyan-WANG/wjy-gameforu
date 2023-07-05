@@ -32,12 +32,15 @@ public class GenreServiceImpl extends ServiceImpl<GenreMapper, Genre> implements
 
         //2 set new genres
 
+        List<GameGenre> gameGenreList = new ArrayList<>();
         for (Integer genid: genids) {
             GameGenre gameGenre = new GameGenre();
             gameGenre.setGenid(genid);
             gameGenre.setGid(gid);
-            gameGenreService.save(gameGenre);
+            gameGenreList.add(gameGenre);
+//            gameGenreService.save(gameGenre);
         }
+        gameGenreService.saveBatch(gameGenreList);
     }
 
     @Override
