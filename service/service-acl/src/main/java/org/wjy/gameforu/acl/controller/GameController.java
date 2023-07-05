@@ -4,22 +4,29 @@ import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
+import org.springframework.transaction.annotation.EnableTransactionManagement;
 import org.springframework.web.bind.annotation.*;
 import org.wjy.gameforu.acl.service.GameService;
 import org.wjy.gameforu.common.result.Result;
 import org.wjy.gameforu.model.gameforu.Game;
+import org.wjy.gameforu.model.gameforu.SteamGame;
 import org.wjy.gameforu.vo.gameforu.GameQueryVo;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * Game Controller
  */
+@Slf4j
 @Api(tags = "game management")
 @RestController
 @RequestMapping("/admin/acl/game")
 @CrossOrigin
+@EnableTransactionManagement
 public class GameController {
 
     /**
@@ -27,6 +34,53 @@ public class GameController {
      */
     @Autowired
     private GameService gameService;
+
+    //线程池
+    @Autowired
+    private ThreadPoolTaskExecutor threadPoolTaskExecutor;
+
+    // import from steam json db
+    @ApiOperation("import steam data")
+    @PostMapping("import")
+    public Result importSteamData(@RequestBody Map<String, SteamGame> steamGameMap){
+
+        //TODO refactor: add this function to service
+        threadPoolTaskExecutor.execute(new Runnable() {
+            @Override
+            public void run() {
+                int count = 0;
+                for (SteamGame steamGame : steamGameMap.values()) {
+                    boolean is_succeed;
+                    Game game = new Game();
+                    game.setAppid(String.valueOf(steamGame.getAppid()));
+                    game.setName(steamGame.getName());
+                    game.setDeveloper(steamGame.getDeveloper());
+                    game.setPublisher(steamGame.getPublisher());
+                    game.setNegative(steamGame.getNegative());
+                    game.setPositive(steamGame.getPositive());
+                    game.setUserscore(steamGame.getUserscore());
+                    game.setOwners(steamGame.getOwners());
+                    game.setInitialPrice(Integer.parseInt(steamGame.getInitialprice()!=null?steamGame.getInitialprice():"0"));
+                    game.setCcu(steamGame.getCcu());
+
+                    try{
+                        is_succeed = gameService.save(game);
+                    }catch (Exception e){
+//                System.out.println(e.getMessage());
+                        log.warn(e.getMessage());
+                        continue;
+                    }
+                    if(is_succeed){
+                        count++;
+                    }
+                }
+                log.debug("add total: " + count);
+            }
+        });
+
+
+        return Result.ok(null);
+    }
 
     //1 user list
     /**
