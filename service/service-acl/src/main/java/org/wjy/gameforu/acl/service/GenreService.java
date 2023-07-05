@@ -11,7 +11,7 @@ import java.util.Map;
 
 public interface GenreService extends IService<Genre> {
 
-    void saveGameGenre(Integer gid, List<Integer> genids);
+    void saveGameGenre(Integer gid, Integer[] genids);
 
     /**
      *

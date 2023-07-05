@@ -59,7 +59,7 @@ public class GameController {
     @ApiOperation("set game genres")
     @PostMapping("/setGamegenre")
     public Result setGameGenre(@RequestParam Integer gid,
-                                @RequestParam List<Integer> genids){
+                                @RequestParam Integer[] genids){
         genreService.saveGameGenre(gid, genids);
         return Result.ok(null);
     }

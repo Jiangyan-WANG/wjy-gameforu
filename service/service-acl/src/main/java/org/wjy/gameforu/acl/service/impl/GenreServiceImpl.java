@@ -24,7 +24,7 @@ public class GenreServiceImpl extends ServiceImpl<GenreMapper, Genre> implements
     private GameGenreService gameGenreService;
 
     @Override
-    public void saveGameGenre(Integer gid, List<Integer> genids) {
+    public void saveGameGenre(Integer gid, Integer[] genids) {
         //1 delete previous genres
         LambdaQueryWrapper<GameGenre> wrapper = new LambdaQueryWrapper<>();
         wrapper.eq(GameGenre::getGid,gid);
