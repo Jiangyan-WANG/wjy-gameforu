@@ -8,16 +8,17 @@ import lombok.Getter;
 
 @JSONType(serializer = EnumSerializer.class, deserializer = EnumDeserializer.class, serializeEnumAsJavaBean = true)
 @Getter
-public enum UserType {
-    USER(0,"会员"),
-    LEADER(1,"团长" );
+public enum UserRole {
+    Admin(0, "管理员"),
+    User(1,"普通用户");
 
     @EnumValue
-    private Integer code ;
-    private String comment ;
+    Integer code;
+    String role;
 
-    UserType(Integer code, String comment ){
-        this.code=code;
-        this.comment=comment;
+    UserRole(Integer code, String role){
+        this.code = code;
+        this.role = role;
     }
+
 }
