@@ -46,7 +46,7 @@ public class UserController {
 
         //2 service to search, return Page object
 
-        IPage<User> pageModel = userService.selectRolePage(pageParam, userQueryVo);
+        IPage<User> pageModel = userService.selectUserPage(pageParam, userQueryVo);
 
         return Result.ok(pageModel);
     }
@@ -55,12 +55,15 @@ public class UserController {
     @ApiOperation("search by id")
     @GetMapping("get/{id}")
     public Result get(@PathVariable Integer id){
-        User gUser = userService.getById(id);
-        return Result.ok(gUser);
+        User User = userService.getById(id);
+
+        //if not exist, data will be null
+        return Result.ok(User);
+
     }
     //3 add user
     @ApiOperation("add user")
-    @PostMapping("/add")
+    @PostMapping("add")
     private Result add(@RequestBody User user){
         /**
          * 密码加密

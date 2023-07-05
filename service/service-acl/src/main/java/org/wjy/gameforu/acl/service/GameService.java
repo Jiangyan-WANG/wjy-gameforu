@@ -16,8 +16,8 @@ public interface GameService extends IService<Game> {
     /**
      * conditional search
      * @param pageParam
-     * @param userQueryVo
+     * @param gameQueryVo
      * @return
      */
-    IPage selectRolePage(Page<Game> pageParam, GameQueryVo gameQueryVo);
+    IPage selectGamePage(Page<Game> pageParam, GameQueryVo gameQueryVo);
 }

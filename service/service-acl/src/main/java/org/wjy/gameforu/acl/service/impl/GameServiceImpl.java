@@ -23,7 +23,7 @@ import org.wjy.gameforu.vo.gameforu.UserQueryVo;
 @Service
 public class GameServiceImpl extends ServiceImpl<GameMapper, Game> implements GameService {
     @Override
-    public IPage selectRolePage(Page<Game> pageParam, GameQueryVo gameQueryVo) {
+    public IPage selectGamePage(Page<Game> pageParam, GameQueryVo gameQueryVo) {
         //1 get condition
         String gameName = gameQueryVo.getGameName();
 

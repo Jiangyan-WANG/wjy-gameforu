@@ -20,7 +20,6 @@ public class UserQueryVo implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
-    @ApiModelProperty(value = "username")
+    @ApiModelProperty(value = "user name")
     private String userName;
-
 }

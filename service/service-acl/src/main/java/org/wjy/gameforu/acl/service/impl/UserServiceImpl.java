@@ -19,7 +19,7 @@ import org.wjy.gameforu.vo.gameforu.UserQueryVo;
 @Service
 public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements UserService {
     @Override
-    public IPage selectRolePage(Page<User> pageParam, UserQueryVo userQueryVo) {
+    public IPage selectUserPage(Page<User> pageParam, UserQueryVo userQueryVo) {
         //1 get condition
         String userName = userQueryVo.getUserName();
 
@@ -32,8 +32,8 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
             wrapper.like(User::getUsername, userName);
         }
         // pagination
-        IPage<User> gfuUserPage = baseMapper.selectPage(pageParam, wrapper);
+        IPage<User> userPage = baseMapper.selectPage(pageParam, wrapper);
         //3 else return all
-        return gfuUserPage ;
+        return userPage ;
     }
 }

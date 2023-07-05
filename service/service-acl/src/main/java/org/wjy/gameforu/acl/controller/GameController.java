@@ -45,7 +45,7 @@ public class GameController {
 
         //2 service to search, return Page object
 
-        IPage<Game> pageModel = gameService.selectRolePage(pageParam, gameQueryVo);
+        IPage<Game> pageModel = gameService.selectGamePage(pageParam, gameQueryVo);
 
         return Result.ok(pageModel);
     }
@@ -59,7 +59,7 @@ public class GameController {
     }
     //3 add user
     @ApiOperation("add game")
-    @PostMapping("/add")
+    @PostMapping("add")
     private Result add(@RequestBody Game game){
         boolean is_succeed =  gameService.save(game);
         if(is_succeed) {

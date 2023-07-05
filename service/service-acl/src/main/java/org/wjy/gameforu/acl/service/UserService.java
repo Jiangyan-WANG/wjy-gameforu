@@ -17,5 +17,5 @@ public interface UserService extends IService<User> {
      * @param userQueryVo
      * @return
      */
-    IPage selectRolePage(Page<User> pageParam, UserQueryVo userQueryVo);
+    IPage selectUserPage(Page<User> pageParam, UserQueryVo userQueryVo);
 }
