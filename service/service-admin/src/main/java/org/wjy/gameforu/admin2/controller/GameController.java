@@ -7,13 +7,12 @@ import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
-import org.springframework.transaction.annotation.EnableTransactionManagement;
 import org.springframework.web.bind.annotation.*;
 
+import org.wjy.gameforu.admin2.entity.Game;
 import org.wjy.gameforu.admin2.service.GameService;
 import org.wjy.gameforu.admin2.service.GenreService;
 import org.wjy.gameforu.common.result.Result;
-import org.wjy.gameforu.model.gameforu.Game;
 import org.wjy.gameforu.model.gameforu.SteamGame;
 import org.wjy.gameforu.vo.gameforu.GameQueryVo;
 
@@ -29,7 +28,7 @@ import java.util.Map;
  * @since 2023-07-07
  */
 @RestController
-@RequestMapping("/admin2/game")
+@RequestMapping("/admin/game")
 @Slf4j
 @Api(tags = "game management")
 @CrossOrigin
@@ -82,15 +81,15 @@ public class GameController {
                 for (SteamGame steamGame : steamGameMap.values()) {
                     boolean is_succeed;
                     Game game = new Game();
-                    game.setAppid(String.valueOf(steamGame.getAppid()));
-                    game.setName(steamGame.getName());
+                    game.setAppid(steamGame.getAppid());
+                    game.setGamename(steamGame.getName());
                     game.setDeveloper(steamGame.getDeveloper());
                     game.setPublisher(steamGame.getPublisher());
                     game.setNegative(steamGame.getNegative());
                     game.setPositive(steamGame.getPositive());
                     game.setUserscore(steamGame.getUserscore());
                     game.setOwners(steamGame.getOwners());
-                    game.setInitialPrice(Integer.parseInt(steamGame.getInitialprice()!=null?steamGame.getInitialprice():"0"));
+                    game.setInitialprice(Integer.parseInt(steamGame.getInitialprice()!=null?steamGame.getInitialprice():"0"));
                     game.setCcu(steamGame.getCcu());
 
                     try{

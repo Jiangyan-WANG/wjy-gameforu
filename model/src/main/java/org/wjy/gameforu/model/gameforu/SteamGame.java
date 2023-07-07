@@ -5,7 +5,7 @@ import lombok.Data;
 @Data
 public class SteamGame {
     /**
-     * "appid": 1619450,
+     *         "appid": 1619450,
      *         "name": "Heart of a Warrior",
      *         "developer": "Techworld Communication",
      *         "publisher": "Techworld Communication",

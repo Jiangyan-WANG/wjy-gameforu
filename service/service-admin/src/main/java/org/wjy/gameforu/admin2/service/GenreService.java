@@ -26,7 +26,7 @@ public interface GenreService extends IService<Genre> {
      * @param genreQueryVo
      * @return
      */
-    IPage selectGenrePage(Page<org.wjy.gameforu.model.gameforu.Genre> pageParams, GenreQueryVo genreQueryVo);
+    IPage selectGenrePage(Page<Genre> pageParams, GenreQueryVo genreQueryVo);
 
 
     /**

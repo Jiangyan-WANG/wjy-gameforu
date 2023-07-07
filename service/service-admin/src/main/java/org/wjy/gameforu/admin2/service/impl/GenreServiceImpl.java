@@ -5,9 +5,9 @@ import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.util.StringUtils;
-import org.wjy.gameforu.admin.service.GameGenreService;
 import org.wjy.gameforu.admin2.entity.Genre;
 import org.wjy.gameforu.admin2.mapper.GenreMapper;
+import org.wjy.gameforu.admin2.service.GameGenreService;
 import org.wjy.gameforu.admin2.service.GenreService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
@@ -59,14 +59,14 @@ public class GenreServiceImpl extends ServiceImpl<GenreMapper, Genre> implements
         //1 get condition
         String genrename = genreQueryVo.getGenrename();
         //2 get wrapper
-        LambdaQueryWrapper<org.wjy.gameforu.model.gameforu.Genre> wrapper = new LambdaQueryWrapper<>();
+        LambdaQueryWrapper<Genre> wrapper = new LambdaQueryWrapper<>();
 
         //3 query
         if(!StringUtils.isEmpty(genrename)){
-            wrapper.like(org.wjy.gameforu.model.gameforu.Genre::getGenreName, genrename);
+            wrapper.like(Genre::getGenrename, genrename);
         }
         //4 get pagiination
-        IPage<org.wjy.gameforu.model.gameforu.Genre> genrePage = baseMapper.selectPage(pageParams, wrapper);
+        IPage<Genre> genrePage = baseMapper.selectPage(pageParams, wrapper);
 
         return genrePage;
     }
