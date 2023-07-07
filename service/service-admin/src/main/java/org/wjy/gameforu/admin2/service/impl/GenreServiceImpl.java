@@ -1,6 +1,7 @@
 package org.wjy.gameforu.admin2.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -59,12 +60,17 @@ public class GenreServiceImpl extends ServiceImpl<GenreMapper, Genre> implements
         //1 get condition
         String genrename = genreQueryVo.getGenrename();
         //2 get wrapper
-        LambdaQueryWrapper<Genre> wrapper = new LambdaQueryWrapper<>();
-
+//        LambdaQueryWrapper<Genre> wrapper = new LambdaQueryWrapper<>();
+        // use QueryWrapper here to get asc order
+        QueryWrapper<Genre> wrapper = new QueryWrapper<>();
         //3 query
         if(!StringUtils.isEmpty(genrename)){
-            wrapper.like(Genre::getGenrename, genrename);
+
+            wrapper.like("genrename",genrename);
+//            wrapper.like(Genre::getGenrename, genrename);
         }
+        // order by id
+        wrapper.orderByAsc("id");
         //4 get pagiination
         IPage<Genre> genrePage = baseMapper.selectPage(pageParams, wrapper);
 
@@ -74,12 +80,14 @@ public class GenreServiceImpl extends ServiceImpl<GenreMapper, Genre> implements
     @Override
     public Map<String, Object> getGenreByGameId(Integer gid) {
         //1 get all genres
-        List<Genre> allGenreList = baseMapper.selectList(null);
+        QueryWrapper<Genre> queryWrapper=new QueryWrapper<>();
+        queryWrapper.orderByAsc("id");
+        List<Genre> allGenreList = baseMapper.selectList(queryWrapper);
         Map<String, Object> res = new HashMap<>();
         //2 get genres of specific game id
         //2.1 get GameGenre List of gid -> List<GameGenre>
         LambdaQueryWrapper<GameGenre> wrapper = new LambdaQueryWrapper<>();
-        wrapper.eq(GameGenre::getGid, gid);
+        wrapper.eq(GameGenre::getGid, gid).orderByAsc(GameGenre::getId);
         List<GameGenre> gameGenreList = gameGenreService.list(wrapper);
 
         //2.2 get genid List by GameGenre List -> List<Integer>

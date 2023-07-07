@@ -11,7 +11,7 @@ public class GenreQueryVo {
     // version control
     private static final Long serialVersionUID = 1L;
 
-    @ApiModelProperty(value="game name")
+    @ApiModelProperty(value="genre name")
     private String genrename;
 
 }
