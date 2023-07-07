@@ -2966,3 +2966,44 @@ Caused by: org.springframework.context.annotation.ConflictingBeanDefinitionExcep
 2023-07-05 23:03:37.764  INFO 21744 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
 2023-07-05 23:03:37.765  INFO 21744 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2023-07-05 23:03:37.776  INFO 21744 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-07-05 23:10:46.998  INFO 22358 --- [restartedMain] o.wjy.gameforu.ServiceAdminApplication   : Starting ServiceAdminApplication on MacBook-Pro.local with PID 22358 (/Users/wjy/dev/IdeaProjects/wjy-gameforu/service/service-admin/target/classes started by wjy in /Users/wjy/dev/IdeaProjects/wjy-gameforu)
+2023-07-05 23:10:47.001  INFO 22358 --- [restartedMain] o.wjy.gameforu.ServiceAdminApplication   : The following profiles are active: dev
+2023-07-05 23:10:47.048  INFO 22358 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-05 23:10:47.048  INFO 22358 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-05 23:10:48.001  INFO 22358 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-07-05 23:10:48.003  INFO 22358 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-07-05 23:10:48.030  INFO 22358 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15ms. Found 0 Redis repository interfaces.
+2023-07-05 23:10:48.444  INFO 22358 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'spring.cloud.sentinel-com.alibaba.cloud.sentinel.SentinelProperties' of type [com.alibaba.cloud.sentinel.SentinelProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-07-05 23:10:48.447  INFO 22358 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration' of type [com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-07-05 23:10:48.717  INFO 22358 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8201 (http)
+2023-07-05 23:10:48.727  INFO 22358 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-05 23:10:48.727  INFO 22358 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2023-07-05 23:10:48.803  INFO 22358 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-05 23:10:48.803  INFO 22358 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1755 ms
+2023-07-05 23:10:49.245  INFO 22358 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-07-05 23:10:49.547  INFO 22358 --- [restartedMain] c.a.c.s.SentinelWebAutoConfiguration     : [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+2023-07-05 23:10:49.576 DEBUG 22358 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 29 mappings in 'requestMappingHandlerMapping'
+2023-07-05 23:10:49.630  INFO 22358 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2023-07-05 23:10:49.752  INFO 22358 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-07-05 23:10:49.759 DEBUG 22358 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-07-05 23:10:49.808 DEBUG 22358 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-07-05 23:10:49.817 DEBUG 22358 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-07-05 23:10:50.328  INFO 22358 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8201 (http) with context path ''
+2023-07-05 23:10:50.331  INFO 22358 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+2023-07-05 23:10:50.334  INFO 22358 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 2 custom documentation plugin(s)
+2023-07-05 23:10:50.366  INFO 22358 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2023-07-05 23:10:50.496  INFO 22358 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: addUsingPOST_1
+2023-07-05 23:10:50.497  INFO 22358 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_1
+2023-07-05 23:10:50.499  INFO 22358 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deletesUsingDELETE_1
+2023-07-05 23:10:50.500  INFO 22358 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUsingGET_1
+2023-07-05 23:10:50.503  INFO 22358 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: pageListUsingGET_1
+2023-07-05 23:10:50.505  INFO 22358 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPUT_1
+2023-07-05 23:10:50.515  INFO 22358 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: addUsingPOST_2
+2023-07-05 23:10:50.516  INFO 22358 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_2
+2023-07-05 23:10:50.518  INFO 22358 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deletesUsingDELETE_2
+2023-07-05 23:10:50.519  INFO 22358 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUsingGET_2
+2023-07-05 23:10:50.522  INFO 22358 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: pageListUsingGET_2
+2023-07-05 23:10:50.523  INFO 22358 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPUT_2
+2023-07-05 23:10:50.531  INFO 22358 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2023-07-05 23:10:50.541  INFO 22358 --- [restartedMain] o.wjy.gameforu.ServiceAdminApplication   : Started ServiceAdminApplication in 3.96 seconds (JVM running for 9.587)
+2023-07-05 23:10:57.732  INFO 22358 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
