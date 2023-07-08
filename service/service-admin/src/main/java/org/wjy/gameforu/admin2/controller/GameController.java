@@ -117,7 +117,7 @@ public class GameController {
      * current page
      * limit item per page
      */
-    @ApiOperation("game list of pagination")
+    @ApiOperation("pagination query")
     @GetMapping("{current}/{limit}")
     public Result  pageList(@PathVariable Integer current,
                             @PathVariable Integer limit,
