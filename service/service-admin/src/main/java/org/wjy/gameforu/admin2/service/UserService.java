@@ -6,6 +6,9 @@ import org.wjy.gameforu.admin2.entity.User;
 import com.baomidou.mybatisplus.extension.service.IService;
 import org.wjy.gameforu.vo.gameforu.UserQueryVo;
 
+import java.util.List;
+import java.util.Map;
+
 /**
  * <p>
  *  服务类
@@ -17,4 +20,13 @@ import org.wjy.gameforu.vo.gameforu.UserQueryVo;
 public interface UserService extends IService<User> {
 
     IPage<User> selectUserPage(Page<User> pageParam, UserQueryVo userQueryVo);
+
+    /**
+     * get roles of the user by user id
+     * @param id user id
+     * @return
+     */
+    Map<String, Object> getRolesByUserId(Integer id);
+
+    Boolean setRoles(Integer id, List<Integer> roleIds);
 }

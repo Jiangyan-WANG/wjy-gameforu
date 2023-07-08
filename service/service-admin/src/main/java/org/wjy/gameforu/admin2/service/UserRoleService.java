@@ -3,6 +3,8 @@ package org.wjy.gameforu.admin2.service;
 import org.wjy.gameforu.admin2.entity.UserRole;
 import com.baomidou.mybatisplus.extension.service.IService;
 
+import java.util.List;
+
 /**
  * <p>
  *  服务类
@@ -13,4 +15,5 @@ import com.baomidou.mybatisplus.extension.service.IService;
  */
 public interface UserRoleService extends IService<UserRole> {
 
+    List<UserRole> getUserRoleByUserId(Integer id);
 }

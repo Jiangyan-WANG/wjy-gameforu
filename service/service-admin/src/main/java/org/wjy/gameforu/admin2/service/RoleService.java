@@ -7,6 +7,8 @@ import org.wjy.gameforu.admin2.entity.Role;
 import com.baomidou.mybatisplus.extension.service.IService;
 import org.wjy.gameforu.vo.gameforu.RoleQueryVo;
 
+import java.util.List;
+
 /**
  * <p>
  *  服务类
@@ -21,4 +23,6 @@ public interface RoleService extends IService<Role> {
      * pagination query of the role
      */
     IPage<Role> selectRolePage(Page<Role> pageParam, RoleQueryVo roleQueryVo);
+
+    List<Role> selectList();
 }

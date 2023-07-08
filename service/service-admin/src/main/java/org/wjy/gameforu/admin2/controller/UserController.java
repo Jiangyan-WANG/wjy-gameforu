@@ -11,9 +11,11 @@ import org.springframework.web.bind.annotation.*;
 import org.wjy.gameforu.admin2.entity.User;
 import org.wjy.gameforu.admin2.service.UserService;
 import org.wjy.gameforu.common.result.Result;
+import org.wjy.gameforu.common.utils.MD5;
 import org.wjy.gameforu.vo.gameforu.UserQueryVo;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * <p>
@@ -46,6 +48,8 @@ public class UserController {
     @ApiOperation("add user")
     @PostMapping("add")
     public Result add(@RequestBody User user){
+        // encrypt password
+        user.setPassword(MD5.encrypt(user.getPassword()));
         boolean is_succeed = userService.save(user);
         if(is_succeed){
             return Result.ok(null);
@@ -97,6 +101,44 @@ public class UserController {
     public Result get(@PathVariable Integer id){
         User user = userService.getById(id);
         return Result.ok(user);
+    }
+
+    //7 get roles of user
+
+    /**
+     * to get roles of the specific user by user id
+     * data: {
+     *     allRoles:[xx,xx],
+     *     assignedRoles:[xx,xx]
+     * }
+     * @param id: user id
+     * @return
+     */
+    @ApiOperation("query roles")
+    @GetMapping("/userRole/{id}")
+    public Result getUserRole(@PathVariable Integer id){
+        Map<String, Object> res = userService.getRolesByUserId(id);
+        return Result.ok(res);
+    }
+
+    //8 assign role for user
+
+    /**
+     * to assign the roles to the user
+     * @param id user id
+     * @param roleIds role id list
+     * @return
+     */
+    @ApiOperation("set roles")
+    @PostMapping("setRoles")
+    public Result setRoles(@RequestParam Integer id,
+                           @RequestParam List<Integer> roleIds){
+        Boolean is_succeed = userService.setRoles(id, roleIds);
+        if(is_succeed){
+            return Result.ok(null);
+        }else{
+            return Result.fail(null);
+        }
     }
 }
 

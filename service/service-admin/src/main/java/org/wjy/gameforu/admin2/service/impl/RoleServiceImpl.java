@@ -12,6 +12,8 @@ import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 import org.wjy.gameforu.vo.gameforu.RoleQueryVo;
 
+import java.util.List;
+
 /**
  * <p>
  *  服务实现类
@@ -36,5 +38,13 @@ public class RoleServiceImpl extends ServiceImpl<RoleMapper, Role> implements Ro
         //3 Ipage
         IPage<Role> res = baseMapper.selectPage(pageParam, wrapper);
         return res;
+    }
+
+    @Override
+    public List<Role> selectList() {
+        QueryWrapper<Role> wrapper = new QueryWrapper<>();
+        wrapper.orderByAsc("id");
+        List<Role> roles = baseMapper.selectList(wrapper);
+        return roles;
     }
 }
