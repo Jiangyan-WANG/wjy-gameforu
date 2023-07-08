@@ -2,6 +2,7 @@ package org.wjy.gameforu.admin2.controller;
 
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -21,6 +22,7 @@ import java.util.List;
  * @author J Wang
  * @since 2023-07-07
  */
+@Api(tags = "role management")
 @RestController
 @RequestMapping("/admin/role")
 public class RoleController {

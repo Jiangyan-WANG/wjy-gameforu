@@ -131,3 +131,272 @@
 2023-07-08 15:04:30.587 DEBUG 55732 --- [http-nio-8201-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
 2023-07-08 15:04:30.590 DEBUG 55732 --- [http-nio-8201-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
 2023-07-08 15:51:44.174  INFO 55732 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2023-07-08 15:54:02.788  INFO 56455 --- [restartedMain] o.wjy.gameforu.ServiceAdminApplication   : Starting ServiceAdminApplication on MacBook-Pro.local with PID 56455 (/Users/wjy/dev/IdeaProjects/wjy-gameforu/service/service-admin/target/classes started by wjy in /Users/wjy/dev/IdeaProjects/wjy-gameforu)
+2023-07-08 15:54:02.790  INFO 56455 --- [restartedMain] o.wjy.gameforu.ServiceAdminApplication   : The following profiles are active: dev
+2023-07-08 15:54:02.842  INFO 56455 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-07-08 15:54:02.842  INFO 56455 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-07-08 15:54:03.851  INFO 56455 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-07-08 15:54:03.854  INFO 56455 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-07-08 15:54:03.890  INFO 56455 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21ms. Found 0 Redis repository interfaces.
+2023-07-08 15:54:04.367  INFO 56455 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'spring.cloud.sentinel-com.alibaba.cloud.sentinel.SentinelProperties' of type [com.alibaba.cloud.sentinel.SentinelProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-07-08 15:54:04.370  INFO 56455 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration' of type [com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-07-08 15:54:04.650  INFO 56455 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8201 (http)
+2023-07-08 15:54:04.661  INFO 56455 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-08 15:54:04.661  INFO 56455 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2023-07-08 15:54:04.740  INFO 56455 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-08 15:54:04.740  INFO 56455 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1897 ms
+2023-07-08 15:54:05.206  INFO 56455 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-07-08 15:54:05.801  INFO 56455 --- [restartedMain] c.a.c.s.SentinelWebAutoConfiguration     : [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+2023-07-08 15:54:05.842 DEBUG 56455 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 26 mappings in 'requestMappingHandlerMapping'
+2023-07-08 15:54:05.906  INFO 56455 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2023-07-08 15:54:06.050  INFO 56455 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-07-08 15:54:06.058 DEBUG 56455 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-07-08 15:54:06.104 DEBUG 56455 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-07-08 15:54:06.114 DEBUG 56455 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-07-08 15:54:06.633  INFO 56455 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8201 (http) with context path ''
+2023-07-08 15:54:06.636  INFO 56455 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+2023-07-08 15:54:06.638  INFO 56455 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 2 custom documentation plugin(s)
+2023-07-08 15:54:06.668  INFO 56455 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2023-07-08 15:54:06.791  INFO 56455 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: addUsingPOST_1
+2023-07-08 15:54:06.793  INFO 56455 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_1
+2023-07-08 15:54:06.794  INFO 56455 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deletesUsingDELETE_1
+2023-07-08 15:54:06.796  INFO 56455 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUsingGET_1
+2023-07-08 15:54:06.799  INFO 56455 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: pageListUsingGET_1
+2023-07-08 15:54:06.800  INFO 56455 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPUT_1
+2023-07-08 15:54:06.804  INFO 56455 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: addUsingPOST_2
+2023-07-08 15:54:06.806  INFO 56455 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_2
+2023-07-08 15:54:06.807  INFO 56455 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deletesUsingDELETE_2
+2023-07-08 15:54:06.808  INFO 56455 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUsingGET_2
+2023-07-08 15:54:06.811  INFO 56455 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: pageListUsingGET_2
+2023-07-08 15:54:06.813  INFO 56455 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPUT_2
+2023-07-08 15:54:06.820  INFO 56455 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2023-07-08 15:54:06.830  INFO 56455 --- [restartedMain] o.wjy.gameforu.ServiceAdminApplication   : Started ServiceAdminApplication in 4.483 seconds (JVM running for 10.073)
+2023-07-08 15:54:14.696  INFO 56455 --- [http-nio-8201-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-08 15:54:14.698  INFO 56455 --- [http-nio-8201-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-07-08 15:54:14.698 DEBUG 56455 --- [http-nio-8201-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2023-07-08 15:54:14.715 DEBUG 56455 --- [http-nio-8201-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-07-08 15:54:14.715  INFO 56455 --- [http-nio-8201-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 17 ms
+2023-07-08 15:54:14.727 DEBUG 56455 --- [http-nio-8201-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/doc.html", parameters={}
+2023-07-08 15:54:14.739 DEBUG 56455 --- [http-nio-8201-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2023-07-08 15:54:19.935 DEBUG 56455 --- [http-nio-8201-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-08 15:54:20.256 DEBUG 56455 --- [http-nio-8201-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/webjars/css/app.ff80f646.css", parameters={}
+2023-07-08 15:54:20.257 DEBUG 56455 --- [http-nio-8201-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2023-07-08 15:54:20.272 DEBUG 56455 --- [http-nio-8201-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-08 15:54:20.280 DEBUG 56455 --- [http-nio-8201-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/webjars/css/chunk-vendors.7c767628.css", parameters={}
+2023-07-08 15:54:20.281 DEBUG 56455 --- [http-nio-8201-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/webjars/js/chunk-vendors.9a4add2b.js", parameters={}
+2023-07-08 15:54:20.281 DEBUG 56455 --- [http-nio-8201-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/webjars/js/app.0f2f48b5.js", parameters={}
+2023-07-08 15:54:20.282 DEBUG 56455 --- [http-nio-8201-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2023-07-08 15:54:20.283 DEBUG 56455 --- [http-nio-8201-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2023-07-08 15:54:20.283 DEBUG 56455 --- [http-nio-8201-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2023-07-08 15:54:20.300 DEBUG 56455 --- [http-nio-8201-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/webjars/css/chunk-62d2fe18.8274cf04.css", parameters={}
+2023-07-08 15:54:20.306 DEBUG 56455 --- [http-nio-8201-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2023-07-08 15:54:20.310 DEBUG 56455 --- [http-nio-8201-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-08 15:54:20.321 DEBUG 56455 --- [http-nio-8201-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-08 15:54:20.323 DEBUG 56455 --- [http-nio-8201-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-08 15:54:20.336 DEBUG 56455 --- [http-nio-8201-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/webjars/js/chunk-0c58d94d.d009b662.js", parameters={}
+2023-07-08 15:54:20.339 DEBUG 56455 --- [http-nio-8201-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2023-07-08 15:54:20.362 DEBUG 56455 --- [http-nio-8201-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/webjars/js/chunk-0fd67716.d57e2c41.js", parameters={}
+2023-07-08 15:54:20.362 DEBUG 56455 --- [http-nio-8201-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-08 15:54:20.363 DEBUG 56455 --- [http-nio-8201-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2023-07-08 15:54:20.367 DEBUG 56455 --- [http-nio-8201-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/webjars/js/chunk-214218f0.92c7a521.js", parameters={}
+2023-07-08 15:54:20.369 DEBUG 56455 --- [http-nio-8201-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2023-07-08 15:54:20.369 DEBUG 56455 --- [http-nio-8201-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/webjars/js/chunk-2d0af44e.c09671a4.js", parameters={}
+2023-07-08 15:54:20.370 DEBUG 56455 --- [http-nio-8201-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/webjars/js/chunk-2d0d0b98.4693c46e.js", parameters={}
+2023-07-08 15:54:20.371 DEBUG 56455 --- [http-nio-8201-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/webjars/js/chunk-2d0bd799.5bb1a14e.js", parameters={}
+2023-07-08 15:54:20.371 DEBUG 56455 --- [http-nio-8201-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2023-07-08 15:54:20.372 DEBUG 56455 --- [http-nio-8201-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2023-07-08 15:54:20.372 DEBUG 56455 --- [http-nio-8201-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2023-07-08 15:54:20.377 DEBUG 56455 --- [http-nio-8201-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-08 15:54:20.385 DEBUG 56455 --- [http-nio-8201-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-08 15:54:20.387 DEBUG 56455 --- [http-nio-8201-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-08 15:54:20.387 DEBUG 56455 --- [http-nio-8201-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-08 15:54:20.391 DEBUG 56455 --- [http-nio-8201-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-08 15:54:20.391 DEBUG 56455 --- [http-nio-8201-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-08 15:54:20.401 DEBUG 56455 --- [http-nio-8201-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/webjars/js/chunk-62d2fe18.64c34be0.js", parameters={}
+2023-07-08 15:54:20.401 DEBUG 56455 --- [http-nio-8201-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/webjars/js/chunk-589faee0.1cf66f6d.js", parameters={}
+2023-07-08 15:54:20.401 DEBUG 56455 --- [http-nio-8201-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/webjars/js/chunk-2d0da532.a47fb5c8.js", parameters={}
+2023-07-08 15:54:20.401 DEBUG 56455 --- [http-nio-8201-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/webjars/js/chunk-2d22269d.fc57b306.js", parameters={}
+2023-07-08 15:54:20.401 DEBUG 56455 --- [http-nio-8201-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/webjars/js/chunk-3b888a65.8737ce4f.js", parameters={}
+2023-07-08 15:54:20.402 DEBUG 56455 --- [http-nio-8201-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2023-07-08 15:54:20.402 DEBUG 56455 --- [http-nio-8201-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2023-07-08 15:54:20.402 DEBUG 56455 --- [http-nio-8201-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2023-07-08 15:54:20.403 DEBUG 56455 --- [http-nio-8201-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2023-07-08 15:54:20.405 DEBUG 56455 --- [http-nio-8201-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2023-07-08 15:54:20.424 DEBUG 56455 --- [http-nio-8201-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/webjars/js/chunk-735c675c.be4e3cfe.js", parameters={}
+2023-07-08 15:54:20.429 DEBUG 56455 --- [http-nio-8201-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2023-07-08 15:54:20.428 DEBUG 56455 --- [http-nio-8201-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-08 15:54:20.436 DEBUG 56455 --- [http-nio-8201-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-08 15:54:20.438 DEBUG 56455 --- [http-nio-8201-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-08 15:54:20.448 DEBUG 56455 --- [http-nio-8201-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-08 15:54:20.448 DEBUG 56455 --- [http-nio-8201-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-08 15:54:20.452 DEBUG 56455 --- [http-nio-8201-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/webjars/js/chunk-adb9e944.e09637fc.js", parameters={}
+2023-07-08 15:54:20.452 DEBUG 56455 --- [http-nio-8201-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-08 15:54:20.453 DEBUG 56455 --- [http-nio-8201-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2023-07-08 15:54:20.457 DEBUG 56455 --- [http-nio-8201-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-08 15:54:20.875 DEBUG 56455 --- [http-nio-8201-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/swagger-resources", parameters={}
+2023-07-08 15:54:20.877 DEBUG 56455 --- [http-nio-8201-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to springfox.documentation.swagger.web.ApiResourceController#swaggerResources()
+2023-07-08 15:54:20.913 DEBUG 56455 --- [http-nio-8201-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-07-08 15:54:20.913 DEBUG 56455 --- [http-nio-8201-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[springfox.documentation.swagger.web.SwaggerResource@5d7e886a, springfox.documentation.swagger.web.S (truncated)...]
+2023-07-08 15:54:20.956 DEBUG 56455 --- [http-nio-8201-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-08 15:54:20.961 DEBUG 56455 --- [http-nio-8201-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/v2/api-docs?group=adminApi", parameters={masked}
+2023-07-08 15:54:21.076 DEBUG 56455 --- [http-nio-8201-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-07-08 15:54:21.076 DEBUG 56455 --- [http-nio-8201-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [springfox.documentation.spring.web.json.Json@eb3fe4d]
+2023-07-08 15:54:21.077 DEBUG 56455 --- [http-nio-8201-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-08 15:54:21.206 DEBUG 56455 --- [http-nio-8201-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/webjars/css/chunk-62d2fe18.8274cf04.css", parameters={}
+2023-07-08 15:54:21.206 DEBUG 56455 --- [http-nio-8201-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/webjars/js/chunk-62d2fe18.64c34be0.js", parameters={}
+2023-07-08 15:54:21.207 DEBUG 56455 --- [http-nio-8201-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/webjars/js/chunk-adb9e944.e09637fc.js", parameters={}
+2023-07-08 15:54:21.207 DEBUG 56455 --- [http-nio-8201-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2023-07-08 15:54:21.207 DEBUG 56455 --- [http-nio-8201-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/webjars/js/chunk-0c58d94d.d009b662.js", parameters={}
+2023-07-08 15:54:21.208 DEBUG 56455 --- [http-nio-8201-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2023-07-08 15:54:21.208 DEBUG 56455 --- [http-nio-8201-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2023-07-08 15:54:21.209 DEBUG 56455 --- [http-nio-8201-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2023-07-08 15:54:21.214 DEBUG 56455 --- [http-nio-8201-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-08 15:54:21.215 DEBUG 56455 --- [http-nio-8201-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-08 15:54:21.215 DEBUG 56455 --- [http-nio-8201-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-08 15:54:21.217 DEBUG 56455 --- [http-nio-8201-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-08 15:54:21.255 DEBUG 56455 --- [http-nio-8201-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/webjars/js/chunk-3b888a65.8737ce4f.js", parameters={}
+2023-07-08 15:54:21.256 DEBUG 56455 --- [http-nio-8201-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/webjars/js/chunk-214218f0.92c7a521.js", parameters={}
+2023-07-08 15:54:21.256 DEBUG 56455 --- [http-nio-8201-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2023-07-08 15:54:21.257 DEBUG 56455 --- [http-nio-8201-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/doc.html", parameters={}
+2023-07-08 15:54:21.257 DEBUG 56455 --- [http-nio-8201-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2023-07-08 15:54:21.257 DEBUG 56455 --- [http-nio-8201-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/webjars/js/chunk-2d0af44e.c09671a4.js", parameters={}
+2023-07-08 15:54:21.258 DEBUG 56455 --- [http-nio-8201-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2023-07-08 15:54:21.258 DEBUG 56455 --- [http-nio-8201-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2023-07-08 15:54:21.261 DEBUG 56455 --- [http-nio-8201-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-08 15:54:21.262 DEBUG 56455 --- [http-nio-8201-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-08 15:54:21.262 DEBUG 56455 --- [http-nio-8201-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-08 15:54:21.263 DEBUG 56455 --- [http-nio-8201-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-08 15:54:21.280 DEBUG 56455 --- [http-nio-8201-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/webjars/js/chunk-2d0bd799.5bb1a14e.js", parameters={}
+2023-07-08 15:54:21.281 DEBUG 56455 --- [http-nio-8201-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2023-07-08 15:54:21.283 DEBUG 56455 --- [http-nio-8201-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-08 15:54:31.253 DEBUG 56455 --- [http-nio-8201-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/webjars/js/chunk-2d22269d.fc57b306.js", parameters={}
+2023-07-08 15:54:31.253 DEBUG 56455 --- [http-nio-8201-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/webjars/js/chunk-0fd67716.d57e2c41.js", parameters={}
+2023-07-08 15:54:31.253 DEBUG 56455 --- [http-nio-8201-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/webjars/js/chunk-589faee0.1cf66f6d.js", parameters={}
+2023-07-08 15:54:31.254 DEBUG 56455 --- [http-nio-8201-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2023-07-08 15:54:31.254 DEBUG 56455 --- [http-nio-8201-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2023-07-08 15:54:31.254 DEBUG 56455 --- [http-nio-8201-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2023-07-08 15:54:31.257 DEBUG 56455 --- [http-nio-8201-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-08 15:54:31.258 DEBUG 56455 --- [http-nio-8201-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-08 15:54:31.261 DEBUG 56455 --- [http-nio-8201-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-08 15:54:31.322 DEBUG 56455 --- [http-nio-8201-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/webjars/js/chunk-735c675c.be4e3cfe.js", parameters={}
+2023-07-08 15:54:31.324 DEBUG 56455 --- [http-nio-8201-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2023-07-08 15:54:31.336 DEBUG 56455 --- [http-nio-8201-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-08 15:54:47.360 DEBUG 56455 --- [http-nio-8201-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/admin/role/add", parameters={}
+2023-07-08 15:54:47.361 DEBUG 56455 --- [http-nio-8201-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.wjy.gameforu.admin2.controller.RoleController#add(Role)
+2023-07-08 15:54:47.409 DEBUG 56455 --- [http-nio-8201-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Role(id=null, rolename=admin)]
+2023-07-08 15:54:47.472  INFO 56455 --- [http-nio-8201-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-07-08 15:54:47.767  INFO 56455 --- [http-nio-8201-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-07-08 15:54:47.903 DEBUG 56455 --- [http-nio-8201-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-07-08 15:54:47.904 DEBUG 56455 --- [http-nio-8201-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing [Result(code=200, message=success, data=null)]
+2023-07-08 15:54:47.906 DEBUG 56455 --- [http-nio-8201-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-08 15:54:53.819 DEBUG 56455 --- [http-nio-8201-exec-9] o.s.web.servlet.DispatcherServlet        : POST "/admin/role/add", parameters={}
+2023-07-08 15:54:53.819 DEBUG 56455 --- [http-nio-8201-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.wjy.gameforu.admin2.controller.RoleController#add(Role)
+2023-07-08 15:54:53.821 DEBUG 56455 --- [http-nio-8201-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Role(id=null, rolename=user)]
+2023-07-08 15:54:53.838 DEBUG 56455 --- [http-nio-8201-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-07-08 15:54:53.838 DEBUG 56455 --- [http-nio-8201-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Writing [Result(code=200, message=success, data=null)]
+2023-07-08 15:54:53.839 DEBUG 56455 --- [http-nio-8201-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-08 15:55:02.356 DEBUG 56455 --- [http-nio-8201-exec-7] o.s.web.servlet.DispatcherServlet        : POST "/admin/role/add", parameters={}
+2023-07-08 15:55:02.357 DEBUG 56455 --- [http-nio-8201-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.wjy.gameforu.admin2.controller.RoleController#add(Role)
+2023-07-08 15:55:02.358 DEBUG 56455 --- [http-nio-8201-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Role(id=null, rolename=developer)]
+2023-07-08 15:55:02.367 DEBUG 56455 --- [http-nio-8201-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-07-08 15:55:02.367 DEBUG 56455 --- [http-nio-8201-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Writing [Result(code=200, message=success, data=null)]
+2023-07-08 15:55:02.368 DEBUG 56455 --- [http-nio-8201-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-08 15:55:12.549 DEBUG 56455 --- [http-nio-8201-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/admin/role/add", parameters={}
+2023-07-08 15:55:12.550 DEBUG 56455 --- [http-nio-8201-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.wjy.gameforu.admin2.controller.RoleController#add(Role)
+2023-07-08 15:55:12.551 DEBUG 56455 --- [http-nio-8201-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Role(id=null, rolename=publisher)]
+2023-07-08 15:55:12.563 DEBUG 56455 --- [http-nio-8201-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-07-08 15:55:12.563 DEBUG 56455 --- [http-nio-8201-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing [Result(code=200, message=success, data=null)]
+2023-07-08 15:55:12.564 DEBUG 56455 --- [http-nio-8201-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-08 15:55:20.936 DEBUG 56455 --- [http-nio-8201-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/admin/role/get/1", parameters={}
+2023-07-08 15:55:20.938 DEBUG 56455 --- [http-nio-8201-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.wjy.gameforu.admin2.controller.RoleController#get(Integer)
+2023-07-08 15:55:20.981 DEBUG 56455 --- [http-nio-8201-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-07-08 15:55:20.981 DEBUG 56455 --- [http-nio-8201-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Writing [Result(code=200, message=success, data=Role(id=1, rolename=admin))]
+2023-07-08 15:55:20.982 DEBUG 56455 --- [http-nio-8201-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-08 15:55:25.041 DEBUG 56455 --- [http-nio-8201-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/admin/role/get/2", parameters={}
+2023-07-08 15:55:25.042 DEBUG 56455 --- [http-nio-8201-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.wjy.gameforu.admin2.controller.RoleController#get(Integer)
+2023-07-08 15:55:25.049 DEBUG 56455 --- [http-nio-8201-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-07-08 15:55:25.050 DEBUG 56455 --- [http-nio-8201-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Writing [Result(code=200, message=success, data=Role(id=2, rolename=user))]
+2023-07-08 15:55:25.051 DEBUG 56455 --- [http-nio-8201-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-08 15:55:49.492 DEBUG 56455 --- [http-nio-8201-exec-7] o.s.web.servlet.DispatcherServlet        : PUT "/admin/role/update", parameters={}
+2023-07-08 15:55:49.493 DEBUG 56455 --- [http-nio-8201-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.wjy.gameforu.admin2.controller.RoleController#update(Role)
+2023-07-08 15:55:49.495 DEBUG 56455 --- [http-nio-8201-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Role(id=3, rolename=system admin)]
+2023-07-08 15:55:49.535 DEBUG 56455 --- [http-nio-8201-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-07-08 15:55:49.536 DEBUG 56455 --- [http-nio-8201-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Writing [Result(code=200, message=success, data=null)]
+2023-07-08 15:55:49.536 DEBUG 56455 --- [http-nio-8201-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-08 15:55:54.961 DEBUG 56455 --- [http-nio-8201-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/admin/role/get/3", parameters={}
+2023-07-08 15:55:54.962 DEBUG 56455 --- [http-nio-8201-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.wjy.gameforu.admin2.controller.RoleController#get(Integer)
+2023-07-08 15:55:54.968 DEBUG 56455 --- [http-nio-8201-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-07-08 15:55:54.968 DEBUG 56455 --- [http-nio-8201-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing [Result(code=200, message=success, data=Role(id=3, rolename=system admin))]
+2023-07-08 15:55:54.969 DEBUG 56455 --- [http-nio-8201-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-08 15:56:02.537 DEBUG 56455 --- [http-nio-8201-exec-6] o.s.web.servlet.DispatcherServlet        : DELETE "/admin/role/remove/4", parameters={}
+2023-07-08 15:56:02.538 DEBUG 56455 --- [http-nio-8201-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.wjy.gameforu.admin2.controller.RoleController#delete(Integer)
+2023-07-08 15:56:02.558 DEBUG 56455 --- [http-nio-8201-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-07-08 15:56:02.558 DEBUG 56455 --- [http-nio-8201-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Writing [Result(code=200, message=success, data=null)]
+2023-07-08 15:56:02.558 DEBUG 56455 --- [http-nio-8201-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-08 15:56:07.322 DEBUG 56455 --- [http-nio-8201-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/admin/role/get/4", parameters={}
+2023-07-08 15:56:07.323 DEBUG 56455 --- [http-nio-8201-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.wjy.gameforu.admin2.controller.RoleController#get(Integer)
+2023-07-08 15:56:07.326 DEBUG 56455 --- [http-nio-8201-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-07-08 15:56:07.326 DEBUG 56455 --- [http-nio-8201-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Writing [Result(code=200, message=success, data=null)]
+2023-07-08 15:56:07.327 DEBUG 56455 --- [http-nio-8201-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-08 15:56:21.533 DEBUG 56455 --- [http-nio-8201-exec-4] o.s.web.servlet.DispatcherServlet        : DELETE "/admin/role/batchRemove", parameters={}
+2023-07-08 15:56:21.533 DEBUG 56455 --- [http-nio-8201-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.wjy.gameforu.admin2.controller.RoleController#deletes(List)
+2023-07-08 15:56:21.542 DEBUG 56455 --- [http-nio-8201-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [[2, 3]]
+2023-07-08 15:56:21.562 DEBUG 56455 --- [http-nio-8201-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-07-08 15:56:21.562 DEBUG 56455 --- [http-nio-8201-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Writing [Result(code=200, message=success, data=null)]
+2023-07-08 15:56:21.562 DEBUG 56455 --- [http-nio-8201-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-08 15:56:33.303 DEBUG 56455 --- [http-nio-8201-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/admin/role/get/2", parameters={}
+2023-07-08 15:56:33.310 DEBUG 56455 --- [http-nio-8201-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.wjy.gameforu.admin2.controller.RoleController#get(Integer)
+2023-07-08 15:56:33.329 DEBUG 56455 --- [http-nio-8201-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-07-08 15:56:33.331 DEBUG 56455 --- [http-nio-8201-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [Result(code=200, message=success, data=null)]
+2023-07-08 15:56:33.334 DEBUG 56455 --- [http-nio-8201-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-08 15:56:35.521 DEBUG 56455 --- [http-nio-8201-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/admin/role/get/3", parameters={}
+2023-07-08 15:56:35.522 DEBUG 56455 --- [http-nio-8201-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.wjy.gameforu.admin2.controller.RoleController#get(Integer)
+2023-07-08 15:56:35.527 DEBUG 56455 --- [http-nio-8201-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-07-08 15:56:35.527 DEBUG 56455 --- [http-nio-8201-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Writing [Result(code=200, message=success, data=null)]
+2023-07-08 15:56:35.528 DEBUG 56455 --- [http-nio-8201-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-08 15:56:35.852 DEBUG 56455 --- [http-nio-8201-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/admin/role/get/3", parameters={}
+2023-07-08 15:56:35.853 DEBUG 56455 --- [http-nio-8201-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.wjy.gameforu.admin2.controller.RoleController#get(Integer)
+2023-07-08 15:56:35.857 DEBUG 56455 --- [http-nio-8201-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-07-08 15:56:35.857 DEBUG 56455 --- [http-nio-8201-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Writing [Result(code=200, message=success, data=null)]
+2023-07-08 15:56:35.857 DEBUG 56455 --- [http-nio-8201-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-08 15:56:40.777 DEBUG 56455 --- [http-nio-8201-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/admin/role/add", parameters={}
+2023-07-08 15:56:40.778 DEBUG 56455 --- [http-nio-8201-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.wjy.gameforu.admin2.controller.RoleController#add(Role)
+2023-07-08 15:56:40.779 DEBUG 56455 --- [http-nio-8201-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Role(id=null, rolename=user)]
+2023-07-08 15:56:40.791 DEBUG 56455 --- [http-nio-8201-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-07-08 15:56:40.791 DEBUG 56455 --- [http-nio-8201-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing [Result(code=200, message=success, data=null)]
+2023-07-08 15:56:40.791 DEBUG 56455 --- [http-nio-8201-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-08 15:56:46.377 DEBUG 56455 --- [http-nio-8201-exec-9] o.s.web.servlet.DispatcherServlet        : POST "/admin/role/add", parameters={}
+2023-07-08 15:56:46.377 DEBUG 56455 --- [http-nio-8201-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.wjy.gameforu.admin2.controller.RoleController#add(Role)
+2023-07-08 15:56:46.378 DEBUG 56455 --- [http-nio-8201-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Role(id=null, rolename=publisher)]
+2023-07-08 15:56:46.389 DEBUG 56455 --- [http-nio-8201-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-07-08 15:56:46.389 DEBUG 56455 --- [http-nio-8201-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Writing [Result(code=200, message=success, data=null)]
+2023-07-08 15:56:46.390 DEBUG 56455 --- [http-nio-8201-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-08 15:56:51.756 DEBUG 56455 --- [http-nio-8201-exec-7] o.s.web.servlet.DispatcherServlet        : POST "/admin/role/add", parameters={}
+2023-07-08 15:56:51.756 DEBUG 56455 --- [http-nio-8201-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.wjy.gameforu.admin2.controller.RoleController#add(Role)
+2023-07-08 15:56:51.757 DEBUG 56455 --- [http-nio-8201-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Role(id=null, rolename=reviewer)]
+2023-07-08 15:56:51.767 DEBUG 56455 --- [http-nio-8201-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-07-08 15:56:51.768 DEBUG 56455 --- [http-nio-8201-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Writing [Result(code=200, message=success, data=null)]
+2023-07-08 15:56:51.768 DEBUG 56455 --- [http-nio-8201-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-08 15:56:59.782 DEBUG 56455 --- [http-nio-8201-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/admin/role/1/5", parameters={}
+2023-07-08 15:56:59.783 DEBUG 56455 --- [http-nio-8201-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.wjy.gameforu.admin2.controller.RoleController#pageList(Integer, Integer, RoleQueryVo)
+2023-07-08 15:56:59.905 DEBUG 56455 --- [http-nio-8201-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-07-08 15:56:59.906 DEBUG 56455 --- [http-nio-8201-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing [Result(code=200, message=success, data=com.baomidou.mybatisplus.extension.plugins.pagination.Page@25 (truncated)...]
+2023-07-08 15:56:59.922 DEBUG 56455 --- [http-nio-8201-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-08 15:57:10.994 DEBUG 56455 --- [http-nio-8201-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/admin/role/1/2?roleName=r", parameters={masked}
+2023-07-08 15:57:10.994 DEBUG 56455 --- [http-nio-8201-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.wjy.gameforu.admin2.controller.RoleController#pageList(Integer, Integer, RoleQueryVo)
+2023-07-08 15:57:11.026 DEBUG 56455 --- [http-nio-8201-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-07-08 15:57:11.026 DEBUG 56455 --- [http-nio-8201-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Writing [Result(code=200, message=success, data=com.baomidou.mybatisplus.extension.plugins.pagination.Page@35 (truncated)...]
+2023-07-08 15:57:11.027 DEBUG 56455 --- [http-nio-8201-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-08 15:57:20.942 DEBUG 56455 --- [http-nio-8201-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/admin/role/1/5?roleName=r", parameters={masked}
+2023-07-08 15:57:20.942 DEBUG 56455 --- [http-nio-8201-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.wjy.gameforu.admin2.controller.RoleController#pageList(Integer, Integer, RoleQueryVo)
+2023-07-08 15:57:20.957 DEBUG 56455 --- [http-nio-8201-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-07-08 15:57:20.957 DEBUG 56455 --- [http-nio-8201-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Writing [Result(code=200, message=success, data=com.baomidou.mybatisplus.extension.plugins.pagination.Page@46 (truncated)...]
+2023-07-08 15:57:20.958 DEBUG 56455 --- [http-nio-8201-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-08 15:57:26.105 DEBUG 56455 --- [http-nio-8201-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/admin/role/1/5?roleName=a", parameters={masked}
+2023-07-08 15:57:26.105 DEBUG 56455 --- [http-nio-8201-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.wjy.gameforu.admin2.controller.RoleController#pageList(Integer, Integer, RoleQueryVo)
+2023-07-08 15:57:26.120 DEBUG 56455 --- [http-nio-8201-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-07-08 15:57:26.120 DEBUG 56455 --- [http-nio-8201-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Writing [Result(code=200, message=success, data=com.baomidou.mybatisplus.extension.plugins.pagination.Page@93 (truncated)...]
+2023-07-08 15:57:26.121 DEBUG 56455 --- [http-nio-8201-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-08 16:22:33.165  INFO 56455 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2023-07-08 16:22:33.168  INFO 56455 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-07-08 16:22:33.183  INFO 56455 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
