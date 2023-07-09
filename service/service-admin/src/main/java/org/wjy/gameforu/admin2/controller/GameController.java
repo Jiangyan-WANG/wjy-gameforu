@@ -14,6 +14,8 @@ import org.wjy.gameforu.admin2.service.GameService;
 import org.wjy.gameforu.admin2.service.GenreService;
 import org.wjy.gameforu.common.result.Result;
 import org.wjy.gameforu.model.external.SteamGame;
+import org.wjy.gameforu.mq.constant.MqConst;
+import org.wjy.gameforu.mq.service.RabbitService;
 import org.wjy.gameforu.vo.GameQueryVo;
 
 import java.util.List;
@@ -46,6 +48,9 @@ public class GameController {
 
     @Autowired
     private GenreService genreService;
+
+    @Autowired
+    RabbitService rabbitService;
 
     @ApiOperation("get game genres")
     @GetMapping("/gamegenre/{gid}")
@@ -146,6 +151,8 @@ public class GameController {
     private Result add(@RequestBody Game game){
         boolean is_succeed =  gameService.save(game);
         if(is_succeed) {
+            // send to add-mq
+            sendToAddMq(game.getId());
 
             return Result.ok(null);
         } else{
@@ -170,6 +177,9 @@ public class GameController {
     public Result delete(@PathVariable Integer id){
         boolean is_succeed = gameService.removeById(id);
         if(is_succeed){
+            //sent to remove
+            sendToRemoveMq(id);
+
             return Result.ok(null);
         }else{
             return Result.fail(null);
@@ -186,6 +196,18 @@ public class GameController {
         }else{
             return Result.fail(null);
         }
+    }
+
+    public void sendToAddMq(Integer game_id){
+        rabbitService.sendMessage(MqConst.EXCHANGE_GAMES,
+                MqConst.ROUTING_GAMES_ADD,
+                game_id);
+    }
+
+    public void sendToRemoveMq(Integer game_id){
+        rabbitService.sendMessage(MqConst.EXCHANGE_GAMES,
+                MqConst.ROUTING_GAMES_REMOVE,
+                game_id);
     }
 }
 
