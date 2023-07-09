@@ -1,4 +1,4 @@
-package org.wjy.gameforu.mq;
+package org.wjy.gameforu.mq.service;
 
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
