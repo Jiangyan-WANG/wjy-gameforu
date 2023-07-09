@@ -214,3 +214,531 @@
 2023-07-09 12:46:53.992  INFO 71282 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
 2023-07-09 12:46:53.995  INFO 71282 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2023-07-09 12:46:54.049  INFO 71282 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-07-09 15:45:45.369  INFO 76842 --- [restartedMain] o.wjy.gameforu.ServiceAdminApplication   : The following profiles are active: dev
+2023-07-09 15:45:46.612  INFO 76842 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-07-09 15:45:46.617  INFO 76842 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-07-09 15:45:46.662  INFO 76842 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21ms. Found 0 Redis repository interfaces.
+2023-07-09 15:45:47.032  INFO 76842 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=3b421ef3-6ddd-3688-a140-389be7c14882
+2023-07-09 15:45:47.040  INFO 76842 --- [restartedMain] faultConfiguringBeanFactoryPostProcessor : No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2023-07-09 15:45:47.046  INFO 76842 --- [restartedMain] faultConfiguringBeanFactoryPostProcessor : No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+2023-07-09 15:45:47.051  INFO 76842 --- [restartedMain] faultConfiguringBeanFactoryPostProcessor : No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2023-07-09 15:45:47.402  INFO 76842 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.stream.binder.rabbit.config.ExtendedBindingHandlerMappingsProviderConfiguration' of type [org.springframework.cloud.stream.binder.rabbit.config.ExtendedBindingHandlerMappingsProviderConfiguration$$EnhancerBySpringCGLIB$$7251965] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-07-09 15:45:47.412  INFO 76842 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'rabbitExtendedPropertiesDefaultMappingsProvider' of type [org.springframework.cloud.stream.binder.rabbit.config.ExtendedBindingHandlerMappingsProviderConfiguration$$Lambda$362/1685375379] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-07-09 15:45:47.420  INFO 76842 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'BindingHandlerAdvise' of type [org.springframework.cloud.stream.config.BindingHandlerAdvise] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-07-09 15:45:47.511  INFO 76842 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'spelConverter' of type [org.springframework.cloud.stream.config.SpelExpressionConverterConfiguration$SpelConverter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-07-09 15:45:47.550  INFO 76842 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'spring.cloud.sentinel-com.alibaba.cloud.sentinel.SentinelProperties' of type [com.alibaba.cloud.sentinel.SentinelProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-07-09 15:45:47.603  INFO 76842 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration' of type [com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-07-09 15:45:47.613  INFO 76842 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-07-09 15:45:47.621  INFO 76842 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration$IntegrationJmxConfiguration' of type [org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration$IntegrationJmxConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-07-09 15:45:47.632  INFO 76842 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration' of type [org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-07-09 15:45:47.637  INFO 76842 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'mbeanServer' of type [com.sun.jmx.mbeanserver.JmxMBeanServer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-07-09 15:45:47.660  INFO 76842 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-07-09 15:45:47.662  INFO 76842 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-07-09 15:45:48.144  INFO 76842 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8201 (http)
+2023-07-09 15:45:48.156  INFO 76842 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-09 15:45:48.157  INFO 76842 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2023-07-09 15:45:48.262  INFO 76842 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-09 15:45:48.262  INFO 76842 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2873 ms
+2023-07-09 15:45:48.755  INFO 76842 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-07-09 15:45:49.633  INFO 76842 --- [restartedMain] c.a.c.s.SentinelWebAutoConfiguration     : [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+2023-07-09 15:45:49.675 DEBUG 76842 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 35 mappings in 'requestMappingHandlerMapping'
+2023-07-09 15:45:49.748  INFO 76842 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2023-07-09 15:45:49.771  WARN 76842 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2023-07-09 15:45:49.771  INFO 76842 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2023-07-09 15:45:49.777  WARN 76842 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2023-07-09 15:45:49.778  INFO 76842 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2023-07-09 15:45:49.962  INFO 76842 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-07-09 15:45:49.975 DEBUG 76842 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-07-09 15:45:50.055 DEBUG 76842 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-07-09 15:45:50.071 DEBUG 76842 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-07-09 15:45:51.157  INFO 76842 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2023-07-09 15:45:51.381  INFO 76842 --- [restartedMain] onConfiguration$FunctionBindingRegistrar : Functional binding is disabled due to the presense of @EnableBinding annotation in your configuration
+2023-07-09 15:45:51.620  INFO 76842 --- [restartedMain] o.s.i.monitor.IntegrationMBeanExporter   : Registering MessageChannel nullChannel
+2023-07-09 15:45:51.639  INFO 76842 --- [restartedMain] o.s.i.monitor.IntegrationMBeanExporter   : Registering MessageChannel errorChannel
+2023-07-09 15:45:51.713  INFO 76842 --- [restartedMain] o.s.i.monitor.IntegrationMBeanExporter   : Registering MessageChannel springCloudBusOutput
+2023-07-09 15:45:51.751  INFO 76842 --- [restartedMain] o.s.i.monitor.IntegrationMBeanExporter   : Registering MessageChannel springCloudBusInput
+2023-07-09 15:45:51.763  INFO 76842 --- [restartedMain] o.s.i.monitor.IntegrationMBeanExporter   : Registering MessageHandler errorLogger
+2023-07-09 15:45:51.806  INFO 76842 --- [restartedMain] o.s.c.s.m.DirectWithAttributesChannel    : Channel 'application-1.springCloudBusInput' has 1 subscriber(s).
+2023-07-09 15:45:51.809  INFO 76842 --- [restartedMain] o.s.i.endpoint.EventDrivenConsumer       : Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2023-07-09 15:45:51.809  INFO 76842 --- [restartedMain] o.s.i.channel.PublishSubscribeChannel    : Channel 'application-1.errorChannel' has 1 subscriber(s).
+2023-07-09 15:45:51.809  INFO 76842 --- [restartedMain] o.s.i.endpoint.EventDrivenConsumer       : started bean '_org.springframework.integration.errorLogger'
+2023-07-09 15:45:51.811  INFO 76842 --- [restartedMain] o.s.c.s.binder.DefaultBinderFactory      : Creating binder: rabbit
+2023-07-09 15:45:56.985  INFO 76842 --- [restartedMain] o.s.c.s.binder.DefaultBinderFactory      : Caching the binder: rabbit
+2023-07-09 15:45:56.986  INFO 76842 --- [restartedMain] o.s.c.s.binder.DefaultBinderFactory      : Retrieving cached binder: rabbit
+2023-07-09 15:45:57.071  INFO 76842 --- [restartedMain] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.54.2:5672]
+2023-07-09 15:45:57.231  INFO 76842 --- [restartedMain] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#1f4ed4ee:0/SimpleConnection@33bce300 [delegate=amqp://guest@192.168.54.2:5672/, localPort= 61439]
+2023-07-09 15:45:57.359  INFO 76842 --- [restartedMain] o.s.c.s.m.DirectWithAttributesChannel    : Channel 'application-1.springCloudBusOutput' has 1 subscriber(s).
+2023-07-09 15:45:57.455  INFO 76842 --- [restartedMain] c.a.n.client.identify.CredentialWatcher  : null No credential found
+2023-07-09 15:45:58.847  INFO 76842 --- [restartedMain] com.alibaba.nacos.client.naming          : [LISTENER] adding DEFAULT_GROUP@@service-admin with DEFAULT to listener map
+2023-07-09 15:45:58.847  INFO 76842 --- [restartedMain] o.s.c.s.binder.DefaultBinderFactory      : Retrieving cached binder: rabbit
+2023-07-09 15:45:58.870  INFO 76842 --- [restartedMain] c.s.b.r.p.RabbitExchangeQueueProvisioner : declaring queue for inbound: springCloudBus.anonymous._Iidyh9WTd2mLo-hAKGxXg, bound to: springCloudBus
+2023-07-09 15:45:58.974  INFO 76842 --- [restartedMain] o.s.c.stream.binder.BinderErrorChannel   : Channel 'springCloudBus.anonymous._Iidyh9WTd2mLo-hAKGxXg.errors' has 1 subscriber(s).
+2023-07-09 15:45:58.974  INFO 76842 --- [restartedMain] o.s.c.stream.binder.BinderErrorChannel   : Channel 'springCloudBus.anonymous._Iidyh9WTd2mLo-hAKGxXg.errors' has 2 subscriber(s).
+2023-07-09 15:45:59.003  INFO 76842 --- [restartedMain] o.s.i.a.i.AmqpInboundChannelAdapter      : started bean 'inbound.springCloudBus.anonymous._Iidyh9WTd2mLo-hAKGxXg'
+2023-07-09 15:45:59.043  INFO 76842 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8201 (http) with context path ''
+2023-07-09 15:45:59.050  INFO 76842 --- [restartedMain] com.alibaba.nacos.client.naming          : [BEAT] adding beat: BeatInfo{port=8201, ip='172.16.2.196', weight=1.0, serviceName='DEFAULT_GROUP@@service-admin', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false} to beat map.
+2023-07-09 15:45:59.051  INFO 76842 --- [restartedMain] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] public registering service DEFAULT_GROUP@@service-admin with instance: Instance{instanceId='null', ip='172.16.2.196', port=8201, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={preserved.register.source=SPRING_CLOUD}}
+2023-07-09 15:45:59.186  INFO 76842 --- [restartedMain] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP service-admin 172.16.2.196:8201 register finished
+2023-07-09 15:45:59.189  INFO 76842 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+2023-07-09 15:45:59.192  INFO 76842 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 2 custom documentation plugin(s)
+2023-07-09 15:45:59.193  INFO 76842 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : received push data: {"type":"dom","data":"{\"name\":\"DEFAULT_GROUP@@service-admin\",\"clusters\":\"DEFAULT\",\"cacheMillis\":10000,\"hosts\":[],\"lastRefTime\":1688913959158,\"checksum\":\"\",\"allIPs\":false,\"reachProtectionThreshold\":false,\"valid\":true}","lastRefTime":831838175032895} from /192.168.54.1
+2023-07-09 15:45:59.228  INFO 76842 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2023-07-09 15:45:59.378  INFO 76842 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: addUsingPOST_1
+2023-07-09 15:45:59.380  INFO 76842 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_1
+2023-07-09 15:45:59.383  INFO 76842 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deletesUsingDELETE_1
+2023-07-09 15:45:59.385  INFO 76842 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUsingGET_1
+2023-07-09 15:45:59.390  INFO 76842 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: pageListUsingGET_1
+2023-07-09 15:45:59.393  INFO 76842 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPUT_1
+2023-07-09 15:45:59.399  INFO 76842 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: addUsingPOST_2
+2023-07-09 15:45:59.401  INFO 76842 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_2
+2023-07-09 15:45:59.403  INFO 76842 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deletesUsingDELETE_2
+2023-07-09 15:45:59.405  INFO 76842 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUsingGET_2
+2023-07-09 15:45:59.409  INFO 76842 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: pageListUsingGET_2
+2023-07-09 15:45:59.411  INFO 76842 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPUT_2
+2023-07-09 15:45:59.420  INFO 76842 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: addUsingPOST_3
+2023-07-09 15:45:59.422  INFO 76842 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_3
+2023-07-09 15:45:59.424  INFO 76842 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deletesUsingDELETE_3
+2023-07-09 15:45:59.426  INFO 76842 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUsingGET_3
+2023-07-09 15:45:59.432  INFO 76842 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: pageListUsingGET_3
+2023-07-09 15:45:59.435  INFO 76842 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPUT_3
+2023-07-09 15:45:59.447  INFO 76842 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2023-07-09 15:45:59.478  INFO 76842 --- [restartedMain] o.wjy.gameforu.ServiceAdminApplication   : Started ServiceAdminApplication in 15.082 seconds (JVM running for 21.435)
+2023-07-09 15:45:59.682  INFO 76842 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : received push data: {"type":"dom","data":"{\"name\":\"DEFAULT_GROUP@@service-admin\",\"clusters\":\"DEFAULT\",\"cacheMillis\":10000,\"hosts\":[{\"instanceId\":\"172.16.2.196#8201#DEFAULT#DEFAULT_GROUP@@service-admin\",\"ip\":\"172.16.2.196\",\"port\":8201,\"weight\":1.0,\"healthy\":true,\"enabled\":true,\"ephemeral\":true,\"clusterName\":\"DEFAULT\",\"serviceName\":\"DEFAULT_GROUP@@service-admin\",\"metadata\":{\"preserved.register.source\":\"SPRING_CLOUD\"},\"instanceHeartBeatInterval\":5000,\"instanceHeartBeatTimeOut\":15000,\"ipDeleteTimeout\":30000}],\"lastRefTime\":1688913959672,\"checksum\":\"\",\"allIPs\":false,\"reachProtectionThreshold\":false,\"valid\":true}","lastRefTime":831838684526518} from /192.168.54.1
+2023-07-09 15:45:59.697  INFO 76842 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : new ips(1) service: DEFAULT_GROUP@@service-admin@@DEFAULT -> [{"instanceId":"172.16.2.196#8201#DEFAULT#DEFAULT_GROUP@@service-admin","ip":"172.16.2.196","port":8201,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@service-admin","metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]
+2023-07-09 15:45:59.704  INFO 76842 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@service-admin@@DEFAULT -> [{"instanceId":"172.16.2.196#8201#DEFAULT#DEFAULT_GROUP@@service-admin","ip":"172.16.2.196","port":8201,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@service-admin","metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]
+2023-07-09 15:47:24.249  INFO 76842 --- [SpringContextShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2023-07-09 15:47:24.255  INFO 76842 --- [SpringContextShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2023-07-09 15:47:24.256  INFO 76842 --- [SpringContextShutdownHook] o.s.i.a.i.AmqpInboundChannelAdapter      : stopped bean 'inbound.springCloudBus.anonymous._Iidyh9WTd2mLo-hAKGxXg'
+2023-07-09 15:47:24.325  INFO 76842 --- [SpringContextShutdownHook] o.s.i.monitor.IntegrationMBeanExporter   : Registering MessageChannel springCloudBus.anonymous._Iidyh9WTd2mLo-hAKGxXg.errors
+2023-07-09 15:47:24.551  INFO 76842 --- [SpringContextShutdownHook] o.s.c.stream.binder.BinderErrorChannel   : Channel 'application-1.springCloudBus.anonymous._Iidyh9WTd2mLo-hAKGxXg.errors' has 1 subscriber(s).
+2023-07-09 15:47:24.551  INFO 76842 --- [SpringContextShutdownHook] o.s.c.stream.binder.BinderErrorChannel   : Channel 'application-1.springCloudBus.anonymous._Iidyh9WTd2mLo-hAKGxXg.errors' has 0 subscriber(s).
+2023-07-09 15:47:24.553  INFO 76842 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : [LISTENER] removing DEFAULT_GROUP@@service-admin with DEFAULT from listener map
+2023-07-09 15:47:24.557  INFO 76842 --- [SpringContextShutdownHook] o.s.i.endpoint.EventDrivenConsumer       : Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2023-07-09 15:47:24.557  INFO 76842 --- [SpringContextShutdownHook] o.s.i.channel.PublishSubscribeChannel    : Channel 'application-1.errorChannel' has 0 subscriber(s).
+2023-07-09 15:47:24.558  INFO 76842 --- [SpringContextShutdownHook] o.s.i.endpoint.EventDrivenConsumer       : stopped bean '_org.springframework.integration.errorLogger'
+2023-07-09 15:47:24.559  INFO 76842 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2023-07-09 15:47:24.590  INFO 76842 --- [SpringContextShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+2023-07-09 15:47:24.591  INFO 76842 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : [BEAT] removing beat: DEFAULT_GROUP@@service-admin:172.16.2.196:8201 from beat map.
+2023-07-09 15:47:24.591  INFO 76842 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : [DEREGISTER-SERVICE] public deregistering service DEFAULT_GROUP@@service-admin with instance: Instance{instanceId='null', ip='172.16.2.196', port=8201, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={}}
+2023-07-09 15:47:24.620  INFO 76842 --- [SpringContextShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
+2023-07-09 15:47:24.621  INFO 76842 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown begin
+2023-07-09 15:47:24.633  INFO 76842 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown stop
+2023-07-09 15:47:24.634  INFO 76842 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.EventDispatcher do shutdown begin
+2023-07-09 15:47:25.152  INFO 76842 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : received push data: {"type":"dom","data":"{\"name\":\"DEFAULT_GROUP@@service-admin\",\"clusters\":\"DEFAULT\",\"cacheMillis\":10000,\"hosts\":[],\"lastRefTime\":1688914045143,\"checksum\":\"\",\"allIPs\":false,\"reachProtectionThreshold\":false,\"valid\":true}","lastRefTime":831924159022760} from /192.168.54.1
+2023-07-09 15:47:25.154  INFO 76842 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : removed ips(1) service: DEFAULT_GROUP@@service-admin@@DEFAULT -> [{"instanceId":"172.16.2.196#8201#DEFAULT#DEFAULT_GROUP@@service-admin","ip":"172.16.2.196","port":8201,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@service-admin","metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]
+2023-07-09 15:47:25.156  INFO 76842 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : current ips:(0) service: DEFAULT_GROUP@@service-admin@@DEFAULT -> []
+2023-07-09 15:47:27.643  INFO 76842 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.EventDispatcher do shutdown stop
+2023-07-09 15:47:27.644  INFO 76842 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.HostReactor do shutdown begin
+2023-07-09 15:47:30.060  INFO 76842 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.PushReceiver do shutdown begin
+2023-07-09 15:47:33.076  INFO 76842 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.PushReceiver do shutdown stop
+2023-07-09 15:47:33.077  INFO 76842 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown begin
+2023-07-09 15:47:33.078  INFO 76842 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown stop
+2023-07-09 15:47:33.078  INFO 76842 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.HostReactor do shutdown stop
+2023-07-09 15:47:33.078  INFO 76842 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.net.NamingProxy do shutdown begin
+2023-07-09 15:47:33.079  WARN 76842 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : [NamingHttpClientManager] Start destroying NacosRestTemplate
+2023-07-09 15:47:33.080  WARN 76842 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : [NamingHttpClientManager] Destruction of the end
+2023-07-09 15:47:33.080  INFO 76842 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.net.NamingProxy do shutdown stop
+2023-07-09 15:47:33.081  INFO 76842 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown begin
+2023-07-09 15:47:33.081  INFO 76842 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown stop
+2023-07-09 15:47:33.082  INFO 76842 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.EventDispatcher do shutdown begin
+2023-07-09 15:47:33.082  INFO 76842 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.EventDispatcher do shutdown stop
+2023-07-09 15:47:33.082  INFO 76842 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.HostReactor do shutdown begin
+2023-07-09 15:47:33.082  INFO 76842 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.PushReceiver do shutdown begin
+2023-07-09 15:47:33.100 ERROR 76842 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : [NA] error while receiving push data
+
+java.net.SocketException: Socket closed
+	at java.net.PlainDatagramSocketImpl.receive0(Native Method) ~[na:1.8.0_362]
+	at java.net.AbstractPlainDatagramSocketImpl.receive(AbstractPlainDatagramSocketImpl.java:143) ~[na:1.8.0_362]
+	at java.net.DatagramSocket.receive(DatagramSocket.java:812) ~[na:1.8.0_362]
+	at com.alibaba.nacos.client.naming.core.PushReceiver.run(PushReceiver.java:83) ~[nacos-client-1.3.2.jar:na]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_362]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_362]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_362]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_362]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_362]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_362]
+	at java.lang.Thread.run(Thread.java:750) [na:1.8.0_362]
+
+2023-07-09 15:47:33.100  INFO 76842 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.PushReceiver do shutdown stop
+2023-07-09 15:47:33.100  INFO 76842 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown begin
+2023-07-09 15:47:33.100  INFO 76842 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown stop
+2023-07-09 15:47:33.100  INFO 76842 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.HostReactor do shutdown stop
+2023-07-09 15:47:33.100  INFO 76842 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.net.NamingProxy do shutdown begin
+2023-07-09 15:47:33.100  WARN 76842 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : [NamingHttpClientManager] Start destroying NacosRestTemplate
+2023-07-09 15:47:33.101  WARN 76842 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : [NamingHttpClientManager] Destruction of the end
+2023-07-09 15:47:33.101  INFO 76842 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.net.NamingProxy do shutdown stop
+2023-07-09 15:47:33.135  INFO 76842 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2023-07-09 15:47:33.139  INFO 76842 --- [SpringContextShutdownHook] o.s.i.monitor.IntegrationMBeanExporter   : Summary on shutdown: nullChannel
+2023-07-09 15:47:33.139  INFO 76842 --- [SpringContextShutdownHook] o.s.i.monitor.IntegrationMBeanExporter   : Summary on shutdown: bean 'errorChannel'
+2023-07-09 15:47:33.139  INFO 76842 --- [SpringContextShutdownHook] o.s.i.monitor.IntegrationMBeanExporter   : Summary on shutdown: bean 'springCloudBusOutput'
+2023-07-09 15:47:33.140  INFO 76842 --- [SpringContextShutdownHook] o.s.i.monitor.IntegrationMBeanExporter   : Summary on shutdown: bean 'springCloudBusInput'
+2023-07-09 15:47:33.140  INFO 76842 --- [SpringContextShutdownHook] o.s.i.monitor.IntegrationMBeanExporter   : Summary on shutdown: bean '_org.springframework.integration.errorLogger.handler' for component '_org.springframework.integration.errorLogger'
+2023-07-09 16:00:05.098  INFO 77348 --- [restartedMain] o.wjy.gameforu.ServiceAdminApplication   : The following profiles are active: dev
+2023-07-09 16:00:06.302  INFO 77348 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-07-09 16:00:06.306  INFO 77348 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-07-09 16:00:06.351  INFO 77348 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 24ms. Found 0 Redis repository interfaces.
+2023-07-09 16:00:06.778  INFO 77348 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=3b421ef3-6ddd-3688-a140-389be7c14882
+2023-07-09 16:00:06.786  INFO 77348 --- [restartedMain] faultConfiguringBeanFactoryPostProcessor : No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2023-07-09 16:00:06.792  INFO 77348 --- [restartedMain] faultConfiguringBeanFactoryPostProcessor : No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+2023-07-09 16:00:06.797  INFO 77348 --- [restartedMain] faultConfiguringBeanFactoryPostProcessor : No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2023-07-09 16:00:07.091  INFO 77348 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.stream.binder.rabbit.config.ExtendedBindingHandlerMappingsProviderConfiguration' of type [org.springframework.cloud.stream.binder.rabbit.config.ExtendedBindingHandlerMappingsProviderConfiguration$$EnhancerBySpringCGLIB$$d5b4ce2c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-07-09 16:00:07.101  INFO 77348 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'rabbitExtendedPropertiesDefaultMappingsProvider' of type [org.springframework.cloud.stream.binder.rabbit.config.ExtendedBindingHandlerMappingsProviderConfiguration$$Lambda$362/1338241254] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-07-09 16:00:07.107  INFO 77348 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'BindingHandlerAdvise' of type [org.springframework.cloud.stream.config.BindingHandlerAdvise] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-07-09 16:00:07.118  INFO 77348 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'spelConverter' of type [org.springframework.cloud.stream.config.SpelExpressionConverterConfiguration$SpelConverter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-07-09 16:00:07.237  INFO 77348 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'spring.cloud.sentinel-com.alibaba.cloud.sentinel.SentinelProperties' of type [com.alibaba.cloud.sentinel.SentinelProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-07-09 16:00:07.294  INFO 77348 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration' of type [com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-07-09 16:00:07.305  INFO 77348 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-07-09 16:00:07.313  INFO 77348 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration$IntegrationJmxConfiguration' of type [org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration$IntegrationJmxConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-07-09 16:00:07.324  INFO 77348 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration' of type [org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-07-09 16:00:07.330  INFO 77348 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'mbeanServer' of type [com.sun.jmx.mbeanserver.JmxMBeanServer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-07-09 16:00:07.364  INFO 77348 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-07-09 16:00:07.367  INFO 77348 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-07-09 16:00:07.956  INFO 77348 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8201 (http)
+2023-07-09 16:00:07.978  INFO 77348 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-09 16:00:07.979  INFO 77348 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2023-07-09 16:00:08.154  INFO 77348 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-09 16:00:08.155  INFO 77348 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3037 ms
+2023-07-09 16:00:08.868  INFO 77348 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-07-09 16:00:10.040  INFO 77348 --- [restartedMain] c.a.c.s.SentinelWebAutoConfiguration     : [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+2023-07-09 16:00:10.104 DEBUG 77348 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 35 mappings in 'requestMappingHandlerMapping'
+2023-07-09 16:00:10.225  INFO 77348 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2023-07-09 16:00:10.249  WARN 77348 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2023-07-09 16:00:10.249  INFO 77348 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2023-07-09 16:00:10.254  WARN 77348 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2023-07-09 16:00:10.254  INFO 77348 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2023-07-09 16:00:10.450  INFO 77348 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-07-09 16:00:10.466 DEBUG 77348 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-07-09 16:00:10.548 DEBUG 77348 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-07-09 16:00:10.564 DEBUG 77348 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-07-09 16:00:11.710  INFO 77348 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2023-07-09 16:00:11.936  INFO 77348 --- [restartedMain] onConfiguration$FunctionBindingRegistrar : Functional binding is disabled due to the presense of @EnableBinding annotation in your configuration
+2023-07-09 16:00:12.229  INFO 77348 --- [restartedMain] o.s.i.monitor.IntegrationMBeanExporter   : Registering MessageChannel nullChannel
+2023-07-09 16:00:12.253  INFO 77348 --- [restartedMain] o.s.i.monitor.IntegrationMBeanExporter   : Registering MessageChannel springCloudBusInput
+2023-07-09 16:00:12.348  INFO 77348 --- [restartedMain] o.s.i.monitor.IntegrationMBeanExporter   : Registering MessageChannel springCloudBusOutput
+2023-07-09 16:00:12.357  INFO 77348 --- [restartedMain] o.s.i.monitor.IntegrationMBeanExporter   : Registering MessageChannel errorChannel
+2023-07-09 16:00:12.420  INFO 77348 --- [restartedMain] o.s.i.monitor.IntegrationMBeanExporter   : Registering MessageHandler errorLogger
+2023-07-09 16:00:12.472  INFO 77348 --- [restartedMain] o.s.c.s.m.DirectWithAttributesChannel    : Channel 'application-1.springCloudBusInput' has 1 subscriber(s).
+2023-07-09 16:00:12.478  INFO 77348 --- [restartedMain] o.s.i.endpoint.EventDrivenConsumer       : Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2023-07-09 16:00:12.478  INFO 77348 --- [restartedMain] o.s.i.channel.PublishSubscribeChannel    : Channel 'application-1.errorChannel' has 1 subscriber(s).
+2023-07-09 16:00:12.478  INFO 77348 --- [restartedMain] o.s.i.endpoint.EventDrivenConsumer       : started bean '_org.springframework.integration.errorLogger'
+2023-07-09 16:00:12.480  INFO 77348 --- [restartedMain] o.s.c.s.binder.DefaultBinderFactory      : Creating binder: rabbit
+2023-07-09 16:00:17.644  INFO 77348 --- [restartedMain] o.s.c.s.binder.DefaultBinderFactory      : Caching the binder: rabbit
+2023-07-09 16:00:17.644  INFO 77348 --- [restartedMain] o.s.c.s.binder.DefaultBinderFactory      : Retrieving cached binder: rabbit
+2023-07-09 16:00:17.798  INFO 77348 --- [restartedMain] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.54.2:5672]
+2023-07-09 16:00:17.932  INFO 77348 --- [restartedMain] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#70ceacd5:0/SimpleConnection@431d6c0e [delegate=amqp://guest@192.168.54.2:5672/, localPort= 61878]
+2023-07-09 16:00:17.984  INFO 77348 --- [restartedMain] o.s.c.s.m.DirectWithAttributesChannel    : Channel 'application-1.springCloudBusOutput' has 1 subscriber(s).
+2023-07-09 16:00:18.028  INFO 77348 --- [restartedMain] c.a.n.client.identify.CredentialWatcher  : null No credential found
+2023-07-09 16:00:18.306  INFO 77348 --- [restartedMain] com.alibaba.nacos.client.naming          : [LISTENER] adding DEFAULT_GROUP@@service-admin with DEFAULT to listener map
+2023-07-09 16:00:18.307  INFO 77348 --- [restartedMain] o.s.c.s.binder.DefaultBinderFactory      : Retrieving cached binder: rabbit
+2023-07-09 16:00:18.327  INFO 77348 --- [restartedMain] c.s.b.r.p.RabbitExchangeQueueProvisioner : declaring queue for inbound: springCloudBus.anonymous.97sPr5sESrickC6lsucQSw, bound to: springCloudBus
+2023-07-09 16:00:18.391  INFO 77348 --- [restartedMain] o.s.c.stream.binder.BinderErrorChannel   : Channel 'springCloudBus.anonymous.97sPr5sESrickC6lsucQSw.errors' has 1 subscriber(s).
+2023-07-09 16:00:18.391  INFO 77348 --- [restartedMain] o.s.c.stream.binder.BinderErrorChannel   : Channel 'springCloudBus.anonymous.97sPr5sESrickC6lsucQSw.errors' has 2 subscriber(s).
+2023-07-09 16:00:18.409  INFO 77348 --- [restartedMain] o.s.i.a.i.AmqpInboundChannelAdapter      : started bean 'inbound.springCloudBus.anonymous.97sPr5sESrickC6lsucQSw'
+2023-07-09 16:00:18.437  INFO 77348 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8201 (http) with context path ''
+2023-07-09 16:00:18.442  INFO 77348 --- [restartedMain] com.alibaba.nacos.client.naming          : [BEAT] adding beat: BeatInfo{port=8201, ip='172.16.2.196', weight=1.0, serviceName='DEFAULT_GROUP@@service-admin', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false} to beat map.
+2023-07-09 16:00:18.443  INFO 77348 --- [restartedMain] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] public registering service DEFAULT_GROUP@@service-admin with instance: Instance{instanceId='null', ip='172.16.2.196', port=8201, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={preserved.register.source=SPRING_CLOUD}}
+2023-07-09 16:00:18.489  INFO 77348 --- [restartedMain] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP service-admin 172.16.2.196:8201 register finished
+2023-07-09 16:00:18.492  INFO 77348 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+2023-07-09 16:00:18.495  INFO 77348 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 2 custom documentation plugin(s)
+2023-07-09 16:00:18.525  INFO 77348 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2023-07-09 16:00:18.630  INFO 77348 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: addUsingPOST_1
+2023-07-09 16:00:18.631  INFO 77348 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_1
+2023-07-09 16:00:18.633  INFO 77348 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deletesUsingDELETE_1
+2023-07-09 16:00:18.634  INFO 77348 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUsingGET_1
+2023-07-09 16:00:18.637  INFO 77348 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: pageListUsingGET_1
+2023-07-09 16:00:18.638  INFO 77348 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPUT_1
+2023-07-09 16:00:18.642  INFO 77348 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: addUsingPOST_2
+2023-07-09 16:00:18.644  INFO 77348 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_2
+2023-07-09 16:00:18.645  INFO 77348 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deletesUsingDELETE_2
+2023-07-09 16:00:18.646  INFO 77348 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUsingGET_2
+2023-07-09 16:00:18.649  INFO 77348 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: pageListUsingGET_2
+2023-07-09 16:00:18.650  INFO 77348 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPUT_2
+2023-07-09 16:00:18.655  INFO 77348 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: addUsingPOST_3
+2023-07-09 16:00:18.656  INFO 77348 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_3
+2023-07-09 16:00:18.657  INFO 77348 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deletesUsingDELETE_3
+2023-07-09 16:00:18.659  INFO 77348 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUsingGET_3
+2023-07-09 16:00:18.663  INFO 77348 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: pageListUsingGET_3
+2023-07-09 16:00:18.665  INFO 77348 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPUT_3
+2023-07-09 16:00:18.672  INFO 77348 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2023-07-09 16:00:18.697  INFO 77348 --- [restartedMain] o.wjy.gameforu.ServiceAdminApplication   : Started ServiceAdminApplication in 14.527 seconds (JVM running for 20.519)
+2023-07-09 16:00:18.792  INFO 77348 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : received push data: {"type":"dom","data":"{\"name\":\"DEFAULT_GROUP@@service-admin\",\"clusters\":\"DEFAULT\",\"cacheMillis\":10000,\"hosts\":[{\"instanceId\":\"172.16.2.196#8201#DEFAULT#DEFAULT_GROUP@@service-admin\",\"ip\":\"172.16.2.196\",\"port\":8201,\"weight\":1.0,\"healthy\":true,\"enabled\":true,\"ephemeral\":true,\"clusterName\":\"DEFAULT\",\"serviceName\":\"DEFAULT_GROUP@@service-admin\",\"metadata\":{\"preserved.register.source\":\"SPRING_CLOUD\"},\"instanceHeartBeatInterval\":5000,\"instanceHeartBeatTimeOut\":15000,\"ipDeleteTimeout\":30000}],\"lastRefTime\":1688914818775,\"checksum\":\"\",\"allIPs\":false,\"reachProtectionThreshold\":false,\"valid\":true}","lastRefTime":832697804924572} from /192.168.54.1
+2023-07-09 16:00:18.805  INFO 77348 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : new ips(1) service: DEFAULT_GROUP@@service-admin@@DEFAULT -> [{"instanceId":"172.16.2.196#8201#DEFAULT#DEFAULT_GROUP@@service-admin","ip":"172.16.2.196","port":8201,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@service-admin","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2023-07-09 16:00:18.813  INFO 77348 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@service-admin@@DEFAULT -> [{"instanceId":"172.16.2.196#8201#DEFAULT#DEFAULT_GROUP@@service-admin","ip":"172.16.2.196","port":8201,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@service-admin","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2023-07-09 16:00:55.807  INFO 77348 --- [http-nio-8201-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-09 16:00:55.810  INFO 77348 --- [http-nio-8201-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-07-09 16:00:55.810 DEBUG 77348 --- [http-nio-8201-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2023-07-09 16:00:55.846 DEBUG 77348 --- [http-nio-8201-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-07-09 16:00:55.846  INFO 77348 --- [http-nio-8201-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 36 ms
+2023-07-09 16:00:55.870 DEBUG 77348 --- [http-nio-8201-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/admin/genre/1/1", parameters={}
+2023-07-09 16:00:55.888 DEBUG 77348 --- [http-nio-8201-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.wjy.gameforu.admin2.controller.GenreController#pageList(Integer, Integer, GenreQueryVo)
+2023-07-09 16:01:01.591  INFO 77348 --- [http-nio-8201-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-07-09 16:01:02.024  INFO 77348 --- [http-nio-8201-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-07-09 16:01:02.197 DEBUG 77348 --- [http-nio-8201-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.7, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-07-09 16:01:02.198 DEBUG 77348 --- [http-nio-8201-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing [Result(code=200, message=success, data=com.baomidou.mybatisplus.extension.plugins.pagination.Page@69 (truncated)...]
+2023-07-09 16:01:02.231 DEBUG 77348 --- [http-nio-8201-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-09 16:01:02.387 DEBUG 77348 --- [http-nio-8201-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/admin/genre/1/1", parameters={}
+2023-07-09 16:01:02.388 DEBUG 77348 --- [http-nio-8201-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.wjy.gameforu.admin2.controller.GenreController#pageList(Integer, Integer, GenreQueryVo)
+2023-07-09 16:01:02.402 DEBUG 77348 --- [http-nio-8201-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-07-09 16:01:02.402 DEBUG 77348 --- [http-nio-8201-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [Result(code=200, message=success, data=com.baomidou.mybatisplus.extension.plugins.pagination.Page@72 (truncated)...]
+2023-07-09 16:01:02.403 DEBUG 77348 --- [http-nio-8201-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-09 16:01:13.764 DEBUG 77348 --- [http-nio-8201-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/doc.html", parameters={}
+2023-07-09 16:01:13.775 DEBUG 77348 --- [http-nio-8201-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2023-07-09 16:01:13.791 DEBUG 77348 --- [http-nio-8201-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-09 16:01:13.832 DEBUG 77348 --- [http-nio-8201-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/webjars/css/app.ff80f646.css", parameters={}
+2023-07-09 16:01:13.834 DEBUG 77348 --- [http-nio-8201-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2023-07-09 16:01:13.837 DEBUG 77348 --- [http-nio-8201-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/webjars/css/chunk-vendors.7c767628.css", parameters={}
+2023-07-09 16:01:13.838 DEBUG 77348 --- [http-nio-8201-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2023-07-09 16:01:13.843 DEBUG 77348 --- [http-nio-8201-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/webjars/js/app.0f2f48b5.js", parameters={}
+2023-07-09 16:01:13.843 DEBUG 77348 --- [http-nio-8201-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/webjars/js/chunk-vendors.9a4add2b.js", parameters={}
+2023-07-09 16:01:13.845 DEBUG 77348 --- [http-nio-8201-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2023-07-09 16:01:13.847 DEBUG 77348 --- [http-nio-8201-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2023-07-09 16:01:13.862 DEBUG 77348 --- [http-nio-8201-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-09 16:01:13.872 DEBUG 77348 --- [http-nio-8201-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-09 16:01:13.880 DEBUG 77348 --- [http-nio-8201-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-09 16:01:13.909 DEBUG 77348 --- [http-nio-8201-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/webjars/css/chunk-62d2fe18.8274cf04.css", parameters={}
+2023-07-09 16:01:13.914 DEBUG 77348 --- [http-nio-8201-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2023-07-09 16:01:13.916 DEBUG 77348 --- [http-nio-8201-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-09 16:01:13.934 DEBUG 77348 --- [http-nio-8201-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-09 16:01:13.963 DEBUG 77348 --- [http-nio-8201-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/webjars/js/chunk-0c58d94d.d009b662.js", parameters={}
+2023-07-09 16:01:13.965 DEBUG 77348 --- [http-nio-8201-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2023-07-09 16:01:13.979 DEBUG 77348 --- [http-nio-8201-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/webjars/js/chunk-0fd67716.d57e2c41.js", parameters={}
+2023-07-09 16:01:13.985 DEBUG 77348 --- [http-nio-8201-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2023-07-09 16:01:13.989 DEBUG 77348 --- [http-nio-8201-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-09 16:01:13.990 DEBUG 77348 --- [http-nio-8201-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/webjars/js/chunk-2d0d0b98.4693c46e.js", parameters={}
+2023-07-09 16:01:13.991 DEBUG 77348 --- [http-nio-8201-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/webjars/js/chunk-2d0bd799.5bb1a14e.js", parameters={}
+2023-07-09 16:01:13.992 DEBUG 77348 --- [http-nio-8201-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/webjars/js/chunk-214218f0.92c7a521.js", parameters={}
+2023-07-09 16:01:13.990 DEBUG 77348 --- [http-nio-8201-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/webjars/js/chunk-2d0af44e.c09671a4.js", parameters={}
+2023-07-09 16:01:13.993 DEBUG 77348 --- [http-nio-8201-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2023-07-09 16:01:13.994 DEBUG 77348 --- [http-nio-8201-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2023-07-09 16:01:13.994 DEBUG 77348 --- [http-nio-8201-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2023-07-09 16:01:13.994 DEBUG 77348 --- [http-nio-8201-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2023-07-09 16:01:14.001 DEBUG 77348 --- [http-nio-8201-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/webjars/js/chunk-2d0da532.a47fb5c8.js", parameters={}
+2023-07-09 16:01:14.004 DEBUG 77348 --- [http-nio-8201-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2023-07-09 16:01:14.007 DEBUG 77348 --- [http-nio-8201-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-09 16:01:14.008 DEBUG 77348 --- [http-nio-8201-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-09 16:01:14.012 DEBUG 77348 --- [http-nio-8201-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-09 16:01:14.012 DEBUG 77348 --- [http-nio-8201-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-09 16:01:14.012 DEBUG 77348 --- [http-nio-8201-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-09 16:01:14.016 DEBUG 77348 --- [http-nio-8201-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-09 16:01:14.023 DEBUG 77348 --- [http-nio-8201-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/webjars/js/chunk-2d22269d.fc57b306.js", parameters={}
+2023-07-09 16:01:14.023 DEBUG 77348 --- [http-nio-8201-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/webjars/js/chunk-589faee0.1cf66f6d.js", parameters={}
+2023-07-09 16:01:14.023 DEBUG 77348 --- [http-nio-8201-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/webjars/js/chunk-3b888a65.8737ce4f.js", parameters={}
+2023-07-09 16:01:14.023 DEBUG 77348 --- [http-nio-8201-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/webjars/js/chunk-735c675c.be4e3cfe.js", parameters={}
+2023-07-09 16:01:14.023 DEBUG 77348 --- [http-nio-8201-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/webjars/js/chunk-62d2fe18.64c34be0.js", parameters={}
+2023-07-09 16:01:14.024 DEBUG 77348 --- [http-nio-8201-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2023-07-09 16:01:14.024 DEBUG 77348 --- [http-nio-8201-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2023-07-09 16:01:14.024 DEBUG 77348 --- [http-nio-8201-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2023-07-09 16:01:14.024 DEBUG 77348 --- [http-nio-8201-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2023-07-09 16:01:14.025 DEBUG 77348 --- [http-nio-8201-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2023-07-09 16:01:14.026 DEBUG 77348 --- [http-nio-8201-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/webjars/js/chunk-adb9e944.e09637fc.js", parameters={}
+2023-07-09 16:01:14.027 DEBUG 77348 --- [http-nio-8201-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2023-07-09 16:01:14.028 DEBUG 77348 --- [http-nio-8201-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-09 16:01:14.030 DEBUG 77348 --- [http-nio-8201-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-09 16:01:14.033 DEBUG 77348 --- [http-nio-8201-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-09 16:01:14.035 DEBUG 77348 --- [http-nio-8201-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-09 16:01:14.037 DEBUG 77348 --- [http-nio-8201-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-09 16:01:14.042 DEBUG 77348 --- [http-nio-8201-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-09 16:01:14.281 DEBUG 77348 --- [http-nio-8201-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/doc.html", parameters={}
+2023-07-09 16:01:14.318 DEBUG 77348 --- [http-nio-8201-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2023-07-09 16:01:14.343 DEBUG 77348 --- [http-nio-8201-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-09 16:01:14.626 DEBUG 77348 --- [http-nio-8201-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/swagger-resources", parameters={}
+2023-07-09 16:01:14.627 DEBUG 77348 --- [http-nio-8201-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to springfox.documentation.swagger.web.ApiResourceController#swaggerResources()
+2023-07-09 16:01:14.638 DEBUG 77348 --- [http-nio-8201-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-07-09 16:01:14.638 DEBUG 77348 --- [http-nio-8201-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[springfox.documentation.swagger.web.SwaggerResource@75a4ed23, springfox.documentation.swagger.web.S (truncated)...]
+2023-07-09 16:01:14.667 DEBUG 77348 --- [http-nio-8201-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-09 16:01:14.685 DEBUG 77348 --- [http-nio-8201-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/v2/api-docs?group=adminApi", parameters={masked}
+2023-07-09 16:01:14.917 DEBUG 77348 --- [http-nio-8201-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-07-09 16:01:14.917 DEBUG 77348 --- [http-nio-8201-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [springfox.documentation.spring.web.json.Json@23cb53a3]
+2023-07-09 16:01:14.919 DEBUG 77348 --- [http-nio-8201-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-09 16:01:22.356 DEBUG 77348 --- [http-nio-8201-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/webjars/css/chunk-62d2fe18.8274cf04.css", parameters={}
+2023-07-09 16:01:22.356 DEBUG 77348 --- [http-nio-8201-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/webjars/js/chunk-62d2fe18.64c34be0.js", parameters={}
+2023-07-09 16:01:22.357 DEBUG 77348 --- [http-nio-8201-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2023-07-09 16:01:22.357 DEBUG 77348 --- [http-nio-8201-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2023-07-09 16:01:22.361 DEBUG 77348 --- [http-nio-8201-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/webjars/js/chunk-0c58d94d.d009b662.js", parameters={}
+2023-07-09 16:01:22.361 DEBUG 77348 --- [http-nio-8201-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/webjars/js/chunk-adb9e944.e09637fc.js", parameters={}
+2023-07-09 16:01:22.362 DEBUG 77348 --- [http-nio-8201-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2023-07-09 16:01:22.362 DEBUG 77348 --- [http-nio-8201-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2023-07-09 16:01:22.363 DEBUG 77348 --- [http-nio-8201-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-09 16:01:22.364 DEBUG 77348 --- [http-nio-8201-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-09 16:01:22.366 DEBUG 77348 --- [http-nio-8201-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-09 16:01:22.367 DEBUG 77348 --- [http-nio-8201-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-09 16:01:22.421 DEBUG 77348 --- [http-nio-8201-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/webjars/js/chunk-214218f0.92c7a521.js", parameters={}
+2023-07-09 16:01:22.421 DEBUG 77348 --- [http-nio-8201-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/webjars/js/chunk-2d0af44e.c09671a4.js", parameters={}
+2023-07-09 16:01:22.421 DEBUG 77348 --- [http-nio-8201-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/webjars/js/chunk-3b888a65.8737ce4f.js", parameters={}
+2023-07-09 16:01:22.422 DEBUG 77348 --- [http-nio-8201-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2023-07-09 16:01:22.423 DEBUG 77348 --- [http-nio-8201-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2023-07-09 16:01:22.423 DEBUG 77348 --- [http-nio-8201-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2023-07-09 16:01:22.425 DEBUG 77348 --- [http-nio-8201-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-09 16:01:22.426 DEBUG 77348 --- [http-nio-8201-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-09 16:01:22.427 DEBUG 77348 --- [http-nio-8201-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-09 16:01:22.441 DEBUG 77348 --- [http-nio-8201-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/webjars/js/chunk-2d0bd799.5bb1a14e.js", parameters={}
+2023-07-09 16:01:22.442 DEBUG 77348 --- [http-nio-8201-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2023-07-09 16:01:22.443 DEBUG 77348 --- [http-nio-8201-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-09 16:01:23.994 DEBUG 77348 --- [http-nio-8201-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/webjars/js/chunk-589faee0.1cf66f6d.js", parameters={}
+2023-07-09 16:01:23.994 DEBUG 77348 --- [http-nio-8201-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/webjars/js/chunk-2d22269d.fc57b306.js", parameters={}
+2023-07-09 16:01:23.994 DEBUG 77348 --- [http-nio-8201-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/webjars/js/chunk-0fd67716.d57e2c41.js", parameters={}
+2023-07-09 16:01:23.995 DEBUG 77348 --- [http-nio-8201-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2023-07-09 16:01:23.995 DEBUG 77348 --- [http-nio-8201-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2023-07-09 16:01:23.995 DEBUG 77348 --- [http-nio-8201-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2023-07-09 16:01:23.998 DEBUG 77348 --- [http-nio-8201-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-09 16:01:23.999 DEBUG 77348 --- [http-nio-8201-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-09 16:01:24.002 DEBUG 77348 --- [http-nio-8201-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-09 16:01:33.247 DEBUG 77348 --- [http-nio-8201-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/admin/game/1/10", parameters={}
+2023-07-09 16:01:33.249 DEBUG 77348 --- [http-nio-8201-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.wjy.gameforu.admin2.controller.GameController#pageList(Integer, Integer, GameQueryVo)
+2023-07-09 16:01:33.401 DEBUG 77348 --- [http-nio-8201-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-07-09 16:01:33.402 DEBUG 77348 --- [http-nio-8201-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Writing [Result(code=200, message=success, data=com.baomidou.mybatisplus.extension.plugins.pagination.Page@5b (truncated)...]
+2023-07-09 16:01:33.417 DEBUG 77348 --- [http-nio-8201-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-09 16:01:33.433 DEBUG 77348 --- [http-nio-8201-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/webjars/js/chunk-735c675c.be4e3cfe.js", parameters={}
+2023-07-09 16:01:33.434 DEBUG 77348 --- [http-nio-8201-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2023-07-09 16:01:33.441 DEBUG 77348 --- [http-nio-8201-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-09 16:01:46.201 DEBUG 77348 --- [http-nio-8201-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/admin/game/10000/10", parameters={}
+2023-07-09 16:01:46.201 DEBUG 77348 --- [http-nio-8201-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.wjy.gameforu.admin2.controller.GameController#pageList(Integer, Integer, GameQueryVo)
+2023-07-09 16:01:46.210 DEBUG 77348 --- [http-nio-8201-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-07-09 16:01:46.210 DEBUG 77348 --- [http-nio-8201-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Writing [Result(code=200, message=success, data=com.baomidou.mybatisplus.extension.plugins.pagination.Page@61 (truncated)...]
+2023-07-09 16:01:46.216 DEBUG 77348 --- [http-nio-8201-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-09 16:01:57.172 DEBUG 77348 --- [http-nio-8201-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/admin/game/5000/10", parameters={}
+2023-07-09 16:01:57.175 DEBUG 77348 --- [http-nio-8201-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.wjy.gameforu.admin2.controller.GameController#pageList(Integer, Integer, GameQueryVo)
+2023-07-09 16:01:57.187 DEBUG 77348 --- [http-nio-8201-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-07-09 16:01:57.187 DEBUG 77348 --- [http-nio-8201-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Writing [Result(code=200, message=success, data=com.baomidou.mybatisplus.extension.plugins.pagination.Page@5f (truncated)...]
+2023-07-09 16:01:57.191 DEBUG 77348 --- [http-nio-8201-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-09 16:02:07.044 DEBUG 77348 --- [http-nio-8201-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/admin/game/500/10", parameters={}
+2023-07-09 16:02:07.044 DEBUG 77348 --- [http-nio-8201-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.wjy.gameforu.admin2.controller.GameController#pageList(Integer, Integer, GameQueryVo)
+2023-07-09 16:02:07.050 DEBUG 77348 --- [http-nio-8201-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-07-09 16:02:07.050 DEBUG 77348 --- [http-nio-8201-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Writing [Result(code=200, message=success, data=com.baomidou.mybatisplus.extension.plugins.pagination.Page@14 (truncated)...]
+2023-07-09 16:02:07.051 DEBUG 77348 --- [http-nio-8201-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-09 16:02:14.982 DEBUG 77348 --- [http-nio-8201-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/admin/game/10/10", parameters={}
+2023-07-09 16:02:14.983 DEBUG 77348 --- [http-nio-8201-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.wjy.gameforu.admin2.controller.GameController#pageList(Integer, Integer, GameQueryVo)
+2023-07-09 16:02:14.992 DEBUG 77348 --- [http-nio-8201-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-07-09 16:02:14.992 DEBUG 77348 --- [http-nio-8201-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [Result(code=200, message=success, data=com.baomidou.mybatisplus.extension.plugins.pagination.Page@28 (truncated)...]
+2023-07-09 16:02:14.994 DEBUG 77348 --- [http-nio-8201-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-09 16:02:20.714 DEBUG 77348 --- [http-nio-8201-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/admin/game/1/10", parameters={}
+2023-07-09 16:02:20.715 DEBUG 77348 --- [http-nio-8201-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.wjy.gameforu.admin2.controller.GameController#pageList(Integer, Integer, GameQueryVo)
+2023-07-09 16:02:20.731 DEBUG 77348 --- [http-nio-8201-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-07-09 16:02:20.732 DEBUG 77348 --- [http-nio-8201-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Writing [Result(code=200, message=success, data=com.baomidou.mybatisplus.extension.plugins.pagination.Page@d6 (truncated)...]
+2023-07-09 16:02:20.735 DEBUG 77348 --- [http-nio-8201-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-09 16:03:51.869 DEBUG 77348 --- [http-nio-8201-exec-7] o.s.web.servlet.DispatcherServlet        : POST "/admin/game/add", parameters={}
+2023-07-09 16:03:51.877 DEBUG 77348 --- [http-nio-8201-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.wjy.gameforu.admin2.controller.GameController#add(Game)
+2023-07-09 16:03:51.948 DEBUG 77348 --- [http-nio-8201-exec-7] .w.s.m.m.a.ServletInvocableHandlerMethod : Could not resolve parameter [0] in private org.wjy.gameforu.common.result.Result org.wjy.gameforu.admin2.controller.GameController.add(org.wjy.gameforu.model.entity.Game): JSON parse error: Unexpected character ('}' (code 125)): was expecting double-quote to start field name; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('}' (code 125)): was expecting double-quote to start field name
+ at [Source: (PushbackInputStream); line: 14, column: 2]
+2023-07-09 16:03:51.967 DEBUG 77348 --- [http-nio-8201-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler org.wjy.gameforu.common.exception.GlobalExceptionHandler#error(Exception)
+2023-07-09 16:03:51.985 DEBUG 77348 --- [http-nio-8201-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-07-09 16:03:51.986 DEBUG 77348 --- [http-nio-8201-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Writing [Result(code=201, message=fail, data=null)]
+2023-07-09 16:03:51.987  WARN 77348 --- [http-nio-8201-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('}' (code 125)): was expecting double-quote to start field name; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('}' (code 125)): was expecting double-quote to start field name
+ at [Source: (PushbackInputStream); line: 14, column: 2]]
+2023-07-09 16:03:51.988 DEBUG 77348 --- [http-nio-8201-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-09 16:04:02.495 DEBUG 77348 --- [http-nio-8201-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/admin/game/add", parameters={}
+2023-07-09 16:04:02.527 DEBUG 77348 --- [http-nio-8201-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.wjy.gameforu.admin2.controller.GameController#add(Game)
+2023-07-09 16:04:02.661 DEBUG 77348 --- [http-nio-8201-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Game(id=50, appid=1401750, gamename=Mission Z test, developer=New Games Waves, Softwaves, publisher= (truncated)...]
+2023-07-09 16:04:05.067 DEBUG 77348 --- [http-nio-8201-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler org.wjy.gameforu.common.exception.GlobalExceptionHandler#error(Exception)
+2023-07-09 16:04:05.080 DEBUG 77348 --- [http-nio-8201-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-07-09 16:04:05.081 DEBUG 77348 --- [http-nio-8201-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing [Result(code=201, message=fail, data=null)]
+2023-07-09 16:04:05.085  WARN 77348 --- [http-nio-8201-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.dao.DuplicateKeyException: 
+### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1401750' for key 'appid_unique'
+### The error may exist in org/wjy/gameforu/admin2/mapper/GameMapper.java (best guess)
+### The error may involve org.wjy.gameforu.admin2.mapper.GameMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO game  ( appid, gamename, developer, publisher, positive, negative, userscore, owners, initialPrice, ccu )  VALUES  ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )
+### Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1401750' for key 'appid_unique'
+; Duplicate entry '1401750' for key 'appid_unique'; nested exception is java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1401750' for key 'appid_unique']
+2023-07-09 16:04:05.087 DEBUG 77348 --- [http-nio-8201-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-09 16:04:08.505 DEBUG 77348 --- [http-nio-8201-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/admin/game/add", parameters={}
+2023-07-09 16:04:08.507 DEBUG 77348 --- [http-nio-8201-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.wjy.gameforu.admin2.controller.GameController#add(Game)
+2023-07-09 16:04:08.510 DEBUG 77348 --- [http-nio-8201-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Game(id=50, appid=1401750, gamename=Mission Z test, developer=New Games Waves, Softwaves, publisher= (truncated)...]
+2023-07-09 16:04:08.523 DEBUG 77348 --- [http-nio-8201-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler org.wjy.gameforu.common.exception.GlobalExceptionHandler#error(Exception)
+2023-07-09 16:04:08.524 DEBUG 77348 --- [http-nio-8201-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-07-09 16:04:08.525 DEBUG 77348 --- [http-nio-8201-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing [Result(code=201, message=fail, data=null)]
+2023-07-09 16:04:08.525  WARN 77348 --- [http-nio-8201-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.dao.DuplicateKeyException: 
+### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1401750' for key 'appid_unique'
+### The error may exist in org/wjy/gameforu/admin2/mapper/GameMapper.java (best guess)
+### The error may involve org.wjy.gameforu.admin2.mapper.GameMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO game  ( appid, gamename, developer, publisher, positive, negative, userscore, owners, initialPrice, ccu )  VALUES  ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ? )
+### Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1401750' for key 'appid_unique'
+; Duplicate entry '1401750' for key 'appid_unique'; nested exception is java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '1401750' for key 'appid_unique']
+2023-07-09 16:04:08.526 DEBUG 77348 --- [http-nio-8201-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-09 16:04:17.650 DEBUG 77348 --- [http-nio-8201-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/admin/game/add", parameters={}
+2023-07-09 16:04:17.651 DEBUG 77348 --- [http-nio-8201-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.wjy.gameforu.admin2.controller.GameController#add(Game)
+2023-07-09 16:04:17.654 DEBUG 77348 --- [http-nio-8201-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Game(id=50, appid=14017500, gamename=Mission Z test, developer=New Games Waves, Softwaves, publisher (truncated)...]
+2023-07-09 16:04:17.804 DEBUG 77348 --- [http-nio-8201-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-07-09 16:04:17.805 DEBUG 77348 --- [http-nio-8201-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [Result(code=200, message=success, data=null)]
+2023-07-09 16:04:17.805 DEBUG 77348 --- [http-nio-8201-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-09 16:04:26.422 DEBUG 77348 --- [http-nio-8201-exec-4] o.s.web.servlet.DispatcherServlet        : POST "/api/game/inner/getgameinfo/", parameters={}
+2023-07-09 16:04:26.505 DEBUG 77348 --- [http-nio-8201-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2023-07-09 16:04:26.665 DEBUG 77348 --- [http-nio-8201-exec-4] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2023-07-09 16:04:26.668 DEBUG 77348 --- [http-nio-8201-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2023-07-09 16:04:26.839 DEBUG 77348 --- [http-nio-8201-exec-4] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for POST "/error", parameters={}
+2023-07-09 16:04:26.875 DEBUG 77348 --- [http-nio-8201-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-07-09 16:04:27.024 DEBUG 77348 --- [http-nio-8201-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-07-09 16:04:27.025 DEBUG 77348 --- [http-nio-8201-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Sun Jul 09 16:04:26 BST 2023, status=404, error=Not Found, message=No message available,  (truncated)...]
+2023-07-09 16:04:27.055 DEBUG 77348 --- [http-nio-8201-exec-4] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2023-07-09 16:12:07.359 DEBUG 77348 --- [http-nio-8201-exec-9] o.s.web.servlet.DispatcherServlet        : POST "/api/game/inner/getgameinfo/", parameters={}
+2023-07-09 16:12:07.454 DEBUG 77348 --- [http-nio-8201-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2023-07-09 16:12:07.612 DEBUG 77348 --- [http-nio-8201-exec-9] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2023-07-09 16:12:07.614 DEBUG 77348 --- [http-nio-8201-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2023-07-09 16:12:07.620 DEBUG 77348 --- [http-nio-8201-exec-9] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for POST "/error", parameters={}
+2023-07-09 16:12:07.628 DEBUG 77348 --- [http-nio-8201-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-07-09 16:12:07.713 DEBUG 77348 --- [http-nio-8201-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-07-09 16:12:07.730 DEBUG 77348 --- [http-nio-8201-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Sun Jul 09 16:12:07 BST 2023, status=404, error=Not Found, message=No message available,  (truncated)...]
+2023-07-09 16:12:07.876 DEBUG 77348 --- [http-nio-8201-exec-9] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2023-07-09 16:13:13.203 DEBUG 77348 --- [http-nio-8201-exec-10] o.s.web.servlet.DispatcherServlet        : POST "/admin/game/add", parameters={}
+2023-07-09 16:13:13.220 DEBUG 77348 --- [http-nio-8201-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.wjy.gameforu.admin2.controller.GameController#add(Game)
+2023-07-09 16:13:13.261 DEBUG 77348 --- [http-nio-8201-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Game(id=null, appid=140175000, gamename=Mission Z test2, developer=New Games Waves, Softwaves, publi (truncated)...]
+2023-07-09 16:13:13.556 DEBUG 77348 --- [http-nio-8201-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-07-09 16:13:13.556 DEBUG 77348 --- [http-nio-8201-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Writing [Result(code=200, message=success, data=null)]
+2023-07-09 16:13:13.565 DEBUG 77348 --- [http-nio-8201-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-09 16:13:13.754 DEBUG 77348 --- [http-nio-8201-exec-7] o.s.web.servlet.DispatcherServlet        : POST "/api/game/inner/getgameinfo/", parameters={}
+2023-07-09 16:13:13.755 DEBUG 77348 --- [http-nio-8201-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2023-07-09 16:13:13.771 DEBUG 77348 --- [http-nio-8201-exec-7] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2023-07-09 16:13:13.771 DEBUG 77348 --- [http-nio-8201-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2023-07-09 16:13:13.772 DEBUG 77348 --- [http-nio-8201-exec-7] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for POST "/error", parameters={}
+2023-07-09 16:13:13.773 DEBUG 77348 --- [http-nio-8201-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2023-07-09 16:13:13.777 DEBUG 77348 --- [http-nio-8201-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-07-09 16:13:13.779 DEBUG 77348 --- [http-nio-8201-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Sun Jul 09 16:13:13 BST 2023, status=404, error=Not Found, message=No message available,  (truncated)...]
+2023-07-09 16:13:13.788 DEBUG 77348 --- [http-nio-8201-exec-7] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2023-07-09 16:16:12.453 DEBUG 77348 --- [http-nio-8201-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/admin/game/1/10", parameters={}
+2023-07-09 16:16:12.476 DEBUG 77348 --- [http-nio-8201-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.wjy.gameforu.admin2.controller.GameController#pageList(Integer, Integer, GameQueryVo)
+2023-07-09 16:16:12.774 DEBUG 77348 --- [http-nio-8201-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-07-09 16:16:12.774 DEBUG 77348 --- [http-nio-8201-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [Result(code=200, message=success, data=com.baomidou.mybatisplus.extension.plugins.pagination.Page@4a (truncated)...]
+2023-07-09 16:16:12.793 DEBUG 77348 --- [http-nio-8201-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-09 16:16:23.201 DEBUG 77348 --- [http-nio-8201-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/admin/game/4/10", parameters={}
+2023-07-09 16:16:23.204 DEBUG 77348 --- [http-nio-8201-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.wjy.gameforu.admin2.controller.GameController#pageList(Integer, Integer, GameQueryVo)
+2023-07-09 16:16:23.297 DEBUG 77348 --- [http-nio-8201-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-07-09 16:16:23.297 DEBUG 77348 --- [http-nio-8201-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Writing [Result(code=200, message=success, data=com.baomidou.mybatisplus.extension.plugins.pagination.Page@7a (truncated)...]
+2023-07-09 16:16:23.301 DEBUG 77348 --- [http-nio-8201-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-09 16:16:30.585 DEBUG 77348 --- [http-nio-8201-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/api/game/inner/getgameinfo/45", parameters={}
+2023-07-09 16:16:30.586 DEBUG 77348 --- [http-nio-8201-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/api/game/inner/getgameinfo/46", parameters={}
+2023-07-09 16:16:30.591 DEBUG 77348 --- [http-nio-8201-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.wjy.gameforu.admin2.api.GameInnerController#getGameInfo(Integer)
+2023-07-09 16:16:30.591 DEBUG 77348 --- [http-nio-8201-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.wjy.gameforu.admin2.api.GameInnerController#getGameInfo(Integer)
+2023-07-09 16:16:30.756 DEBUG 77348 --- [http-nio-8201-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-07-09 16:16:30.756 DEBUG 77348 --- [http-nio-8201-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-07-09 16:16:30.760 DEBUG 77348 --- [http-nio-8201-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Writing [Game(id=46, appid=140175000, gamename=Mission Z test2, developer=New Games Waves, Softwaves, publish (truncated)...]
+2023-07-09 16:16:30.760 DEBUG 77348 --- [http-nio-8201-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Writing [Game(id=45, appid=14017500, gamename=Mission Z test, developer=New Games Waves, Softwaves, publisher (truncated)...]
+2023-07-09 16:16:30.764 DEBUG 77348 --- [http-nio-8201-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-09 16:16:30.765 DEBUG 77348 --- [http-nio-8201-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-09 16:16:51.571 DEBUG 77348 --- [http-nio-8201-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/admin/game/get/45", parameters={}
+2023-07-09 16:16:51.576 DEBUG 77348 --- [http-nio-8201-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.wjy.gameforu.admin2.controller.GameController#get(Integer)
+2023-07-09 16:16:51.939 DEBUG 77348 --- [http-nio-8201-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-07-09 16:16:51.940 DEBUG 77348 --- [http-nio-8201-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Writing [Result(code=200, message=success, data=Game(id=45, appid=14017500, gamename=Mission Z test, develope (truncated)...]
+2023-07-09 16:16:51.951 DEBUG 77348 --- [http-nio-8201-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-09 16:16:54.906 DEBUG 77348 --- [http-nio-8201-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/admin/game/get/46", parameters={}
+2023-07-09 16:16:54.909 DEBUG 77348 --- [http-nio-8201-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.wjy.gameforu.admin2.controller.GameController#get(Integer)
+2023-07-09 16:16:54.965 DEBUG 77348 --- [http-nio-8201-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-07-09 16:16:54.966 DEBUG 77348 --- [http-nio-8201-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Writing [Result(code=200, message=success, data=Game(id=46, appid=140175000, gamename=Mission Z test2, develo (truncated)...]
+2023-07-09 16:16:54.966 DEBUG 77348 --- [http-nio-8201-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-09 16:17:13.494 DEBUG 77348 --- [http-nio-8201-exec-10] o.s.web.servlet.DispatcherServlet        : DELETE "/admin/game/batchRemove", parameters={}
+2023-07-09 16:17:13.496 DEBUG 77348 --- [http-nio-8201-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.wjy.gameforu.admin2.controller.GameController#deletes(List)
+2023-07-09 16:17:13.520 DEBUG 77348 --- [http-nio-8201-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [[45, 46]]
+2023-07-09 16:17:13.634 DEBUG 77348 --- [http-nio-8201-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-07-09 16:17:13.635 DEBUG 77348 --- [http-nio-8201-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Writing [Result(code=200, message=success, data=null)]
+2023-07-09 16:17:13.636 DEBUG 77348 --- [http-nio-8201-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-09 16:17:22.921 DEBUG 77348 --- [http-nio-8201-exec-7] o.s.web.servlet.DispatcherServlet        : POST "/admin/game/add", parameters={}
+2023-07-09 16:17:22.922 DEBUG 77348 --- [http-nio-8201-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.wjy.gameforu.admin2.controller.GameController#add(Game)
+2023-07-09 16:17:22.923 DEBUG 77348 --- [http-nio-8201-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [Game(id=null, appid=14017500, gamename=Mission Z test, developer=New Games Waves, Softwaves, publish (truncated)...]
+2023-07-09 16:17:22.945 DEBUG 77348 --- [http-nio-8201-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-07-09 16:17:22.945 DEBUG 77348 --- [http-nio-8201-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Writing [Result(code=200, message=success, data=null)]
+2023-07-09 16:17:22.947 DEBUG 77348 --- [http-nio-8201-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-09 16:17:22.957 DEBUG 77348 --- [http-nio-8201-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/api/game/inner/getgameinfo/47", parameters={}
+2023-07-09 16:17:22.958 DEBUG 77348 --- [http-nio-8201-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.wjy.gameforu.admin2.api.GameInnerController#getGameInfo(Integer)
+2023-07-09 16:17:22.963 DEBUG 77348 --- [http-nio-8201-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-07-09 16:17:22.964 DEBUG 77348 --- [http-nio-8201-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing [Game(id=47, appid=14017500, gamename=Mission Z test, developer=New Games Waves, Softwaves, publisher (truncated)...]
+2023-07-09 16:17:22.965 DEBUG 77348 --- [http-nio-8201-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK

@@ -151,8 +151,10 @@ public class GameController {
     private Result add(@RequestBody Game game){
         boolean is_succeed =  gameService.save(game);
         if(is_succeed) {
+            // get game id
+            Integer gameid = gameService.getIdByAppid(game.getAppid());
             // send to add-mq
-            sendToAddMq(game.getId());
+            sendToAddMq(gameid);
 
             return Result.ok(null);
         } else{

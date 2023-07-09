@@ -1,7 +1,7 @@
 server:
   port: 8201
 
-#mp相关日志
+#mp log
 mybatis-plus:
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
@@ -13,6 +13,19 @@ spring:
     url: jdbc:mysql://192.168.54.2:33306/gameforu_dev?characterEncoding=utf-8&useSSL=false
     username: root
     password: 123456
+
+  rabbitmq:
+    host: 192.168.54.2
+    port: 5672
+    username: guest
+    password: guest
+    publisher-confirm-type: CORRELATED  #confirm if message sent to exchange successfully
+    publisher-returns: true
+    listener:
+      simple:
+        prefetch: 1
+        concurrency: 3
+        acknowledge-mode: manual   #consummer confirm manually
 
   jackson:
     date-format: yyyy-MM-dd HH:mm:ss
