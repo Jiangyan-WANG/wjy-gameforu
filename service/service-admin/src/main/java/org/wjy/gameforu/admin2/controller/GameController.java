@@ -105,6 +105,9 @@ public class GameController {
                         continue;
                     }
                     if(is_succeed){
+                        // send gameid to rabbitmq
+                        Integer gameid = gameService.getIdByAppid(game.getAppid());
+                        sendToAddMq(gameid);
                         count++;
                     }
                 }
@@ -194,6 +197,10 @@ public class GameController {
     public Result deletes(@RequestBody List<Integer> idList){
         boolean is_succeed = gameService.removeByIds(idList);
         if(is_succeed){
+            // send to remove mq
+            for (Integer id : idList) {
+                sendToRemoveMq(id);
+            }
             return Result.ok(null);
         }else{
             return Result.fail(null);

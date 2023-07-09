@@ -742,3 +742,584 @@ java.net.SocketException: Socket closed
 2023-07-09 16:17:22.963 DEBUG 77348 --- [http-nio-8201-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
 2023-07-09 16:17:22.964 DEBUG 77348 --- [http-nio-8201-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing [Game(id=47, appid=14017500, gamename=Mission Z test, developer=New Games Waves, Softwaves, publisher (truncated)...]
 2023-07-09 16:17:22.965 DEBUG 77348 --- [http-nio-8201-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-09 16:51:52.207 DEBUG 77348 --- [http-nio-8201-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/admin/genre/1/1", parameters={}
+2023-07-09 16:51:52.270 DEBUG 77348 --- [http-nio-8201-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.wjy.gameforu.admin2.controller.GenreController#pageList(Integer, Integer, GenreQueryVo)
+2023-07-09 16:51:52.651 DEBUG 77348 --- [http-nio-8201-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.7, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-07-09 16:51:52.654 DEBUG 77348 --- [http-nio-8201-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Writing [Result(code=200, message=success, data=com.baomidou.mybatisplus.extension.plugins.pagination.Page@38 (truncated)...]
+2023-07-09 16:51:52.677 DEBUG 77348 --- [http-nio-8201-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-09 16:51:53.038 DEBUG 77348 --- [http-nio-8201-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/admin/genre/1/1", parameters={}
+2023-07-09 16:51:53.039 DEBUG 77348 --- [http-nio-8201-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.wjy.gameforu.admin2.controller.GenreController#pageList(Integer, Integer, GenreQueryVo)
+2023-07-09 16:51:53.050 DEBUG 77348 --- [http-nio-8201-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-07-09 16:51:53.050 DEBUG 77348 --- [http-nio-8201-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Writing [Result(code=200, message=success, data=com.baomidou.mybatisplus.extension.plugins.pagination.Page@45 (truncated)...]
+2023-07-09 16:51:53.051 DEBUG 77348 --- [http-nio-8201-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-09 17:00:55.597  INFO 77348 --- [SpringContextShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2023-07-09 17:00:56.349  INFO 77348 --- [SpringContextShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2023-07-09 17:00:56.351  INFO 77348 --- [SpringContextShutdownHook] o.s.i.a.i.AmqpInboundChannelAdapter      : stopped bean 'inbound.springCloudBus.anonymous.97sPr5sESrickC6lsucQSw'
+2023-07-09 17:00:56.614  INFO 77348 --- [SpringContextShutdownHook] o.s.i.monitor.IntegrationMBeanExporter   : Registering MessageChannel springCloudBus.anonymous.97sPr5sESrickC6lsucQSw.errors
+2023-07-09 17:00:56.960  INFO 77348 --- [SpringContextShutdownHook] o.s.c.stream.binder.BinderErrorChannel   : Channel 'application-1.springCloudBus.anonymous.97sPr5sESrickC6lsucQSw.errors' has 1 subscriber(s).
+2023-07-09 17:00:56.964  INFO 77348 --- [SpringContextShutdownHook] o.s.c.stream.binder.BinderErrorChannel   : Channel 'application-1.springCloudBus.anonymous.97sPr5sESrickC6lsucQSw.errors' has 0 subscriber(s).
+2023-07-09 17:00:56.977  INFO 77348 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : [LISTENER] removing DEFAULT_GROUP@@service-admin with DEFAULT from listener map
+2023-07-09 17:00:57.017  INFO 77348 --- [SpringContextShutdownHook] o.s.i.endpoint.EventDrivenConsumer       : Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2023-07-09 17:00:57.018  INFO 77348 --- [SpringContextShutdownHook] o.s.i.channel.PublishSubscribeChannel    : Channel 'application-1.errorChannel' has 0 subscriber(s).
+2023-07-09 17:00:57.019  INFO 77348 --- [SpringContextShutdownHook] o.s.i.endpoint.EventDrivenConsumer       : stopped bean '_org.springframework.integration.errorLogger'
+2023-07-09 17:00:57.024  INFO 77348 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2023-07-09 17:00:57.235  INFO 77348 --- [SpringContextShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+2023-07-09 17:00:57.237  INFO 77348 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : [BEAT] removing beat: DEFAULT_GROUP@@service-admin:172.16.2.196:8201 from beat map.
+2023-07-09 17:00:57.237  INFO 77348 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : [DEREGISTER-SERVICE] public deregistering service DEFAULT_GROUP@@service-admin with instance: Instance{instanceId='null', ip='172.16.2.196', port=8201, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={}}
+2023-07-09 17:00:57.339  INFO 77348 --- [SpringContextShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
+2023-07-09 17:00:57.341  INFO 77348 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown begin
+2023-07-09 17:00:57.513  INFO 77348 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown stop
+2023-07-09 17:00:57.514  INFO 77348 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.EventDispatcher do shutdown begin
+2023-07-09 17:00:57.875  INFO 77348 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : received push data: {"type":"dom","data":"{\"name\":\"DEFAULT_GROUP@@service-admin\",\"clusters\":\"DEFAULT\",\"cacheMillis\":10000,\"hosts\":[],\"lastRefTime\":1688918457834,\"checksum\":\"\",\"allIPs\":false,\"reachProtectionThreshold\":false,\"valid\":true}","lastRefTime":836336631884060} from /192.168.54.1
+2023-07-09 17:00:57.888  INFO 77348 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : removed ips(1) service: DEFAULT_GROUP@@service-admin@@DEFAULT -> [{"instanceId":"172.16.2.196#8201#DEFAULT#DEFAULT_GROUP@@service-admin","ip":"172.16.2.196","port":8201,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@service-admin","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2023-07-09 17:00:57.895  INFO 77348 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : current ips:(0) service: DEFAULT_GROUP@@service-admin@@DEFAULT -> []
+2023-07-09 17:01:00.529  INFO 77348 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.EventDispatcher do shutdown stop
+2023-07-09 17:01:00.529  INFO 77348 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.HostReactor do shutdown begin
+2023-07-09 17:01:03.545  INFO 77348 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.PushReceiver do shutdown begin
+2023-07-09 17:01:06.564  INFO 77348 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.PushReceiver do shutdown stop
+2023-07-09 17:01:06.565  INFO 77348 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown begin
+2023-07-09 17:01:06.566  INFO 77348 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown stop
+2023-07-09 17:01:06.567  INFO 77348 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.HostReactor do shutdown stop
+2023-07-09 17:01:06.567  INFO 77348 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.net.NamingProxy do shutdown begin
+2023-07-09 17:01:06.570  WARN 77348 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : [NamingHttpClientManager] Start destroying NacosRestTemplate
+2023-07-09 17:01:06.570  WARN 77348 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : [NamingHttpClientManager] Destruction of the end
+2023-07-09 17:01:06.570  INFO 77348 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.net.NamingProxy do shutdown stop
+2023-07-09 17:01:06.571  INFO 77348 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown begin
+2023-07-09 17:01:06.572  INFO 77348 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown stop
+2023-07-09 17:01:06.572  INFO 77348 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.EventDispatcher do shutdown begin
+2023-07-09 17:01:06.572  INFO 77348 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.EventDispatcher do shutdown stop
+2023-07-09 17:01:06.572  INFO 77348 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.HostReactor do shutdown begin
+2023-07-09 17:01:06.573  INFO 77348 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.PushReceiver do shutdown begin
+2023-07-09 17:01:06.599 ERROR 77348 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : [NA] error while receiving push data
+
+java.net.SocketException: Socket closed
+	at java.net.PlainDatagramSocketImpl.receive0(Native Method) ~[na:1.8.0_362]
+	at java.net.AbstractPlainDatagramSocketImpl.receive(AbstractPlainDatagramSocketImpl.java:143) ~[na:1.8.0_362]
+	at java.net.DatagramSocket.receive(DatagramSocket.java:812) ~[na:1.8.0_362]
+	at com.alibaba.nacos.client.naming.core.PushReceiver.run(PushReceiver.java:83) ~[nacos-client-1.3.2.jar:na]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_362]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_362]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_362]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_362]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_362]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_362]
+	at java.lang.Thread.run(Thread.java:750) [na:1.8.0_362]
+
+2023-07-09 17:01:06.603  INFO 77348 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.PushReceiver do shutdown stop
+2023-07-09 17:01:06.604  INFO 77348 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown begin
+2023-07-09 17:01:06.604  INFO 77348 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown stop
+2023-07-09 17:01:06.604  INFO 77348 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.HostReactor do shutdown stop
+2023-07-09 17:01:06.604  INFO 77348 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.net.NamingProxy do shutdown begin
+2023-07-09 17:01:06.604  WARN 77348 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : [NamingHttpClientManager] Start destroying NacosRestTemplate
+2023-07-09 17:01:06.604  WARN 77348 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : [NamingHttpClientManager] Destruction of the end
+2023-07-09 17:01:06.604  INFO 77348 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.net.NamingProxy do shutdown stop
+2023-07-09 17:01:06.679  INFO 77348 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2023-07-09 17:01:06.685  INFO 77348 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-07-09 17:01:06.696  INFO 77348 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-07-09 17:01:06.698  INFO 77348 --- [SpringContextShutdownHook] o.s.i.monitor.IntegrationMBeanExporter   : Summary on shutdown: nullChannel
+2023-07-09 17:01:06.698  INFO 77348 --- [SpringContextShutdownHook] o.s.i.monitor.IntegrationMBeanExporter   : Summary on shutdown: bean 'springCloudBusInput'
+2023-07-09 17:01:06.699  INFO 77348 --- [SpringContextShutdownHook] o.s.i.monitor.IntegrationMBeanExporter   : Summary on shutdown: bean 'springCloudBusOutput'
+2023-07-09 17:01:06.699  INFO 77348 --- [SpringContextShutdownHook] o.s.i.monitor.IntegrationMBeanExporter   : Summary on shutdown: bean 'errorChannel'
+2023-07-09 17:01:06.700  INFO 77348 --- [SpringContextShutdownHook] o.s.i.monitor.IntegrationMBeanExporter   : Summary on shutdown: bean '_org.springframework.integration.errorLogger.handler' for component '_org.springframework.integration.errorLogger'
+2023-07-09 17:01:18.184  INFO 79843 --- [restartedMain] o.wjy.gameforu.ServiceAdminApplication   : The following profiles are active: dev
+2023-07-09 17:01:19.297  INFO 79843 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-07-09 17:01:19.300  INFO 79843 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-07-09 17:01:19.337  INFO 79843 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21ms. Found 0 Redis repository interfaces.
+2023-07-09 17:01:19.673  INFO 79843 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=3b421ef3-6ddd-3688-a140-389be7c14882
+2023-07-09 17:01:19.681  INFO 79843 --- [restartedMain] faultConfiguringBeanFactoryPostProcessor : No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2023-07-09 17:01:19.687  INFO 79843 --- [restartedMain] faultConfiguringBeanFactoryPostProcessor : No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+2023-07-09 17:01:19.693  INFO 79843 --- [restartedMain] faultConfiguringBeanFactoryPostProcessor : No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2023-07-09 17:01:20.047  INFO 79843 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.stream.binder.rabbit.config.ExtendedBindingHandlerMappingsProviderConfiguration' of type [org.springframework.cloud.stream.binder.rabbit.config.ExtendedBindingHandlerMappingsProviderConfiguration$$EnhancerBySpringCGLIB$$dd833c99] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-07-09 17:01:20.056  INFO 79843 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'rabbitExtendedPropertiesDefaultMappingsProvider' of type [org.springframework.cloud.stream.binder.rabbit.config.ExtendedBindingHandlerMappingsProviderConfiguration$$Lambda$362/1972360035] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-07-09 17:01:20.063  INFO 79843 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'BindingHandlerAdvise' of type [org.springframework.cloud.stream.config.BindingHandlerAdvise] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-07-09 17:01:20.140  INFO 79843 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'spelConverter' of type [org.springframework.cloud.stream.config.SpelExpressionConverterConfiguration$SpelConverter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-07-09 17:01:20.169  INFO 79843 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'spring.cloud.sentinel-com.alibaba.cloud.sentinel.SentinelProperties' of type [com.alibaba.cloud.sentinel.SentinelProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-07-09 17:01:20.216  INFO 79843 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration' of type [com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-07-09 17:01:20.226  INFO 79843 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-07-09 17:01:20.233  INFO 79843 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration$IntegrationJmxConfiguration' of type [org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration$IntegrationJmxConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-07-09 17:01:20.242  INFO 79843 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration' of type [org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-07-09 17:01:20.246  INFO 79843 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'mbeanServer' of type [com.sun.jmx.mbeanserver.JmxMBeanServer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-07-09 17:01:20.268  INFO 79843 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-07-09 17:01:20.270  INFO 79843 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-07-09 17:01:20.859  INFO 79843 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8201 (http)
+2023-07-09 17:01:20.875  INFO 79843 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-09 17:01:20.876  INFO 79843 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2023-07-09 17:01:21.043  INFO 79843 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-09 17:01:21.043  INFO 79843 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2842 ms
+2023-07-09 17:01:21.725  INFO 79843 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-07-09 17:01:23.092  INFO 79843 --- [restartedMain] c.a.c.s.SentinelWebAutoConfiguration     : [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+2023-07-09 17:01:23.133 DEBUG 79843 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 35 mappings in 'requestMappingHandlerMapping'
+2023-07-09 17:01:23.217  INFO 79843 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2023-07-09 17:01:23.246  WARN 79843 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2023-07-09 17:01:23.246  INFO 79843 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2023-07-09 17:01:23.254  WARN 79843 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2023-07-09 17:01:23.254  INFO 79843 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2023-07-09 17:01:23.452  INFO 79843 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-07-09 17:01:23.466 DEBUG 79843 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-07-09 17:01:23.554 DEBUG 79843 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-07-09 17:01:23.577 DEBUG 79843 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-07-09 17:01:24.668  INFO 79843 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2023-07-09 17:01:24.684  INFO 79843 --- [restartedMain] onConfiguration$FunctionBindingRegistrar : Functional binding is disabled due to the presense of @EnableBinding annotation in your configuration
+2023-07-09 17:01:25.162  INFO 79843 --- [restartedMain] o.s.i.monitor.IntegrationMBeanExporter   : Registering MessageChannel springCloudBusInput
+2023-07-09 17:01:25.244  INFO 79843 --- [restartedMain] o.s.i.monitor.IntegrationMBeanExporter   : Registering MessageChannel nullChannel
+2023-07-09 17:01:25.260  INFO 79843 --- [restartedMain] o.s.i.monitor.IntegrationMBeanExporter   : Registering MessageChannel springCloudBusOutput
+2023-07-09 17:01:25.267  INFO 79843 --- [restartedMain] o.s.i.monitor.IntegrationMBeanExporter   : Registering MessageChannel errorChannel
+2023-07-09 17:01:25.314  INFO 79843 --- [restartedMain] o.s.i.monitor.IntegrationMBeanExporter   : Registering MessageHandler errorLogger
+2023-07-09 17:01:25.355  INFO 79843 --- [restartedMain] o.s.c.s.m.DirectWithAttributesChannel    : Channel 'application-1.springCloudBusInput' has 1 subscriber(s).
+2023-07-09 17:01:25.357  INFO 79843 --- [restartedMain] o.s.i.endpoint.EventDrivenConsumer       : Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2023-07-09 17:01:25.357  INFO 79843 --- [restartedMain] o.s.i.channel.PublishSubscribeChannel    : Channel 'application-1.errorChannel' has 1 subscriber(s).
+2023-07-09 17:01:25.357  INFO 79843 --- [restartedMain] o.s.i.endpoint.EventDrivenConsumer       : started bean '_org.springframework.integration.errorLogger'
+2023-07-09 17:01:25.359  INFO 79843 --- [restartedMain] o.s.c.s.binder.DefaultBinderFactory      : Creating binder: rabbit
+2023-07-09 17:01:30.521  INFO 79843 --- [restartedMain] o.s.c.s.binder.DefaultBinderFactory      : Caching the binder: rabbit
+2023-07-09 17:01:30.522  INFO 79843 --- [restartedMain] o.s.c.s.binder.DefaultBinderFactory      : Retrieving cached binder: rabbit
+2023-07-09 17:01:30.583  INFO 79843 --- [restartedMain] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.54.2:5672]
+2023-07-09 17:01:30.655  INFO 79843 --- [restartedMain] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#6553b4e0:0/SimpleConnection@b83a187 [delegate=amqp://guest@192.168.54.2:5672/, localPort= 63224]
+2023-07-09 17:01:30.708  INFO 79843 --- [restartedMain] o.s.c.s.m.DirectWithAttributesChannel    : Channel 'application-1.springCloudBusOutput' has 1 subscriber(s).
+2023-07-09 17:01:30.751  INFO 79843 --- [restartedMain] c.a.n.client.identify.CredentialWatcher  : null No credential found
+2023-07-09 17:01:30.899  INFO 79843 --- [restartedMain] com.alibaba.nacos.client.naming          : [LISTENER] adding DEFAULT_GROUP@@service-admin with DEFAULT to listener map
+2023-07-09 17:01:30.899  INFO 79843 --- [restartedMain] o.s.c.s.binder.DefaultBinderFactory      : Retrieving cached binder: rabbit
+2023-07-09 17:01:30.923  INFO 79843 --- [restartedMain] c.s.b.r.p.RabbitExchangeQueueProvisioner : declaring queue for inbound: springCloudBus.anonymous.ZmKKh1maT6mdeJPEhMumzg, bound to: springCloudBus
+2023-07-09 17:01:30.964  INFO 79843 --- [restartedMain] o.s.c.stream.binder.BinderErrorChannel   : Channel 'springCloudBus.anonymous.ZmKKh1maT6mdeJPEhMumzg.errors' has 1 subscriber(s).
+2023-07-09 17:01:30.964  INFO 79843 --- [restartedMain] o.s.c.stream.binder.BinderErrorChannel   : Channel 'springCloudBus.anonymous.ZmKKh1maT6mdeJPEhMumzg.errors' has 2 subscriber(s).
+2023-07-09 17:01:30.984  INFO 79843 --- [restartedMain] o.s.i.a.i.AmqpInboundChannelAdapter      : started bean 'inbound.springCloudBus.anonymous.ZmKKh1maT6mdeJPEhMumzg'
+2023-07-09 17:01:31.016  INFO 79843 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8201 (http) with context path ''
+2023-07-09 17:01:31.022  INFO 79843 --- [restartedMain] com.alibaba.nacos.client.naming          : [BEAT] adding beat: BeatInfo{port=8201, ip='172.16.2.196', weight=1.0, serviceName='DEFAULT_GROUP@@service-admin', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false} to beat map.
+2023-07-09 17:01:31.025  INFO 79843 --- [restartedMain] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] public registering service DEFAULT_GROUP@@service-admin with instance: Instance{instanceId='null', ip='172.16.2.196', port=8201, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={preserved.register.source=SPRING_CLOUD}}
+2023-07-09 17:01:31.045  INFO 79843 --- [restartedMain] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP service-admin 172.16.2.196:8201 register finished
+2023-07-09 17:01:31.048  INFO 79843 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+2023-07-09 17:01:31.052  INFO 79843 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 2 custom documentation plugin(s)
+2023-07-09 17:01:31.085  INFO 79843 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2023-07-09 17:01:31.212  INFO 79843 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: addUsingPOST_1
+2023-07-09 17:01:31.214  INFO 79843 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_1
+2023-07-09 17:01:31.215  INFO 79843 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deletesUsingDELETE_1
+2023-07-09 17:01:31.217  INFO 79843 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUsingGET_1
+2023-07-09 17:01:31.222  INFO 79843 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: pageListUsingGET_1
+2023-07-09 17:01:31.224  INFO 79843 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPUT_1
+2023-07-09 17:01:31.229  INFO 79843 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: addUsingPOST_2
+2023-07-09 17:01:31.231  INFO 79843 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_2
+2023-07-09 17:01:31.233  INFO 79843 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deletesUsingDELETE_2
+2023-07-09 17:01:31.235  INFO 79843 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUsingGET_2
+2023-07-09 17:01:31.238  INFO 79843 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: pageListUsingGET_2
+2023-07-09 17:01:31.240  INFO 79843 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPUT_2
+2023-07-09 17:01:31.249  INFO 79843 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: addUsingPOST_3
+2023-07-09 17:01:31.252  INFO 79843 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_3
+2023-07-09 17:01:31.255  INFO 79843 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deletesUsingDELETE_3
+2023-07-09 17:01:31.257  INFO 79843 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUsingGET_3
+2023-07-09 17:01:31.263  INFO 79843 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: pageListUsingGET_3
+2023-07-09 17:01:31.267  INFO 79843 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPUT_3
+2023-07-09 17:01:31.278  INFO 79843 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2023-07-09 17:01:31.305  INFO 79843 --- [restartedMain] o.wjy.gameforu.ServiceAdminApplication   : Started ServiceAdminApplication in 14.149 seconds (JVM running for 19.881)
+2023-07-09 17:01:31.373  INFO 79843 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : received push data: {"type":"dom","data":"{\"name\":\"DEFAULT_GROUP@@service-admin\",\"clusters\":\"DEFAULT\",\"cacheMillis\":10000,\"hosts\":[{\"instanceId\":\"172.16.2.196#8201#DEFAULT#DEFAULT_GROUP@@service-admin\",\"ip\":\"172.16.2.196\",\"port\":8201,\"weight\":1.0,\"healthy\":true,\"enabled\":true,\"ephemeral\":true,\"clusterName\":\"DEFAULT\",\"serviceName\":\"DEFAULT_GROUP@@service-admin\",\"metadata\":{\"preserved.register.source\":\"SPRING_CLOUD\"},\"instanceHeartBeatInterval\":5000,\"instanceHeartBeatTimeOut\":15000,\"ipDeleteTimeout\":30000}],\"lastRefTime\":1688918491370,\"checksum\":\"\",\"allIPs\":false,\"reachProtectionThreshold\":false,\"valid\":true}","lastRefTime":836370161580486} from /192.168.54.1
+2023-07-09 17:01:31.387  INFO 79843 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : new ips(1) service: DEFAULT_GROUP@@service-admin@@DEFAULT -> [{"instanceId":"172.16.2.196#8201#DEFAULT#DEFAULT_GROUP@@service-admin","ip":"172.16.2.196","port":8201,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@service-admin","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2023-07-09 17:01:31.396  INFO 79843 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@service-admin@@DEFAULT -> [{"instanceId":"172.16.2.196#8201#DEFAULT#DEFAULT_GROUP@@service-admin","ip":"172.16.2.196","port":8201,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@service-admin","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2023-07-09 17:02:01.669  INFO 79843 --- [http-nio-8201-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-09 17:02:01.671  INFO 79843 --- [http-nio-8201-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-07-09 17:02:01.671 DEBUG 79843 --- [http-nio-8201-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2023-07-09 17:02:01.688 DEBUG 79843 --- [http-nio-8201-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-07-09 17:02:01.688  INFO 79843 --- [http-nio-8201-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 17 ms
+2023-07-09 17:02:01.704 DEBUG 79843 --- [http-nio-8201-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/admin/genre/1/1", parameters={}
+2023-07-09 17:02:01.714 DEBUG 79843 --- [http-nio-8201-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.wjy.gameforu.admin2.controller.GenreController#pageList(Integer, Integer, GenreQueryVo)
+2023-07-09 17:02:07.043  INFO 79843 --- [http-nio-8201-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-07-09 17:02:07.267  INFO 79843 --- [http-nio-8201-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-07-09 17:02:07.402 DEBUG 79843 --- [http-nio-8201-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.7, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-07-09 17:02:07.402 DEBUG 79843 --- [http-nio-8201-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing [Result(code=200, message=success, data=com.baomidou.mybatisplus.extension.plugins.pagination.Page@59 (truncated)...]
+2023-07-09 17:02:07.429 DEBUG 79843 --- [http-nio-8201-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-09 17:02:07.539 DEBUG 79843 --- [http-nio-8201-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/admin/genre/1/1", parameters={}
+2023-07-09 17:02:07.539 DEBUG 79843 --- [http-nio-8201-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.wjy.gameforu.admin2.controller.GenreController#pageList(Integer, Integer, GenreQueryVo)
+2023-07-09 17:02:07.559 DEBUG 79843 --- [http-nio-8201-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-07-09 17:02:07.559 DEBUG 79843 --- [http-nio-8201-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [Result(code=200, message=success, data=com.baomidou.mybatisplus.extension.plugins.pagination.Page@a2 (truncated)...]
+2023-07-09 17:02:07.560 DEBUG 79843 --- [http-nio-8201-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-09 17:11:23.152  INFO 79843 --- [SpringContextShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2023-07-09 17:11:24.042  INFO 79843 --- [SpringContextShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2023-07-09 17:11:24.044  INFO 79843 --- [SpringContextShutdownHook] o.s.i.a.i.AmqpInboundChannelAdapter      : stopped bean 'inbound.springCloudBus.anonymous.ZmKKh1maT6mdeJPEhMumzg'
+2023-07-09 17:11:24.146  INFO 79843 --- [SpringContextShutdownHook] o.s.i.monitor.IntegrationMBeanExporter   : Registering MessageChannel springCloudBus.anonymous.ZmKKh1maT6mdeJPEhMumzg.errors
+2023-07-09 17:11:24.314  INFO 79843 --- [SpringContextShutdownHook] o.s.c.stream.binder.BinderErrorChannel   : Channel 'application-1.springCloudBus.anonymous.ZmKKh1maT6mdeJPEhMumzg.errors' has 1 subscriber(s).
+2023-07-09 17:11:24.316  INFO 79843 --- [SpringContextShutdownHook] o.s.c.stream.binder.BinderErrorChannel   : Channel 'application-1.springCloudBus.anonymous.ZmKKh1maT6mdeJPEhMumzg.errors' has 0 subscriber(s).
+2023-07-09 17:11:24.323  INFO 79843 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : [LISTENER] removing DEFAULT_GROUP@@service-admin with DEFAULT from listener map
+2023-07-09 17:11:24.338  INFO 79843 --- [SpringContextShutdownHook] o.s.i.endpoint.EventDrivenConsumer       : Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2023-07-09 17:11:24.339  INFO 79843 --- [SpringContextShutdownHook] o.s.i.channel.PublishSubscribeChannel    : Channel 'application-1.errorChannel' has 0 subscriber(s).
+2023-07-09 17:11:24.340  INFO 79843 --- [SpringContextShutdownHook] o.s.i.endpoint.EventDrivenConsumer       : stopped bean '_org.springframework.integration.errorLogger'
+2023-07-09 17:11:24.343  INFO 79843 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2023-07-09 17:11:24.447  INFO 79843 --- [SpringContextShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+2023-07-09 17:11:24.448  INFO 79843 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : [BEAT] removing beat: DEFAULT_GROUP@@service-admin:172.16.2.196:8201 from beat map.
+2023-07-09 17:11:24.448  INFO 79843 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : [DEREGISTER-SERVICE] public deregistering service DEFAULT_GROUP@@service-admin with instance: Instance{instanceId='null', ip='172.16.2.196', port=8201, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={}}
+2023-07-09 17:11:24.495  INFO 79843 --- [SpringContextShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
+2023-07-09 17:11:24.495  INFO 79843 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown begin
+2023-07-09 17:11:25.122  INFO 79843 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : received push data: {"type":"dom","data":"{\"name\":\"DEFAULT_GROUP@@service-admin\",\"clusters\":\"DEFAULT\",\"cacheMillis\":10000,\"hosts\":[],\"lastRefTime\":1688919085081,\"checksum\":\"\",\"allIPs\":false,\"reachProtectionThreshold\":false,\"valid\":true}","lastRefTime":836963863001730} from /192.168.54.1
+2023-07-09 17:11:25.127  INFO 79843 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : removed ips(1) service: DEFAULT_GROUP@@service-admin@@DEFAULT -> [{"instanceId":"172.16.2.196#8201#DEFAULT#DEFAULT_GROUP@@service-admin","ip":"172.16.2.196","port":8201,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@service-admin","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2023-07-09 17:11:25.133  INFO 79843 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : current ips:(0) service: DEFAULT_GROUP@@service-admin@@DEFAULT -> []
+2023-07-09 17:11:27.509  INFO 79843 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown stop
+2023-07-09 17:11:27.511  INFO 79843 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.EventDispatcher do shutdown begin
+2023-07-09 17:11:30.522  INFO 79843 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.EventDispatcher do shutdown stop
+2023-07-09 17:11:30.523  INFO 79843 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.HostReactor do shutdown begin
+2023-07-09 17:12:19.384  INFO 80298 --- [restartedMain] o.wjy.gameforu.ServiceAdminApplication   : The following profiles are active: dev
+2023-07-09 17:12:20.555  INFO 80298 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-07-09 17:12:20.558  INFO 80298 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-07-09 17:12:20.606  INFO 80298 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 28ms. Found 0 Redis repository interfaces.
+2023-07-09 17:12:21.049  INFO 80298 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=3b421ef3-6ddd-3688-a140-389be7c14882
+2023-07-09 17:12:21.059  INFO 80298 --- [restartedMain] faultConfiguringBeanFactoryPostProcessor : No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2023-07-09 17:12:21.068  INFO 80298 --- [restartedMain] faultConfiguringBeanFactoryPostProcessor : No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+2023-07-09 17:12:21.073  INFO 80298 --- [restartedMain] faultConfiguringBeanFactoryPostProcessor : No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2023-07-09 17:12:21.386  INFO 80298 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.stream.binder.rabbit.config.ExtendedBindingHandlerMappingsProviderConfiguration' of type [org.springframework.cloud.stream.binder.rabbit.config.ExtendedBindingHandlerMappingsProviderConfiguration$$EnhancerBySpringCGLIB$$467aced0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-07-09 17:12:21.395  INFO 80298 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'rabbitExtendedPropertiesDefaultMappingsProvider' of type [org.springframework.cloud.stream.binder.rabbit.config.ExtendedBindingHandlerMappingsProviderConfiguration$$Lambda$357/1878015597] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-07-09 17:12:21.401  INFO 80298 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'BindingHandlerAdvise' of type [org.springframework.cloud.stream.config.BindingHandlerAdvise] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-07-09 17:12:21.410  INFO 80298 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'spelConverter' of type [org.springframework.cloud.stream.config.SpelExpressionConverterConfiguration$SpelConverter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-07-09 17:12:21.444  INFO 80298 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'spring.cloud.sentinel-com.alibaba.cloud.sentinel.SentinelProperties' of type [com.alibaba.cloud.sentinel.SentinelProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-07-09 17:12:21.546  INFO 80298 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration' of type [com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-07-09 17:12:21.557  INFO 80298 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-07-09 17:12:21.564  INFO 80298 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration$IntegrationJmxConfiguration' of type [org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration$IntegrationJmxConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-07-09 17:12:21.574  INFO 80298 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration' of type [org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-07-09 17:12:21.578  INFO 80298 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'mbeanServer' of type [com.sun.jmx.mbeanserver.JmxMBeanServer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-07-09 17:12:21.601  INFO 80298 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-07-09 17:12:21.603  INFO 80298 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-07-09 17:12:22.097  INFO 80298 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8201 (http)
+2023-07-09 17:12:22.109  INFO 80298 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-09 17:12:22.109  INFO 80298 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2023-07-09 17:12:22.210  INFO 80298 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-09 17:12:22.210  INFO 80298 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2808 ms
+2023-07-09 17:12:22.680  INFO 80298 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-07-09 17:12:23.694  INFO 80298 --- [restartedMain] c.a.c.s.SentinelWebAutoConfiguration     : [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+2023-07-09 17:12:23.730 DEBUG 80298 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 35 mappings in 'requestMappingHandlerMapping'
+2023-07-09 17:12:23.804  INFO 80298 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2023-07-09 17:12:23.826  WARN 80298 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2023-07-09 17:12:23.826  INFO 80298 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2023-07-09 17:12:23.832  WARN 80298 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2023-07-09 17:12:23.832  INFO 80298 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2023-07-09 17:12:23.991  INFO 80298 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-07-09 17:12:24.004 DEBUG 80298 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-07-09 17:12:24.074 DEBUG 80298 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-07-09 17:12:24.088 DEBUG 80298 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-07-09 17:12:25.039  INFO 80298 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2023-07-09 17:12:25.268  INFO 80298 --- [restartedMain] onConfiguration$FunctionBindingRegistrar : Functional binding is disabled due to the presense of @EnableBinding annotation in your configuration
+2023-07-09 17:12:25.498  INFO 80298 --- [restartedMain] o.s.i.monitor.IntegrationMBeanExporter   : Registering MessageChannel springCloudBusOutput
+2023-07-09 17:12:25.583  INFO 80298 --- [restartedMain] o.s.i.monitor.IntegrationMBeanExporter   : Registering MessageChannel springCloudBusInput
+2023-07-09 17:12:25.593  INFO 80298 --- [restartedMain] o.s.i.monitor.IntegrationMBeanExporter   : Registering MessageChannel nullChannel
+2023-07-09 17:12:25.614  INFO 80298 --- [restartedMain] o.s.i.monitor.IntegrationMBeanExporter   : Registering MessageChannel errorChannel
+2023-07-09 17:12:25.686  INFO 80298 --- [restartedMain] o.s.i.monitor.IntegrationMBeanExporter   : Registering MessageHandler errorLogger
+2023-07-09 17:12:25.730  INFO 80298 --- [restartedMain] o.s.c.s.m.DirectWithAttributesChannel    : Channel 'application-1.springCloudBusInput' has 1 subscriber(s).
+2023-07-09 17:12:25.733  INFO 80298 --- [restartedMain] o.s.i.endpoint.EventDrivenConsumer       : Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2023-07-09 17:12:25.733  INFO 80298 --- [restartedMain] o.s.i.channel.PublishSubscribeChannel    : Channel 'application-1.errorChannel' has 1 subscriber(s).
+2023-07-09 17:12:25.734  INFO 80298 --- [restartedMain] o.s.i.endpoint.EventDrivenConsumer       : started bean '_org.springframework.integration.errorLogger'
+2023-07-09 17:12:25.735  INFO 80298 --- [restartedMain] o.s.c.s.binder.DefaultBinderFactory      : Creating binder: rabbit
+2023-07-09 17:12:30.904  INFO 80298 --- [restartedMain] o.s.c.s.binder.DefaultBinderFactory      : Caching the binder: rabbit
+2023-07-09 17:12:30.905  INFO 80298 --- [restartedMain] o.s.c.s.binder.DefaultBinderFactory      : Retrieving cached binder: rabbit
+2023-07-09 17:12:30.959  INFO 80298 --- [restartedMain] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.54.2:5672]
+2023-07-09 17:12:31.040  INFO 80298 --- [restartedMain] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#27fb9071:0/SimpleConnection@603b64f7 [delegate=amqp://guest@192.168.54.2:5672/, localPort= 63534]
+2023-07-09 17:12:31.096  INFO 80298 --- [restartedMain] o.s.c.s.m.DirectWithAttributesChannel    : Channel 'application-1.springCloudBusOutput' has 1 subscriber(s).
+2023-07-09 17:12:31.138  INFO 80298 --- [restartedMain] c.a.n.client.identify.CredentialWatcher  : null No credential found
+2023-07-09 17:12:31.351  INFO 80298 --- [restartedMain] com.alibaba.nacos.client.naming          : [LISTENER] adding DEFAULT_GROUP@@service-admin with DEFAULT to listener map
+2023-07-09 17:12:31.352  INFO 80298 --- [restartedMain] o.s.c.s.binder.DefaultBinderFactory      : Retrieving cached binder: rabbit
+2023-07-09 17:12:31.374  INFO 80298 --- [restartedMain] c.s.b.r.p.RabbitExchangeQueueProvisioner : declaring queue for inbound: springCloudBus.anonymous.A68wkpgKT9-e89xxNEaixA, bound to: springCloudBus
+2023-07-09 17:12:31.436  INFO 80298 --- [restartedMain] o.s.c.stream.binder.BinderErrorChannel   : Channel 'springCloudBus.anonymous.A68wkpgKT9-e89xxNEaixA.errors' has 1 subscriber(s).
+2023-07-09 17:12:31.436  INFO 80298 --- [restartedMain] o.s.c.stream.binder.BinderErrorChannel   : Channel 'springCloudBus.anonymous.A68wkpgKT9-e89xxNEaixA.errors' has 2 subscriber(s).
+2023-07-09 17:12:31.464  INFO 80298 --- [restartedMain] o.s.i.a.i.AmqpInboundChannelAdapter      : started bean 'inbound.springCloudBus.anonymous.A68wkpgKT9-e89xxNEaixA'
+2023-07-09 17:12:31.501  INFO 80298 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8201 (http) with context path ''
+2023-07-09 17:12:31.507  INFO 80298 --- [restartedMain] com.alibaba.nacos.client.naming          : [BEAT] adding beat: BeatInfo{port=8201, ip='172.16.2.196', weight=1.0, serviceName='DEFAULT_GROUP@@service-admin', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false} to beat map.
+2023-07-09 17:12:31.508  INFO 80298 --- [restartedMain] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] public registering service DEFAULT_GROUP@@service-admin with instance: Instance{instanceId='null', ip='172.16.2.196', port=8201, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={preserved.register.source=SPRING_CLOUD}}
+2023-07-09 17:12:31.537  INFO 80298 --- [restartedMain] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP service-admin 172.16.2.196:8201 register finished
+2023-07-09 17:12:31.540  INFO 80298 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+2023-07-09 17:12:31.543  INFO 80298 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 2 custom documentation plugin(s)
+2023-07-09 17:12:31.587  INFO 80298 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2023-07-09 17:12:31.711  INFO 80298 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: addUsingPOST_1
+2023-07-09 17:12:31.713  INFO 80298 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_1
+2023-07-09 17:12:31.714  INFO 80298 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deletesUsingDELETE_1
+2023-07-09 17:12:31.717  INFO 80298 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUsingGET_1
+2023-07-09 17:12:31.721  INFO 80298 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: pageListUsingGET_1
+2023-07-09 17:12:31.723  INFO 80298 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPUT_1
+2023-07-09 17:12:31.728  INFO 80298 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: addUsingPOST_2
+2023-07-09 17:12:31.730  INFO 80298 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_2
+2023-07-09 17:12:31.731  INFO 80298 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deletesUsingDELETE_2
+2023-07-09 17:12:31.733  INFO 80298 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUsingGET_2
+2023-07-09 17:12:31.737  INFO 80298 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: pageListUsingGET_2
+2023-07-09 17:12:31.739  INFO 80298 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPUT_2
+2023-07-09 17:12:31.745  INFO 80298 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: addUsingPOST_3
+2023-07-09 17:12:31.746  INFO 80298 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_3
+2023-07-09 17:12:31.748  INFO 80298 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deletesUsingDELETE_3
+2023-07-09 17:12:31.749  INFO 80298 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUsingGET_3
+2023-07-09 17:12:31.754  INFO 80298 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: pageListUsingGET_3
+2023-07-09 17:12:31.757  INFO 80298 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPUT_3
+2023-07-09 17:12:31.768  INFO 80298 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2023-07-09 17:12:31.787  INFO 80298 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : received push data: {"type":"dom","data":"{\"name\":\"DEFAULT_GROUP@@service-admin\",\"clusters\":\"DEFAULT\",\"cacheMillis\":10000,\"hosts\":[{\"instanceId\":\"172.16.2.196#8201#DEFAULT#DEFAULT_GROUP@@service-admin\",\"ip\":\"172.16.2.196\",\"port\":8201,\"weight\":1.0,\"healthy\":true,\"enabled\":true,\"ephemeral\":true,\"clusterName\":\"DEFAULT\",\"serviceName\":\"DEFAULT_GROUP@@service-admin\",\"metadata\":{\"preserved.register.source\":\"SPRING_CLOUD\"},\"instanceHeartBeatInterval\":5000,\"instanceHeartBeatTimeOut\":15000,\"ipDeleteTimeout\":30000}],\"lastRefTime\":1688919151779,\"checksum\":\"\",\"allIPs\":false,\"reachProtectionThreshold\":false,\"valid\":true}","lastRefTime":837030552937183} from /192.168.54.1
+2023-07-09 17:12:31.800  INFO 80298 --- [restartedMain] o.wjy.gameforu.ServiceAdminApplication   : Started ServiceAdminApplication in 13.441 seconds (JVM running for 19.568)
+2023-07-09 17:12:31.803  INFO 80298 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : new ips(1) service: DEFAULT_GROUP@@service-admin@@DEFAULT -> [{"instanceId":"172.16.2.196#8201#DEFAULT#DEFAULT_GROUP@@service-admin","ip":"172.16.2.196","port":8201,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@service-admin","metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]
+2023-07-09 17:12:31.812  INFO 80298 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@service-admin@@DEFAULT -> [{"instanceId":"172.16.2.196#8201#DEFAULT#DEFAULT_GROUP@@service-admin","ip":"172.16.2.196","port":8201,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@service-admin","metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]
+2023-07-09 17:39:52.698  INFO 80298 --- [SpringContextShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2023-07-09 17:39:52.744  INFO 80298 --- [SpringContextShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2023-07-09 17:39:52.745  INFO 80298 --- [SpringContextShutdownHook] o.s.i.a.i.AmqpInboundChannelAdapter      : stopped bean 'inbound.springCloudBus.anonymous.A68wkpgKT9-e89xxNEaixA'
+2023-07-09 17:39:52.824  INFO 80298 --- [SpringContextShutdownHook] o.s.i.monitor.IntegrationMBeanExporter   : Registering MessageChannel springCloudBus.anonymous.A68wkpgKT9-e89xxNEaixA.errors
+2023-07-09 17:39:53.013  INFO 80298 --- [SpringContextShutdownHook] o.s.c.stream.binder.BinderErrorChannel   : Channel 'application-1.springCloudBus.anonymous.A68wkpgKT9-e89xxNEaixA.errors' has 1 subscriber(s).
+2023-07-09 17:39:53.016  INFO 80298 --- [SpringContextShutdownHook] o.s.c.stream.binder.BinderErrorChannel   : Channel 'application-1.springCloudBus.anonymous.A68wkpgKT9-e89xxNEaixA.errors' has 0 subscriber(s).
+2023-07-09 17:39:53.021  INFO 80298 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : [LISTENER] removing DEFAULT_GROUP@@service-admin with DEFAULT from listener map
+2023-07-09 17:39:53.033  INFO 80298 --- [SpringContextShutdownHook] o.s.i.endpoint.EventDrivenConsumer       : Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2023-07-09 17:39:53.033  INFO 80298 --- [SpringContextShutdownHook] o.s.i.channel.PublishSubscribeChannel    : Channel 'application-1.errorChannel' has 0 subscriber(s).
+2023-07-09 17:39:53.033  INFO 80298 --- [SpringContextShutdownHook] o.s.i.endpoint.EventDrivenConsumer       : stopped bean '_org.springframework.integration.errorLogger'
+2023-07-09 17:39:53.035  INFO 80298 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2023-07-09 17:39:53.130  INFO 80298 --- [SpringContextShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+2023-07-09 17:39:53.130  INFO 80298 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : [BEAT] removing beat: DEFAULT_GROUP@@service-admin:172.16.2.196:8201 from beat map.
+2023-07-09 17:39:53.131  INFO 80298 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : [DEREGISTER-SERVICE] public deregistering service DEFAULT_GROUP@@service-admin with instance: Instance{instanceId='null', ip='172.16.2.196', port=8201, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={}}
+2023-07-09 17:39:53.216  INFO 80298 --- [SpringContextShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
+2023-07-09 17:39:53.216  INFO 80298 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown begin
+2023-07-09 17:39:53.872  INFO 80298 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : received push data: {"type":"dom","data":"{\"name\":\"DEFAULT_GROUP@@service-admin\",\"clusters\":\"DEFAULT\",\"cacheMillis\":10000,\"hosts\":[],\"lastRefTime\":1688920793794,\"checksum\":\"\",\"allIPs\":false,\"reachProtectionThreshold\":false,\"valid\":true}","lastRefTime":838672584082679} from /192.168.54.1
+2023-07-09 17:39:53.885  INFO 80298 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : removed ips(1) service: DEFAULT_GROUP@@service-admin@@DEFAULT -> [{"instanceId":"172.16.2.196#8201#DEFAULT#DEFAULT_GROUP@@service-admin","ip":"172.16.2.196","port":8201,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@service-admin","metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]
+2023-07-09 17:39:53.891  INFO 80298 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : current ips:(0) service: DEFAULT_GROUP@@service-admin@@DEFAULT -> []
+2023-07-09 17:39:56.223  INFO 80298 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown stop
+2023-07-09 17:39:56.225  INFO 80298 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.EventDispatcher do shutdown begin
+2023-07-09 17:39:59.234  INFO 80298 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.EventDispatcher do shutdown stop
+2023-07-09 17:39:59.235  INFO 80298 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.HostReactor do shutdown begin
+2023-07-09 17:40:02.243  INFO 80298 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.PushReceiver do shutdown begin
+2023-07-09 17:40:05.257  INFO 80298 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.PushReceiver do shutdown stop
+2023-07-09 17:40:05.259  INFO 80298 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown begin
+2023-07-09 17:40:05.260  INFO 80298 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown stop
+2023-07-09 17:40:05.260  INFO 80298 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.HostReactor do shutdown stop
+2023-07-09 17:40:05.261  INFO 80298 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.net.NamingProxy do shutdown begin
+2023-07-09 17:40:05.261  WARN 80298 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : [NamingHttpClientManager] Start destroying NacosRestTemplate
+2023-07-09 17:40:05.263  WARN 80298 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : [NamingHttpClientManager] Destruction of the end
+2023-07-09 17:40:05.264  INFO 80298 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.net.NamingProxy do shutdown stop
+2023-07-09 17:40:05.264  INFO 80298 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown begin
+2023-07-09 17:40:05.264  INFO 80298 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown stop
+2023-07-09 17:40:05.265  INFO 80298 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.EventDispatcher do shutdown begin
+2023-07-09 17:40:05.265  INFO 80298 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.EventDispatcher do shutdown stop
+2023-07-09 17:40:05.265  INFO 80298 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.HostReactor do shutdown begin
+2023-07-09 17:40:05.265  INFO 80298 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.PushReceiver do shutdown begin
+2023-07-09 17:40:05.290 ERROR 80298 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : [NA] error while receiving push data
+
+java.net.SocketException: Socket closed
+	at java.net.PlainDatagramSocketImpl.receive0(Native Method) ~[na:1.8.0_362]
+	at java.net.AbstractPlainDatagramSocketImpl.receive(AbstractPlainDatagramSocketImpl.java:143) ~[na:1.8.0_362]
+	at java.net.DatagramSocket.receive(DatagramSocket.java:812) ~[na:1.8.0_362]
+	at com.alibaba.nacos.client.naming.core.PushReceiver.run(PushReceiver.java:83) ~[nacos-client-1.3.2.jar:na]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_362]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_362]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_362]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_362]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_362]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_362]
+	at java.lang.Thread.run(Thread.java:750) [na:1.8.0_362]
+
+2023-07-09 17:40:05.297  INFO 80298 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.PushReceiver do shutdown stop
+2023-07-09 17:40:05.297  INFO 80298 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown begin
+2023-07-09 17:40:05.297  INFO 80298 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown stop
+2023-07-09 17:40:05.297  INFO 80298 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.HostReactor do shutdown stop
+2023-07-09 17:40:05.297  INFO 80298 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.net.NamingProxy do shutdown begin
+2023-07-09 17:40:05.297  WARN 80298 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : [NamingHttpClientManager] Start destroying NacosRestTemplate
+2023-07-09 17:40:05.297  WARN 80298 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : [NamingHttpClientManager] Destruction of the end
+2023-07-09 17:40:05.297  INFO 80298 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.net.NamingProxy do shutdown stop
+2023-07-09 17:40:05.335  INFO 80298 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2023-07-09 17:40:05.338  INFO 80298 --- [SpringContextShutdownHook] o.s.i.monitor.IntegrationMBeanExporter   : Summary on shutdown: bean 'springCloudBusOutput'
+2023-07-09 17:40:05.339  INFO 80298 --- [SpringContextShutdownHook] o.s.i.monitor.IntegrationMBeanExporter   : Summary on shutdown: bean 'springCloudBusInput'
+2023-07-09 17:40:05.339  INFO 80298 --- [SpringContextShutdownHook] o.s.i.monitor.IntegrationMBeanExporter   : Summary on shutdown: nullChannel
+2023-07-09 17:40:05.339  INFO 80298 --- [SpringContextShutdownHook] o.s.i.monitor.IntegrationMBeanExporter   : Summary on shutdown: bean 'errorChannel'
+2023-07-09 17:40:05.339  INFO 80298 --- [SpringContextShutdownHook] o.s.i.monitor.IntegrationMBeanExporter   : Summary on shutdown: bean '_org.springframework.integration.errorLogger.handler' for component '_org.springframework.integration.errorLogger'
+2023-07-09 17:42:43.573  INFO 81097 --- [restartedMain] o.wjy.gameforu.ServiceAdminApplication   : The following profiles are active: dev
+2023-07-09 17:42:44.993  INFO 81097 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-07-09 17:42:44.997  INFO 81097 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-07-09 17:42:45.044  INFO 81097 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 27ms. Found 0 Redis repository interfaces.
+2023-07-09 17:42:45.403  INFO 81097 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=3b421ef3-6ddd-3688-a140-389be7c14882
+2023-07-09 17:42:45.412  INFO 81097 --- [restartedMain] faultConfiguringBeanFactoryPostProcessor : No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2023-07-09 17:42:45.418  INFO 81097 --- [restartedMain] faultConfiguringBeanFactoryPostProcessor : No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+2023-07-09 17:42:45.423  INFO 81097 --- [restartedMain] faultConfiguringBeanFactoryPostProcessor : No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2023-07-09 17:42:45.750  INFO 81097 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.stream.binder.rabbit.config.ExtendedBindingHandlerMappingsProviderConfiguration' of type [org.springframework.cloud.stream.binder.rabbit.config.ExtendedBindingHandlerMappingsProviderConfiguration$$EnhancerBySpringCGLIB$$c26ecbc5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-07-09 17:42:45.760  INFO 81097 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'rabbitExtendedPropertiesDefaultMappingsProvider' of type [org.springframework.cloud.stream.binder.rabbit.config.ExtendedBindingHandlerMappingsProviderConfiguration$$Lambda$362/146731123] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-07-09 17:42:45.768  INFO 81097 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'BindingHandlerAdvise' of type [org.springframework.cloud.stream.config.BindingHandlerAdvise] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-07-09 17:42:45.825  INFO 81097 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'spelConverter' of type [org.springframework.cloud.stream.config.SpelExpressionConverterConfiguration$SpelConverter] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-07-09 17:42:45.860  INFO 81097 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'spring.cloud.sentinel-com.alibaba.cloud.sentinel.SentinelProperties' of type [com.alibaba.cloud.sentinel.SentinelProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-07-09 17:42:45.911  INFO 81097 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration' of type [com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-07-09 17:42:45.922  INFO 81097 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.integration.config.IntegrationManagementConfiguration' of type [org.springframework.integration.config.IntegrationManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-07-09 17:42:45.929  INFO 81097 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration$IntegrationJmxConfiguration' of type [org.springframework.boot.autoconfigure.integration.IntegrationAutoConfiguration$IntegrationJmxConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-07-09 17:42:45.939  INFO 81097 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration' of type [org.springframework.boot.autoconfigure.jmx.JmxAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-07-09 17:42:45.944  INFO 81097 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'mbeanServer' of type [com.sun.jmx.mbeanserver.JmxMBeanServer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-07-09 17:42:45.966  INFO 81097 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'integrationChannelResolver' of type [org.springframework.integration.support.channel.BeanFactoryChannelResolver] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-07-09 17:42:45.968  INFO 81097 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'integrationDisposableAutoCreatedBeans' of type [org.springframework.integration.config.annotation.Disposables] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2023-07-09 17:42:46.434  INFO 81097 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8201 (http)
+2023-07-09 17:42:46.446  INFO 81097 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-09 17:42:46.446  INFO 81097 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2023-07-09 17:42:46.546  INFO 81097 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-09 17:42:46.546  INFO 81097 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2953 ms
+2023-07-09 17:42:52.106  INFO 81097 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-07-09 17:42:53.429  INFO 81097 --- [restartedMain] c.a.c.s.SentinelWebAutoConfiguration     : [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+2023-07-09 17:42:53.485 DEBUG 81097 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 35 mappings in 'requestMappingHandlerMapping'
+2023-07-09 17:42:53.592  INFO 81097 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+2023-07-09 17:42:53.620  WARN 81097 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2023-07-09 17:42:53.620  INFO 81097 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2023-07-09 17:42:53.628  WARN 81097 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2023-07-09 17:42:53.628  INFO 81097 --- [restartedMain] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2023-07-09 17:42:53.855  INFO 81097 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-07-09 17:42:53.872 DEBUG 81097 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-07-09 17:42:53.966 DEBUG 81097 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-07-09 17:42:53.985 DEBUG 81097 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-07-09 17:42:55.770  INFO 81097 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2023-07-09 17:42:55.815  INFO 81097 --- [restartedMain] onConfiguration$FunctionBindingRegistrar : Functional binding is disabled due to the presense of @EnableBinding annotation in your configuration
+2023-07-09 17:42:57.075  INFO 81097 --- [restartedMain] o.s.i.monitor.IntegrationMBeanExporter   : Registering MessageChannel nullChannel
+2023-07-09 17:42:57.177  INFO 81097 --- [restartedMain] o.s.i.monitor.IntegrationMBeanExporter   : Registering MessageChannel springCloudBusInput
+2023-07-09 17:42:57.541  INFO 81097 --- [restartedMain] o.s.i.monitor.IntegrationMBeanExporter   : Registering MessageChannel errorChannel
+2023-07-09 17:42:57.693  INFO 81097 --- [restartedMain] o.s.i.monitor.IntegrationMBeanExporter   : Registering MessageChannel springCloudBusOutput
+2023-07-09 17:42:57.763  INFO 81097 --- [restartedMain] o.s.i.monitor.IntegrationMBeanExporter   : Registering MessageHandler errorLogger
+2023-07-09 17:42:58.048  INFO 81097 --- [restartedMain] o.s.c.s.m.DirectWithAttributesChannel    : Channel 'application-1.springCloudBusInput' has 1 subscriber(s).
+2023-07-09 17:42:58.057  INFO 81097 --- [restartedMain] o.s.i.endpoint.EventDrivenConsumer       : Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2023-07-09 17:42:58.058  INFO 81097 --- [restartedMain] o.s.i.channel.PublishSubscribeChannel    : Channel 'application-1.errorChannel' has 1 subscriber(s).
+2023-07-09 17:42:58.059  INFO 81097 --- [restartedMain] o.s.i.endpoint.EventDrivenConsumer       : started bean '_org.springframework.integration.errorLogger'
+2023-07-09 17:42:58.063  INFO 81097 --- [restartedMain] o.s.c.s.binder.DefaultBinderFactory      : Creating binder: rabbit
+2023-07-09 17:43:03.811  INFO 81097 --- [restartedMain] o.s.c.s.binder.DefaultBinderFactory      : Caching the binder: rabbit
+2023-07-09 17:43:03.822  INFO 81097 --- [restartedMain] o.s.c.s.binder.DefaultBinderFactory      : Retrieving cached binder: rabbit
+2023-07-09 17:43:04.069  INFO 81097 --- [restartedMain] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.54.2:5672]
+2023-07-09 17:43:04.221  INFO 81097 --- [restartedMain] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#3998563:0/SimpleConnection@5037fe8b [delegate=amqp://guest@192.168.54.2:5672/, localPort= 64148]
+2023-07-09 17:43:04.365  INFO 81097 --- [restartedMain] o.s.c.s.m.DirectWithAttributesChannel    : Channel 'application-1.springCloudBusOutput' has 1 subscriber(s).
+2023-07-09 17:43:04.434  INFO 81097 --- [restartedMain] c.a.n.client.identify.CredentialWatcher  : null No credential found
+2023-07-09 17:43:04.801  INFO 81097 --- [restartedMain] com.alibaba.nacos.client.naming          : [LISTENER] adding DEFAULT_GROUP@@service-admin with DEFAULT to listener map
+2023-07-09 17:43:04.802  INFO 81097 --- [restartedMain] o.s.c.s.binder.DefaultBinderFactory      : Retrieving cached binder: rabbit
+2023-07-09 17:43:04.876  INFO 81097 --- [restartedMain] c.s.b.r.p.RabbitExchangeQueueProvisioner : declaring queue for inbound: springCloudBus.anonymous.3F4mHubrRs-5ALbXeheVog, bound to: springCloudBus
+2023-07-09 17:43:04.994  INFO 81097 --- [restartedMain] o.s.c.stream.binder.BinderErrorChannel   : Channel 'springCloudBus.anonymous.3F4mHubrRs-5ALbXeheVog.errors' has 1 subscriber(s).
+2023-07-09 17:43:04.994  INFO 81097 --- [restartedMain] o.s.c.stream.binder.BinderErrorChannel   : Channel 'springCloudBus.anonymous.3F4mHubrRs-5ALbXeheVog.errors' has 2 subscriber(s).
+2023-07-09 17:43:05.061  INFO 81097 --- [restartedMain] o.s.i.a.i.AmqpInboundChannelAdapter      : started bean 'inbound.springCloudBus.anonymous.3F4mHubrRs-5ALbXeheVog'
+2023-07-09 17:43:05.164  INFO 81097 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8201 (http) with context path ''
+2023-07-09 17:43:05.184  INFO 81097 --- [restartedMain] com.alibaba.nacos.client.naming          : [BEAT] adding beat: BeatInfo{port=8201, ip='172.16.2.196', weight=1.0, serviceName='DEFAULT_GROUP@@service-admin', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false} to beat map.
+2023-07-09 17:43:05.187  INFO 81097 --- [restartedMain] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] public registering service DEFAULT_GROUP@@service-admin with instance: Instance{instanceId='null', ip='172.16.2.196', port=8201, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={preserved.register.source=SPRING_CLOUD}}
+2023-07-09 17:43:05.193  INFO 81097 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : received push data: {"type":"dom","data":"{\"name\":\"DEFAULT_GROUP@@service-admin\",\"clusters\":\"DEFAULT\",\"cacheMillis\":10000,\"hosts\":[],\"lastRefTime\":1688920985187,\"checksum\":\"\",\"allIPs\":false,\"reachProtectionThreshold\":false,\"valid\":true}","lastRefTime":838863943924328} from /192.168.54.1
+2023-07-09 17:43:05.216  INFO 81097 --- [restartedMain] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP service-admin 172.16.2.196:8201 register finished
+2023-07-09 17:43:05.227  INFO 81097 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+2023-07-09 17:43:05.240  INFO 81097 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 2 custom documentation plugin(s)
+2023-07-09 17:43:05.348  INFO 81097 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2023-07-09 17:43:05.780  INFO 81097 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: addUsingPOST_1
+2023-07-09 17:43:05.785  INFO 81097 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_1
+2023-07-09 17:43:05.792  INFO 81097 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deletesUsingDELETE_1
+2023-07-09 17:43:05.797  INFO 81097 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUsingGET_1
+2023-07-09 17:43:05.800  INFO 81097 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : received push data: {"type":"dom","data":"{\"name\":\"DEFAULT_GROUP@@service-admin\",\"clusters\":\"DEFAULT\",\"cacheMillis\":10000,\"hosts\":[{\"instanceId\":\"172.16.2.196#8201#DEFAULT#DEFAULT_GROUP@@service-admin\",\"ip\":\"172.16.2.196\",\"port\":8201,\"weight\":1.0,\"healthy\":true,\"enabled\":true,\"ephemeral\":true,\"clusterName\":\"DEFAULT\",\"serviceName\":\"DEFAULT_GROUP@@service-admin\",\"metadata\":{\"preserved.register.source\":\"SPRING_CLOUD\"},\"instanceHeartBeatInterval\":5000,\"instanceHeartBeatTimeOut\":15000,\"ipDeleteTimeout\":30000}],\"lastRefTime\":1688920985797,\"checksum\":\"\",\"allIPs\":false,\"reachProtectionThreshold\":false,\"valid\":true}","lastRefTime":838864553362808} from /192.168.54.1
+2023-07-09 17:43:05.818  INFO 81097 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: pageListUsingGET_1
+2023-07-09 17:43:05.825  INFO 81097 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPUT_1
+2023-07-09 17:43:05.844  INFO 81097 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: addUsingPOST_2
+2023-07-09 17:43:05.850  INFO 81097 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_2
+2023-07-09 17:43:05.851  INFO 81097 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : new ips(1) service: DEFAULT_GROUP@@service-admin@@DEFAULT -> [{"instanceId":"172.16.2.196#8201#DEFAULT#DEFAULT_GROUP@@service-admin","ip":"172.16.2.196","port":8201,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@service-admin","metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]
+2023-07-09 17:43:05.862  INFO 81097 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deletesUsingDELETE_2
+2023-07-09 17:43:05.873  INFO 81097 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUsingGET_2
+2023-07-09 17:43:05.878  INFO 81097 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@service-admin@@DEFAULT -> [{"instanceId":"172.16.2.196#8201#DEFAULT#DEFAULT_GROUP@@service-admin","ip":"172.16.2.196","port":8201,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@service-admin","metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]
+2023-07-09 17:43:05.892  INFO 81097 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: pageListUsingGET_2
+2023-07-09 17:43:05.897  INFO 81097 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPUT_2
+2023-07-09 17:43:05.918  INFO 81097 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: addUsingPOST_3
+2023-07-09 17:43:05.925  INFO 81097 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deleteUsingDELETE_3
+2023-07-09 17:43:05.933  INFO 81097 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: deletesUsingDELETE_3
+2023-07-09 17:43:05.938  INFO 81097 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUsingGET_3
+2023-07-09 17:43:05.965  INFO 81097 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: pageListUsingGET_3
+2023-07-09 17:43:05.976  INFO 81097 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: updateUsingPUT_3
+2023-07-09 17:43:06.005  INFO 81097 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2023-07-09 17:43:06.107  INFO 81097 --- [restartedMain] o.wjy.gameforu.ServiceAdminApplication   : Started ServiceAdminApplication in 23.729 seconds (JVM running for 29.729)
+2023-07-09 17:43:23.707  INFO 81097 --- [http-nio-8201-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-09 17:43:23.709  INFO 81097 --- [http-nio-8201-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-07-09 17:43:23.710 DEBUG 81097 --- [http-nio-8201-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2023-07-09 17:43:23.777 DEBUG 81097 --- [http-nio-8201-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2023-07-09 17:43:23.778  INFO 81097 --- [http-nio-8201-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 69 ms
+2023-07-09 17:43:23.807 DEBUG 81097 --- [http-nio-8201-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/admin/genre/1/1", parameters={}
+2023-07-09 17:43:23.838 DEBUG 81097 --- [http-nio-8201-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.wjy.gameforu.admin2.controller.GenreController#pageList(Integer, Integer, GenreQueryVo)
+2023-07-09 17:43:27.086 DEBUG 81097 --- [http-nio-8201-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/admin/genre/1/1", parameters={}
+2023-07-09 17:43:27.088 DEBUG 81097 --- [http-nio-8201-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.wjy.gameforu.admin2.controller.GenreController#pageList(Integer, Integer, GenreQueryVo)
+2023-07-09 17:43:29.275  INFO 81097 --- [http-nio-8201-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-07-09 17:43:29.539  INFO 81097 --- [http-nio-8201-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-07-09 17:43:29.793 DEBUG 81097 --- [http-nio-8201-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.7, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-07-09 17:43:29.793 DEBUG 81097 --- [http-nio-8201-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.7, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-07-09 17:43:29.794 DEBUG 81097 --- [http-nio-8201-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing [Result(code=200, message=success, data=com.baomidou.mybatisplus.extension.plugins.pagination.Page@5f (truncated)...]
+2023-07-09 17:43:29.794 DEBUG 81097 --- [http-nio-8201-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [Result(code=200, message=success, data=com.baomidou.mybatisplus.extension.plugins.pagination.Page@51 (truncated)...]
+2023-07-09 17:43:29.820 DEBUG 81097 --- [http-nio-8201-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-09 17:43:29.820 DEBUG 81097 --- [http-nio-8201-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-09 17:43:29.926 DEBUG 81097 --- [http-nio-8201-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/admin/genre/1/1", parameters={}
+2023-07-09 17:43:29.927 DEBUG 81097 --- [http-nio-8201-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.wjy.gameforu.admin2.controller.GenreController#pageList(Integer, Integer, GenreQueryVo)
+2023-07-09 17:43:29.936 DEBUG 81097 --- [http-nio-8201-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-07-09 17:43:29.937 DEBUG 81097 --- [http-nio-8201-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing [Result(code=200, message=success, data=com.baomidou.mybatisplus.extension.plugins.pagination.Page@5e (truncated)...]
+2023-07-09 17:43:29.939 DEBUG 81097 --- [http-nio-8201-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-09 17:43:34.729 DEBUG 81097 --- [http-nio-8201-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/admin/genre/1/1", parameters={}
+2023-07-09 17:43:34.730 DEBUG 81097 --- [http-nio-8201-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.wjy.gameforu.admin2.controller.GenreController#pageList(Integer, Integer, GenreQueryVo)
+2023-07-09 17:43:34.739 DEBUG 81097 --- [http-nio-8201-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.7, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-07-09 17:43:34.739 DEBUG 81097 --- [http-nio-8201-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Writing [Result(code=200, message=success, data=com.baomidou.mybatisplus.extension.plugins.pagination.Page@33 (truncated)...]
+2023-07-09 17:43:34.740 DEBUG 81097 --- [http-nio-8201-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-09 17:43:34.834 DEBUG 81097 --- [http-nio-8201-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/admin/genre/1/1", parameters={}
+2023-07-09 17:43:34.835 DEBUG 81097 --- [http-nio-8201-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.wjy.gameforu.admin2.controller.GenreController#pageList(Integer, Integer, GenreQueryVo)
+2023-07-09 17:43:34.849 DEBUG 81097 --- [http-nio-8201-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-07-09 17:43:34.849 DEBUG 81097 --- [http-nio-8201-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Writing [Result(code=200, message=success, data=com.baomidou.mybatisplus.extension.plugins.pagination.Page@2d (truncated)...]
+2023-07-09 17:43:34.850 DEBUG 81097 --- [http-nio-8201-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-09 17:43:37.714 DEBUG 81097 --- [http-nio-8201-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/admin/genre/1/1", parameters={}
+2023-07-09 17:43:37.715 DEBUG 81097 --- [http-nio-8201-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.wjy.gameforu.admin2.controller.GenreController#pageList(Integer, Integer, GenreQueryVo)
+2023-07-09 17:43:37.723 DEBUG 81097 --- [http-nio-8201-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.7, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-07-09 17:43:37.724 DEBUG 81097 --- [http-nio-8201-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Writing [Result(code=200, message=success, data=com.baomidou.mybatisplus.extension.plugins.pagination.Page@4b (truncated)...]
+2023-07-09 17:43:37.725 DEBUG 81097 --- [http-nio-8201-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-09 17:43:37.778 DEBUG 81097 --- [http-nio-8201-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/admin/genre/1/1", parameters={}
+2023-07-09 17:43:37.779 DEBUG 81097 --- [http-nio-8201-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.wjy.gameforu.admin2.controller.GenreController#pageList(Integer, Integer, GenreQueryVo)
+2023-07-09 17:43:37.792 DEBUG 81097 --- [http-nio-8201-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-07-09 17:43:37.793 DEBUG 81097 --- [http-nio-8201-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Writing [Result(code=200, message=success, data=com.baomidou.mybatisplus.extension.plugins.pagination.Page@a3 (truncated)...]
+2023-07-09 17:43:37.794 DEBUG 81097 --- [http-nio-8201-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-09 17:43:54.462 DEBUG 81097 --- [http-nio-8201-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/admin/genre/1/2", parameters={}
+2023-07-09 17:43:54.471 DEBUG 81097 --- [http-nio-8201-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.wjy.gameforu.admin2.controller.GenreController#pageList(Integer, Integer, GenreQueryVo)
+2023-07-09 17:43:54.520 DEBUG 81097 --- [http-nio-8201-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.7, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-07-09 17:43:54.520 DEBUG 81097 --- [http-nio-8201-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Writing [Result(code=200, message=success, data=com.baomidou.mybatisplus.extension.plugins.pagination.Page@6a (truncated)...]
+2023-07-09 17:43:54.524 DEBUG 81097 --- [http-nio-8201-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-09 17:43:54.633 DEBUG 81097 --- [http-nio-8201-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/admin/genre/1/2", parameters={}
+2023-07-09 17:43:54.635 DEBUG 81097 --- [http-nio-8201-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.wjy.gameforu.admin2.controller.GenreController#pageList(Integer, Integer, GenreQueryVo)
+2023-07-09 17:43:54.654 DEBUG 81097 --- [http-nio-8201-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-07-09 17:43:54.654 DEBUG 81097 --- [http-nio-8201-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Writing [Result(code=200, message=success, data=com.baomidou.mybatisplus.extension.plugins.pagination.Page@5c (truncated)...]
+2023-07-09 17:43:54.655 DEBUG 81097 --- [http-nio-8201-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2023-07-09 17:49:27.402  INFO 81097 --- [SpringContextShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2023-07-09 17:49:28.429  INFO 81097 --- [SpringContextShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2023-07-09 17:49:28.434  INFO 81097 --- [SpringContextShutdownHook] o.s.i.a.i.AmqpInboundChannelAdapter      : stopped bean 'inbound.springCloudBus.anonymous.3F4mHubrRs-5ALbXeheVog'
+2023-07-09 17:49:28.671  INFO 81097 --- [SpringContextShutdownHook] o.s.i.monitor.IntegrationMBeanExporter   : Registering MessageChannel springCloudBus.anonymous.3F4mHubrRs-5ALbXeheVog.errors
+2023-07-09 17:49:29.096  INFO 81097 --- [SpringContextShutdownHook] o.s.c.stream.binder.BinderErrorChannel   : Channel 'application-1.springCloudBus.anonymous.3F4mHubrRs-5ALbXeheVog.errors' has 1 subscriber(s).
+2023-07-09 17:49:29.098  INFO 81097 --- [SpringContextShutdownHook] o.s.c.stream.binder.BinderErrorChannel   : Channel 'application-1.springCloudBus.anonymous.3F4mHubrRs-5ALbXeheVog.errors' has 0 subscriber(s).
+2023-07-09 17:49:29.110  INFO 81097 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : [LISTENER] removing DEFAULT_GROUP@@service-admin with DEFAULT from listener map
+2023-07-09 17:49:29.167  INFO 81097 --- [SpringContextShutdownHook] o.s.i.endpoint.EventDrivenConsumer       : Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2023-07-09 17:49:29.168  INFO 81097 --- [SpringContextShutdownHook] o.s.i.channel.PublishSubscribeChannel    : Channel 'application-1.errorChannel' has 0 subscriber(s).
+2023-07-09 17:49:29.168  INFO 81097 --- [SpringContextShutdownHook] o.s.i.endpoint.EventDrivenConsumer       : stopped bean '_org.springframework.integration.errorLogger'
+2023-07-09 17:49:29.174  INFO 81097 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2023-07-09 17:49:29.416  INFO 81097 --- [SpringContextShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+2023-07-09 17:49:29.417  INFO 81097 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : [BEAT] removing beat: DEFAULT_GROUP@@service-admin:172.16.2.196:8201 from beat map.
+2023-07-09 17:49:29.419  INFO 81097 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : [DEREGISTER-SERVICE] public deregistering service DEFAULT_GROUP@@service-admin with instance: Instance{instanceId='null', ip='172.16.2.196', port=8201, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={}}
+2023-07-09 17:49:29.467  INFO 81097 --- [SpringContextShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
+2023-07-09 17:49:29.472  INFO 81097 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown begin
+2023-07-09 17:49:30.102  INFO 81097 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : received push data: {"type":"dom","data":"{\"name\":\"DEFAULT_GROUP@@service-admin\",\"clusters\":\"DEFAULT\",\"cacheMillis\":10000,\"hosts\":[],\"lastRefTime\":1688921370064,\"checksum\":\"\",\"allIPs\":false,\"reachProtectionThreshold\":false,\"valid\":true}","lastRefTime":839248818026388} from /192.168.54.1
+2023-07-09 17:49:30.129  INFO 81097 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : removed ips(1) service: DEFAULT_GROUP@@service-admin@@DEFAULT -> [{"instanceId":"172.16.2.196#8201#DEFAULT#DEFAULT_GROUP@@service-admin","ip":"172.16.2.196","port":8201,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@service-admin","metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]
+2023-07-09 17:49:30.134  INFO 81097 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : current ips:(0) service: DEFAULT_GROUP@@service-admin@@DEFAULT -> []
+2023-07-09 17:49:31.350  INFO 81097 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown stop
+2023-07-09 17:49:31.357  INFO 81097 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.EventDispatcher do shutdown begin
+2023-07-09 17:49:34.366  INFO 81097 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.EventDispatcher do shutdown stop
+2023-07-09 17:49:34.371  INFO 81097 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.HostReactor do shutdown begin
+2023-07-09 17:49:36.813  INFO 81097 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.PushReceiver do shutdown begin
+2023-07-09 17:49:39.841  INFO 81097 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.PushReceiver do shutdown stop
+2023-07-09 17:49:39.869  INFO 81097 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown begin
+2023-07-09 17:49:39.874  INFO 81097 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown stop
+2023-07-09 17:49:39.875  INFO 81097 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.HostReactor do shutdown stop
+2023-07-09 17:49:39.876  INFO 81097 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.net.NamingProxy do shutdown begin
+2023-07-09 17:49:39.879  WARN 81097 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : [NamingHttpClientManager] Start destroying NacosRestTemplate
+2023-07-09 17:49:39.881  WARN 81097 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : [NamingHttpClientManager] Destruction of the end
+2023-07-09 17:49:39.882  INFO 81097 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.net.NamingProxy do shutdown stop
+2023-07-09 17:49:39.896  INFO 81097 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown begin
+2023-07-09 17:49:39.897  INFO 81097 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown stop
+2023-07-09 17:49:39.898  INFO 81097 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.EventDispatcher do shutdown begin
+2023-07-09 17:49:39.899  INFO 81097 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.EventDispatcher do shutdown stop
+2023-07-09 17:49:39.899  INFO 81097 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.HostReactor do shutdown begin
+2023-07-09 17:49:39.900  INFO 81097 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.PushReceiver do shutdown begin
+2023-07-09 17:49:39.968 ERROR 81097 --- [com.alibaba.nacos.naming.push.receiver] com.alibaba.nacos.client.naming          : [NA] error while receiving push data
+
+java.net.SocketException: Socket closed
+	at java.net.PlainDatagramSocketImpl.receive0(Native Method) ~[na:1.8.0_362]
+	at java.net.AbstractPlainDatagramSocketImpl.receive(AbstractPlainDatagramSocketImpl.java:143) ~[na:1.8.0_362]
+	at java.net.DatagramSocket.receive(DatagramSocket.java:812) ~[na:1.8.0_362]
+	at com.alibaba.nacos.client.naming.core.PushReceiver.run(PushReceiver.java:83) ~[nacos-client-1.3.2.jar:na]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_362]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_362]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_362]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_362]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_362]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_362]
+	at java.lang.Thread.run(Thread.java:750) [na:1.8.0_362]
+
+2023-07-09 17:49:39.980  INFO 81097 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.PushReceiver do shutdown stop
+2023-07-09 17:49:39.981  INFO 81097 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown begin
+2023-07-09 17:49:39.982  INFO 81097 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown stop
+2023-07-09 17:49:39.982  INFO 81097 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.HostReactor do shutdown stop
+2023-07-09 17:49:39.983  INFO 81097 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.net.NamingProxy do shutdown begin
+2023-07-09 17:49:39.983  WARN 81097 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : [NamingHttpClientManager] Start destroying NacosRestTemplate
+2023-07-09 17:49:39.983  WARN 81097 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : [NamingHttpClientManager] Destruction of the end
+2023-07-09 17:49:39.983  INFO 81097 --- [SpringContextShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.net.NamingProxy do shutdown stop
+2023-07-09 17:49:40.148  INFO 81097 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2023-07-09 17:49:40.153  INFO 81097 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-07-09 17:49:40.320  INFO 81097 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-07-09 17:49:40.334  INFO 81097 --- [SpringContextShutdownHook] o.s.i.monitor.IntegrationMBeanExporter   : Summary on shutdown: nullChannel
+2023-07-09 17:49:40.334  INFO 81097 --- [SpringContextShutdownHook] o.s.i.monitor.IntegrationMBeanExporter   : Summary on shutdown: bean 'springCloudBusInput'
+2023-07-09 17:49:40.335  INFO 81097 --- [SpringContextShutdownHook] o.s.i.monitor.IntegrationMBeanExporter   : Summary on shutdown: bean 'errorChannel'
+2023-07-09 17:49:40.335  INFO 81097 --- [SpringContextShutdownHook] o.s.i.monitor.IntegrationMBeanExporter   : Summary on shutdown: bean 'springCloudBusOutput'
+2023-07-09 17:49:40.337  INFO 81097 --- [SpringContextShutdownHook] o.s.i.monitor.IntegrationMBeanExporter   : Summary on shutdown: bean '_org.springframework.integration.errorLogger.handler' for component '_org.springframework.integration.errorLogger'

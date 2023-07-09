@@ -1,0 +1,21 @@
+server:
+  port: 8200
+
+spring:
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      routes:
+        - id: service-admin
+          #lb: loadbalance
+          uri: lb://service-admin
+          predicates:
+            - Path=/admin/**
+            - Path=api/game/**
+
+        - id: service-search
+          uri: lb://service-search
+          predicates:
+            - Path=/*/search/**
