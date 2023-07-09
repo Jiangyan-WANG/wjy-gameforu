@@ -1,6 +1,6 @@
 package org.wjy.gameforu.admin2.mapper;
 
-import org.wjy.gameforu.admin2.entity.Role;
+import org.wjy.gameforu.model.entity.Role;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 /**

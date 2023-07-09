@@ -1,6 +1,6 @@
 package org.wjy.gameforu.admin2.service.impl;
 
-import org.wjy.gameforu.admin2.entity.Prefer;
+import org.wjy.gameforu.model.entity.Prefer;
 import org.wjy.gameforu.admin2.mapper.PreferMapper;
 import org.wjy.gameforu.admin2.service.PreferService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;

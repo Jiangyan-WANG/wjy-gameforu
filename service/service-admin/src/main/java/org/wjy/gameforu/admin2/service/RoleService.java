@@ -2,10 +2,9 @@ package org.wjy.gameforu.admin2.service;
 
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import org.wjy.gameforu.admin2.entity.Game;
-import org.wjy.gameforu.admin2.entity.Role;
+import org.wjy.gameforu.model.entity.Role;
 import com.baomidou.mybatisplus.extension.service.IService;
-import org.wjy.gameforu.vo.gameforu.RoleQueryVo;
+import org.wjy.gameforu.vo.RoleQueryVo;
 
 import java.util.List;
 

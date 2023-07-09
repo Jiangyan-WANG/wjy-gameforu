@@ -6,14 +6,14 @@ import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.util.StringUtils;
-import org.wjy.gameforu.admin2.entity.Genre;
+import org.wjy.gameforu.model.entity.Genre;
 import org.wjy.gameforu.admin2.mapper.GenreMapper;
 import org.wjy.gameforu.admin2.service.GameGenreService;
 import org.wjy.gameforu.admin2.service.GenreService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
-import org.wjy.gameforu.admin2.entity.GameGenre;
-import org.wjy.gameforu.vo.gameforu.GenreQueryVo;
+import org.wjy.gameforu.model.entity.GameGenre;
+import org.wjy.gameforu.vo.GenreQueryVo;
 
 import java.util.ArrayList;
 import java.util.HashMap;

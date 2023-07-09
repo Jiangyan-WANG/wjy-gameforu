@@ -2,9 +2,9 @@ package org.wjy.gameforu.admin2.service;
 
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import org.wjy.gameforu.admin2.entity.User;
+import org.wjy.gameforu.model.entity.User;
 import com.baomidou.mybatisplus.extension.service.IService;
-import org.wjy.gameforu.vo.gameforu.UserQueryVo;
+import org.wjy.gameforu.vo.UserQueryVo;
 
 import java.util.List;
 import java.util.Map;

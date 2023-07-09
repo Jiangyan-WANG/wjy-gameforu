@@ -1,6 +1,6 @@
 package org.wjy.gameforu.admin2.service;
 
-import org.wjy.gameforu.admin2.entity.Follower;
+import org.wjy.gameforu.model.entity.Follower;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**

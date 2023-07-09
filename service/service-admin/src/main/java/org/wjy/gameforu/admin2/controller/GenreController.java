@@ -8,10 +8,10 @@ import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import org.wjy.gameforu.admin2.entity.Genre;
+import org.wjy.gameforu.model.entity.Genre;
 import org.wjy.gameforu.admin2.service.GenreService;
 import org.wjy.gameforu.common.result.Result;
-import org.wjy.gameforu.vo.gameforu.GenreQueryVo;
+import org.wjy.gameforu.vo.GenreQueryVo;
 
 import java.util.List;
 

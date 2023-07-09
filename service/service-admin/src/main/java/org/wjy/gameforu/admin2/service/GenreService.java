@@ -2,9 +2,9 @@ package org.wjy.gameforu.admin2.service;
 
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import org.wjy.gameforu.admin2.entity.Genre;
+import org.wjy.gameforu.model.entity.Genre;
 import com.baomidou.mybatisplus.extension.service.IService;
-import org.wjy.gameforu.vo.gameforu.GenreQueryVo;
+import org.wjy.gameforu.vo.GenreQueryVo;
 
 import java.util.Map;
 

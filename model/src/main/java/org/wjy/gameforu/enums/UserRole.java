@@ -9,8 +9,8 @@ import lombok.Getter;
 @JSONType(serializer = EnumSerializer.class, deserializer = EnumDeserializer.class, serializeEnumAsJavaBean = true)
 @Getter
 public enum UserRole {
-    Admin(0, "管理员"),
-    User(1,"普通用户");
+    Admin(0, "admin"),
+    User(1,"user");
 
     @EnumValue
     Integer code;

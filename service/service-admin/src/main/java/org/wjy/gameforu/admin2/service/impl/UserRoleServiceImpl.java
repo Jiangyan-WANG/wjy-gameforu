@@ -1,7 +1,7 @@
 package org.wjy.gameforu.admin2.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
-import org.wjy.gameforu.admin2.entity.UserRole;
+import org.wjy.gameforu.model.entity.UserRole;
 import org.wjy.gameforu.admin2.mapper.UserRoleMapper;
 import org.wjy.gameforu.admin2.service.UserRoleService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;

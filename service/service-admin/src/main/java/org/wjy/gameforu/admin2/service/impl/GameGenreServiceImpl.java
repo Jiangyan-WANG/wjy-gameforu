@@ -1,6 +1,6 @@
 package org.wjy.gameforu.admin2.service.impl;
 
-import org.wjy.gameforu.admin2.entity.GameGenre;
+import org.wjy.gameforu.model.entity.GameGenre;
 import org.wjy.gameforu.admin2.mapper.GameGenreMapper;
 import org.wjy.gameforu.admin2.service.GameGenreService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;

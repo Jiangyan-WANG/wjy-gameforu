@@ -4,12 +4,12 @@ import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import org.springframework.util.StringUtils;
-import org.wjy.gameforu.admin2.entity.Game;
+import org.wjy.gameforu.model.entity.Game;
 import org.wjy.gameforu.admin2.mapper.GameMapper;
 import org.wjy.gameforu.admin2.service.GameService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
-import org.wjy.gameforu.vo.gameforu.GameQueryVo;
+import org.wjy.gameforu.vo.GameQueryVo;
 
 /**
  * <p>

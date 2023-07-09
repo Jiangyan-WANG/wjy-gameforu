@@ -1,6 +1,6 @@
 package org.wjy.gameforu.admin2.service;
 
-import org.wjy.gameforu.admin2.entity.Tag;
+import org.wjy.gameforu.model.entity.Tag;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**

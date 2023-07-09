@@ -1,6 +1,6 @@
 package org.wjy.gameforu.admin2.service.impl;
 
-import org.wjy.gameforu.admin2.entity.ReplyComment;
+import org.wjy.gameforu.model.entity.ReplyComment;
 import org.wjy.gameforu.admin2.mapper.ReplyCommentMapper;
 import org.wjy.gameforu.admin2.service.ReplyCommentService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;

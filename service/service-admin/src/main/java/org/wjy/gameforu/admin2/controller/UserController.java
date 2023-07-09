@@ -8,11 +8,11 @@ import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import org.wjy.gameforu.admin2.entity.User;
+import org.wjy.gameforu.model.entity.User;
 import org.wjy.gameforu.admin2.service.UserService;
 import org.wjy.gameforu.common.result.Result;
 import org.wjy.gameforu.common.utils.MD5;
-import org.wjy.gameforu.vo.gameforu.UserQueryVo;
+import org.wjy.gameforu.vo.UserQueryVo;
 
 import java.util.List;
 import java.util.Map;

@@ -1,0 +1,38 @@
+version: '3'
+
+services:
+  nacos:
+    image: nacos/nacos-server:2.0.3
+    container_name: nacos
+    ports:
+      - 38848:8848
+    volumes:
+#      run in linux virtual env
+      - /home/wjy/docker:/home/nacos/init.d
+    command: "nacos-server.sh -m standalone"
+  redis:
+    image: redis:5.0.5
+    container_name: redis
+    ports:
+      - 6379:6379
+
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.10.1
+    container_name: elasticsearch
+    ports:
+      - 9200:9200
+
+  kibana:
+    image: docker.elastic.co/kibana/kibana:7.10.1
+    container_name: kibana
+    ports:
+      - 5601:5601
+    environment:
+      - ELASTICSEARCH_HOSTS=http://elasticsearch:9200
+
+  rabbitmq:
+    image: rabbitmq:3.8.9
+    container_name: rabbitmq
+    ports:
+      - 5672:5672
+      - 15672:15672

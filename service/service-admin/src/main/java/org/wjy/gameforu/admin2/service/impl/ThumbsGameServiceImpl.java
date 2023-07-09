@@ -1,6 +1,6 @@
 package org.wjy.gameforu.admin2.service.impl;
 
-import org.wjy.gameforu.admin2.entity.ThumbsGame;
+import org.wjy.gameforu.model.entity.ThumbsGame;
 import org.wjy.gameforu.admin2.mapper.ThumbsGameMapper;
 import org.wjy.gameforu.admin2.service.ThumbsGameService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;

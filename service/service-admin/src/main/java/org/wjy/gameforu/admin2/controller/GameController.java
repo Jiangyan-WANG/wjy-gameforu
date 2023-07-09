@@ -9,12 +9,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
 import org.springframework.web.bind.annotation.*;
 
-import org.wjy.gameforu.admin2.entity.Game;
+import org.wjy.gameforu.model.entity.Game;
 import org.wjy.gameforu.admin2.service.GameService;
 import org.wjy.gameforu.admin2.service.GenreService;
 import org.wjy.gameforu.common.result.Result;
-import org.wjy.gameforu.model.gameforu.SteamGame;
-import org.wjy.gameforu.vo.gameforu.GameQueryVo;
+import org.wjy.gameforu.model.external.SteamGame;
+import org.wjy.gameforu.vo.GameQueryVo;
 
 import java.util.List;
 import java.util.Map;

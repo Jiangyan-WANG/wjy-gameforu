@@ -7,10 +7,10 @@ import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import org.wjy.gameforu.admin2.entity.Role;
+import org.wjy.gameforu.model.entity.Role;
 import org.wjy.gameforu.admin2.service.RoleService;
 import org.wjy.gameforu.common.result.Result;
-import org.wjy.gameforu.vo.gameforu.RoleQueryVo;
+import org.wjy.gameforu.vo.RoleQueryVo;
 
 import java.util.List;
 
