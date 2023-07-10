@@ -33,7 +33,6 @@ import java.util.Map;
 @RequestMapping("/admin/game")
 @Slf4j
 @Api(tags = "game management")
-@CrossOrigin
 public class GameController {
 
     /**

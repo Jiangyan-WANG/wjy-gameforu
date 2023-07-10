@@ -7,6 +7,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="service-permission" />
         <module name="common-util" />
         <module name="service-gateway" />
         <module name="rabbit-util" />
@@ -27,6 +28,7 @@
       <module name="service-admin" options="-parameters" />
       <module name="service-game-client" options="-parameters" />
       <module name="service-gateway" options="-parameters" />
+      <module name="service-permission" options="-parameters" />
       <module name="service-search" options="-parameters" />
       <module name="service-util" options="-parameters" />
     </option>

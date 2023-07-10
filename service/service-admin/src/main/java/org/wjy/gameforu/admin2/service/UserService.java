@@ -4,6 +4,7 @@ import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import org.wjy.gameforu.model.entity.User;
 import com.baomidou.mybatisplus.extension.service.IService;
+import org.wjy.gameforu.vo.LoginDataVo;
 import org.wjy.gameforu.vo.UserQueryVo;
 
 import java.util.List;
@@ -29,4 +30,6 @@ public interface UserService extends IService<User> {
     Map<String, Object> getRolesByUserId(Integer id);
 
     Boolean setRoles(Integer id, List<Integer> roleIds);
+
+    Map<String, Object> loginCheck(LoginDataVo loginDataVo);
 }

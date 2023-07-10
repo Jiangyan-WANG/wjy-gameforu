@@ -4,7 +4,11 @@ import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.util.StringUtils;
+import org.wjy.gameforu.common.utils.JwtHelper;
+import org.wjy.gameforu.common.utils.MD5;
+import org.wjy.gameforu.enums.RedisConst;
 import org.wjy.gameforu.model.entity.Role;
 import org.wjy.gameforu.model.entity.User;
 import org.wjy.gameforu.model.entity.UserRole;
@@ -14,6 +18,7 @@ import org.wjy.gameforu.admin2.service.UserRoleService;
 import org.wjy.gameforu.admin2.service.UserService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
+import org.wjy.gameforu.vo.LoginDataVo;
 import org.wjy.gameforu.vo.UserQueryVo;
 
 import java.util.ArrayList;
@@ -95,6 +100,34 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
         }
         boolean is_succeed = userRoleService.saveBatch(userRoleList);
         return is_succeed;
+    }
+
+    /**
+     * return
+     * {
+     *     "pass":"yes"/"no",
+     *     "token":"sdfaegag"/null
+     * }
+     *
+     * @param loginDataVo
+     * @return
+     */
+    @Override
+    public Map<String, Object> loginCheck(LoginDataVo loginDataVo) {
+        LambdaQueryWrapper<User> wrapper = new LambdaQueryWrapper<>();
+        wrapper.eq(User::getUsername,loginDataVo.getUsername()) // check username
+                .eq(User::getPassword, MD5.encrypt(loginDataVo.getPassword())); // check password
+        User user = baseMapper.selectOne(wrapper);
+        Map<String, Object> res = new HashMap<>();
+        if(user!=null){
+            res.put("pass","yes");
+            String token = JwtHelper.createToken(user.getId().longValue(), user.getUsername());
+            res.put("token",token);
+            res.put("user",user);
+        }else{
+            res.put("pass","no");
+        }
+        return res;
     }
 
 

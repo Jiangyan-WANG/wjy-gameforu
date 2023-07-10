@@ -13,8 +13,14 @@ spring:
           uri: lb://service-admin
           predicates:
             - Path=/admin/**
+            - Path=api/game/**
 
         - id: service-search
           uri: lb://service-search
           predicates:
             - Path=/*/search/**
+
+        - id: service-permission
+          uri: lb://service-permission
+          predicates:
+            - Path=/permission/**

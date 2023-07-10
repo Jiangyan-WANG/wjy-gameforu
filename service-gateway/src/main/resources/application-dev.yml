@@ -19,3 +19,8 @@ spring:
           uri: lb://service-search
           predicates:
             - Path=/*/search/**
+
+        - id: service-permission
+          uri: lb://service-permission
+          predicates:
+            - Path=/permission/**
