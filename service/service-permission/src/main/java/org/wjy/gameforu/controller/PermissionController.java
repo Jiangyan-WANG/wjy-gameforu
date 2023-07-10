@@ -43,7 +43,7 @@ public class PermissionController {
             User user = (User) res.get("user");
             String token = (String) res.get("token");
             redisTemplate.opsForValue().set(RedisConst.USER_LOGIN_KEY_PREFIX+user.getId(),
-                    token);
+                    loginDataVo);
             return Result.ok(token);
         }else{
             return Result.fail(null);
