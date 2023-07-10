@@ -7,7 +7,7 @@ import org.wjy.gameforu.model.entity.Game;
 
 /**
  * feign client for rpc
- * value is application name: application.yml
+ * value is application name: application.yml or discovery name
  */
 
 @FeignClient(value = "service-admin")
@@ -21,6 +21,6 @@ public interface GameFeignClient {
      * @param gameId
      * @return
      */
-    @GetMapping("/api/game/inner/getgameinfo/{gameId}")
+    @GetMapping("/api/admin/game/inner/getgameinfo/{gameId}")
     public Game getGameInfo(@PathVariable("gameId") Integer gameId);
 }

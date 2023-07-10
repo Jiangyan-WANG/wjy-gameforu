@@ -13,7 +13,7 @@ import org.wjy.gameforu.model.entity.Game;
  * inner api for elasticsearch or others
  */
 @RestController
-@RequestMapping("/api/game")
+@RequestMapping("/api/admin/game")
 public class GameInnerController {
 
     @Autowired

@@ -24,7 +24,7 @@ import java.util.List;
  */
 @Api(tags = "role management")
 @RestController
-@RequestMapping("/admin/role")
+@RequestMapping("/role/admin")
 public class RoleController {
 
     @Autowired

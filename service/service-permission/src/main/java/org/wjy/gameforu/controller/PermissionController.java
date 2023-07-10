@@ -7,8 +7,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.web.bind.annotation.*;
 import org.wjy.gameforu.admin2.service.UserService;
+import org.wjy.gameforu.common.constant.RedisConst;
 import org.wjy.gameforu.common.result.Result;
-import org.wjy.gameforu.enums.RedisConst;
 import org.wjy.gameforu.model.entity.User;
 import org.wjy.gameforu.vo.LoginDataVo;
 
@@ -25,9 +25,9 @@ import java.util.Map;
  * @since 2023-07-09
  */
 @RestController
-@RequestMapping("/permission")
+@RequestMapping("/user/permission")
 @Slf4j
-@Api(tags = "permission control")
+@Api(tags = "user permission control")
 public class PermissionController {
     @Autowired
     UserService userService;

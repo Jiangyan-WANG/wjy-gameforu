@@ -30,7 +30,7 @@ import java.util.Map;
  * @since 2023-07-07
  */
 @RestController
-@RequestMapping("/admin/game")
+@RequestMapping("/game/admin")
 @Slf4j
 @Api(tags = "game management")
 public class GameController {

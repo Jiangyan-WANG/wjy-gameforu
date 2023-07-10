@@ -24,7 +24,7 @@ import java.util.List;
  * @since 2023-07-07
  */
 @RestController
-@RequestMapping("/admin/genre")
+@RequestMapping("/genre/admin")
 @Api(tags = "genre management")
 @CrossOrigin
 public class GenreController {
