@@ -12,8 +12,7 @@ spring:
           #lb: loadbalance
           uri: lb://service-admin
           predicates:
-            - Path=/admin/**
-            - Path=api/game/**
+            - Path=/*/admin/**
 
         - id: service-search
           uri: lb://service-search
@@ -23,4 +22,4 @@ spring:
         - id: service-permission
           uri: lb://service-permission
           predicates:
-            - Path=/permission/**
+            - Path=/*/permission/**

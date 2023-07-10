@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.*;
 import org.wjy.gameforu.admin2.service.UserService;
 import org.wjy.gameforu.common.constant.RedisConst;
 import org.wjy.gameforu.common.result.Result;
+import org.wjy.gameforu.common.utils.MD5;
 import org.wjy.gameforu.model.entity.User;
 import org.wjy.gameforu.vo.LoginDataVo;
 
@@ -42,6 +43,7 @@ public class PermissionController {
         if(res.get("pass").equals("yes")){
             User user = (User) res.get("user");
             String token = (String) res.get("token");
+            loginDataVo.setPassword(MD5.encrypt(loginDataVo.getPassword()));
             redisTemplate.opsForValue().set(RedisConst.USER_LOGIN_KEY_PREFIX+user.getId(),
                     loginDataVo);
             return Result.ok(token);

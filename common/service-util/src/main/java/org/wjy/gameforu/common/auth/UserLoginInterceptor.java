@@ -35,7 +35,7 @@ public class UserLoginInterceptor implements HandlerInterceptor {
     private void getUserLoginInfo(HttpServletRequest request) {
         // get token from header
         String token = request.getHeader("token");
-        log.debug("test interceptor: token");
+        log.info("test interceptor: token");
         // get userId from token
         if(!StringUtils.isEmpty(token)){
             Long userId = JwtHelper.getUserId(token);
@@ -46,9 +46,8 @@ public class UserLoginInterceptor implements HandlerInterceptor {
             if(loginDataVo!=null){
                 AuthContextHolder.setUserId(userId.intValue());
                 AuthContextHolder.setUsername(loginDataVo.getUsername());
-                log.debug("test interceptor: " + AuthContextHolder.getUserId());
-                log.debug("test interceptor: " + AuthContextHolder.getUsername());
-
+                log.info("test interceptor: " + AuthContextHolder.getUserId());
+                log.info("test interceptor: " + AuthContextHolder.getUsername());
             }
         }
 

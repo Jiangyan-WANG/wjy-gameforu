@@ -76,7 +76,7 @@ public class Swagger2Config {
                 .select()
                 // only show path with /admin/
                 .apis(RequestHandlerSelectors.basePackage("org.wjy.gameforu"))
-                .paths(PathSelectors.regex("/admin/.*"))
+                .paths(PathSelectors.regex("/.*/admin/.*"))
                 .build()
                 .globalOperationParameters(pars);
         return adminApi;
@@ -105,7 +105,7 @@ public class Swagger2Config {
                 .select()
                 // only show path with /admin/
                 .apis(RequestHandlerSelectors.basePackage("org.wjy.gameforu"))
-                .paths(PathSelectors.regex("/permission/.*"))
+                .paths(PathSelectors.regex("/.*/permission/.*"))
                 .build()
                 .globalOperationParameters(pars);
         return permissionApi;
