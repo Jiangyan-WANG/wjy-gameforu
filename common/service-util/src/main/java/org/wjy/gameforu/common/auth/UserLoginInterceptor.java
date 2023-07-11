@@ -8,6 +8,7 @@ import org.springframework.web.servlet.HandlerInterceptor;
 import org.wjy.gameforu.common.constant.RedisConst;
 import org.wjy.gameforu.common.utils.JwtHelper;
 import org.wjy.gameforu.vo.LoginDataVo;
+import org.wjy.gameforu.vo.UserInfoResponseVo;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -40,12 +41,13 @@ public class UserLoginInterceptor implements HandlerInterceptor {
         if(!StringUtils.isEmpty(token)){
             Long userId = JwtHelper.getUserId(token);
             // get userInfo by userId from redis
-            LoginDataVo loginDataVo = (LoginDataVo) redisTemplate.opsForValue().get(
+            UserInfoResponseVo userInfoResponseVo =  (UserInfoResponseVo) redisTemplate.opsForValue().get(
                     RedisConst.USER_LOGIN_KEY_PREFIX + userId);
             // set userInfo to ThreadLocal
-            if(loginDataVo!=null){
+            if(userInfoResponseVo!=null){
                 AuthContextHolder.setUserId(userId.intValue());
-                AuthContextHolder.setUsername(loginDataVo.getUsername());
+                AuthContextHolder.setUsername(userInfoResponseVo.getUsername());
+                AuthContextHolder.setAvatar(userInfoResponseVo.getAvatar());
                 log.info("test interceptor: " + AuthContextHolder.getUserId());
                 log.info("test interceptor: " + AuthContextHolder.getUsername());
             }

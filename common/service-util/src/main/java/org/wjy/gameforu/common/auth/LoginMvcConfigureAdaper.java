@@ -26,7 +26,7 @@ public class LoginMvcConfigureAdaper extends WebMvcConfigurationSupport  {
 
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
-        List<String> excludePath = new ArrayList<>();
+//        List<String> excludePath = new ArrayList<>();
 //        excludePath.add("/*/permission/login/**");
 //        // exclude swagger2 related path
 ////        "/swagger-ui.html", "/webjars/**", "/v2/**", "/swagger-resources/**"
@@ -36,7 +36,7 @@ public class LoginMvcConfigureAdaper extends WebMvcConfigurationSupport  {
 //        excludePath.add("/swagger-resources/**");
         registry.addInterceptor(new UserLoginInterceptor(redisTemplate))
                 .addPathPatterns("/**")
-                .excludePathPatterns("/*/permission/login/**", "/error");
+                .excludePathPatterns("/*/permission/login/**", "/error", "/*/search/**");
         super.addInterceptors(registry);
     }
 

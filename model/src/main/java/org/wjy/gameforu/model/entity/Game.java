@@ -48,6 +48,8 @@ public class Game implements Serializable {
 
     private String description;
 
+    private String logourl;
+
     private LocalDateTime addTime;
 
 

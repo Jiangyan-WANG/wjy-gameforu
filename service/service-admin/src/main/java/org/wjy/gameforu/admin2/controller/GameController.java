@@ -101,14 +101,18 @@ public class GameController {
                     }catch (Exception e){
 //                System.out.println(e.getMessage());
                         log.warn(e.getMessage());
+                        // send to rabbit mq to add to elasticsearch db
+                        Integer gameid = gameService.getIdByAppid(game.getAppid());
+                        sendToAddMq(gameid);
                         continue;
                     }
                     if(is_succeed){
                         // send gameid to rabbitmq
-                        Integer gameid = gameService.getIdByAppid(game.getAppid());
-                        sendToAddMq(gameid);
                         count++;
                     }
+                    // send to rabbit mq to add to elasticsearch db
+                    Integer gameid = gameService.getIdByAppid(game.getAppid());
+                    sendToAddMq(gameid);
                 }
                 log.debug("add total: " + count);
             }
@@ -163,7 +167,7 @@ public class GameController {
             return Result.fail(null);
         }
     }
-    //4 update user
+    //4 update game
     @ApiOperation("update game")
     @PutMapping("update")
     public Result update(@RequestBody Game game){

@@ -112,6 +112,34 @@ public class Swagger2Config {
     }
 
     /**
+     * api config for permission
+     * @return
+     */
+    @Bean
+    public Docket searchApiConfig(){
+        List<Parameter> pars = new ArrayList<>();
+        ParameterBuilder tokenPar = new ParameterBuilder();
+        tokenPar.name("searchId")
+                .description("用户token")
+                .defaultValue("1")
+                .modelRef(new ModelRef("string"))
+                .parameterType("header")
+                .required(false)
+                .build();
+        pars.add(tokenPar.build());
+
+        Docket searchApi = new Docket(DocumentationType.SWAGGER_2)
+                .groupName("searchApi")
+                .apiInfo(searchApiInfo())
+                .select()
+                // only show path with /admin/
+                .apis(RequestHandlerSelectors.basePackage("org.wjy.gameforu"))
+                .paths(PathSelectors.regex("/.*/search/.*"))
+                .build()
+                .globalOperationParameters(pars);
+        return searchApi;
+    }
+    /**
      * api info
      * @return
      */
@@ -143,6 +171,19 @@ public class Swagger2Config {
      * @return
      */
     private ApiInfo permissionApiInfo(){
+        return new ApiInfoBuilder()
+                .title("后台管理系统-API文档")
+                .description("本文档描述了GameForU后台系统服务接口定义")
+                .version("1.0")
+                .contact(new Contact("J Wang", "", "jxw1466@alumni.bham.ac.uk"))
+                .build();
+    }
+
+    /**
+     * api search
+     * @return
+     */
+    private ApiInfo searchApiInfo(){
         return new ApiInfoBuilder()
                 .title("后台管理系统-API文档")
                 .description("本文档描述了GameForU后台系统服务接口定义")

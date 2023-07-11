@@ -7,11 +7,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.web.bind.annotation.*;
 import org.wjy.gameforu.admin2.service.UserService;
+import org.wjy.gameforu.common.auth.AuthContextHolder;
 import org.wjy.gameforu.common.constant.RedisConst;
 import org.wjy.gameforu.common.result.Result;
-import org.wjy.gameforu.common.utils.MD5;
 import org.wjy.gameforu.model.entity.User;
 import org.wjy.gameforu.vo.LoginDataVo;
+import org.wjy.gameforu.vo.UserInfoResponseVo;
 
 import javax.annotation.Resource;
 import java.util.HashMap;
@@ -43,9 +44,21 @@ public class PermissionController {
         if(res.get("pass").equals("yes")){
             User user = (User) res.get("user");
             String token = (String) res.get("token");
-            loginDataVo.setPassword(MD5.encrypt(loginDataVo.getPassword()));
+
+            // contruct user info data
+            UserInfoResponseVo userInfoResponseVo = new UserInfoResponseVo();
+            userInfoResponseVo.setUsername(user.getUsername());
+            // set avatar: example John Smith--->>>JS
+            String[] avatarContructor = user.getUsername().trim().split(" ");
+            String avatar ="";
+            for (String s : avatarContructor) {
+                avatar+=s.toUpperCase().charAt(0);
+            }
+            userInfoResponseVo.setAvatar(avatar);
+            // save user info to redis
             redisTemplate.opsForValue().set(RedisConst.USER_LOGIN_KEY_PREFIX+user.getId(),
-                    loginDataVo);
+                    userInfoResponseVo);
+
             return Result.ok(token);
         }else{
             return Result.fail(null);
@@ -61,9 +74,10 @@ public class PermissionController {
     @ApiOperation("info")
     @GetMapping("info")
     public Result info(){
-        Map<String,String> res = new HashMap<>();
-        res.put("username","test");
-        res.put("avatar","/");
-        return Result.ok(res);
+        UserInfoResponseVo userInfoResponseVo = new UserInfoResponseVo();
+        userInfoResponseVo.setUsername(AuthContextHolder.getUsername());
+        userInfoResponseVo.setAvatar(AuthContextHolder.getAvatar());
+
+        return Result.ok(userInfoResponseVo);
     }
 }
