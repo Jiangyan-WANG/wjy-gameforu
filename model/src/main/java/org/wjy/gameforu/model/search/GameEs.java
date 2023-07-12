@@ -13,6 +13,6 @@ public class GameEs {
     @Id
     Integer id;
 
-    @Field(type = FieldType.Text, analyzer = "ik_max_word")
+    @Field(type = FieldType.Text, analyzer = "ik_smart")
     String keyword;
 }
