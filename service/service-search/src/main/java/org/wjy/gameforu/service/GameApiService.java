@@ -2,6 +2,8 @@ package org.wjy.gameforu.service;
 
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
+import org.springframework.data.elasticsearch.core.SearchHit;
+import org.springframework.data.elasticsearch.core.SearchHits;
 import org.wjy.gameforu.model.search.GameEs;
 
 import java.util.List;
@@ -17,5 +19,5 @@ public interface GameApiService {
      * @param keyword
      * @return
      */
-    Page<GameEs> getSuggestGame(String keyword, Pageable pageable);
+    Page<SearchHit<GameEs>> getSuggestGame(String keyword, Pageable pageable);
 }

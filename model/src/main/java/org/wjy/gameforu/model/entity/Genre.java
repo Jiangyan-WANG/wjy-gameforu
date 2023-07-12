@@ -25,5 +25,5 @@ public class Genre implements Serializable {
 
     private String genrename;
 
-
+    private String logourl;
 }

@@ -7,6 +7,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
+import org.springframework.data.elasticsearch.core.SearchHit;
+import org.springframework.data.elasticsearch.core.SearchHits;
 import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.*;
 import org.wjy.gameforu.common.result.Result;
@@ -32,7 +34,7 @@ public class GameSearchController {
         if(StringUtils.isEmpty(keyword)) {
             return Result.ok(null);
         }else {
-            Page<GameEs> suggestGames = gameApiService.getSuggestGame(keyword, pageable);
+            Page<SearchHit<GameEs>> suggestGames = gameApiService.getSuggestGame(keyword, pageable);
             return Result.ok(suggestGames);
         }
     }

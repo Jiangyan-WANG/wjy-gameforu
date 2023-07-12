@@ -11,8 +11,9 @@ import org.springframework.data.elasticsearch.annotations.FieldType;
 public class GameEs {
 
     @Id
-    Integer id;
+    String id; //must be string
 
     @Field(type = FieldType.Text, analyzer = "ik_smart")
     String keyword;
+
 }
