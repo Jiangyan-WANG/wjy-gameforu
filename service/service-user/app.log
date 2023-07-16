@@ -571,3 +571,26 @@ Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No q
 2023-07-17 00:33:50.987 DEBUG 61986 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Writing [Result(code=201, message=fail, data=null)]
 2023-07-17 00:33:51.001 DEBUG 61986 --- [SpringContextShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@7ee55e70, started on Mon Jul 17 00:33:48 BST 2023, parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@37efd131
 2023-07-17 00:33:51.004  INFO 61986 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2023-07-17 00:47:04.087  INFO 62423 --- [main] o.w.g.test.ReplyCommentControllerTest    : The following profiles are active: dev
+2023-07-17 00:47:04.093 DEBUG 62423 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@7ee55e70
+2023-07-17 00:47:05.863  INFO 62423 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-07-17 00:47:05.888 DEBUG 62423 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-07-17 00:47:05.993 DEBUG 62423 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 5 mappings in 'requestMappingHandlerMapping'
+2023-07-17 00:47:06.083 DEBUG 62423 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-07-17 00:47:06.105 DEBUG 62423 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-07-17 00:47:06.262  INFO 62423 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2023-07-17 00:47:06.262  INFO 62423 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-07-17 00:47:06.281  INFO 62423 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 19 ms
+2023-07-17 00:47:06.318  INFO 62423 --- [main] o.w.g.test.ReplyCommentControllerTest    : Started ReplyCommentControllerTest in 8.523 seconds (JVM running for 9.826)
+2023-07-17 00:47:06.410 DEBUG 62423 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.wjy.gameforu.user.controller.ReplyCommentController#get(Integer)
+2023-07-17 00:47:06.525 DEBUG 62423 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-07-17 00:47:06.526 DEBUG 62423 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Writing [Result(code=200, message=success, data=[])]
+2023-07-17 00:47:06.571 DEBUG 62423 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.wjy.gameforu.user.controller.ReplyCommentController#delete(Integer)
+2023-07-17 00:47:06.572 DEBUG 62423 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-07-17 00:47:06.572 DEBUG 62423 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Writing [Result(code=201, message=fail, data=null)]
+2023-07-17 00:47:06.681 DEBUG 62423 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.wjy.gameforu.user.controller.ReplyCommentController#addComment(Integer, Integer, ReplyCommentVo)
+2023-07-17 00:47:06.721 DEBUG 62423 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [ReplyCommentVo(replyComment=very good view point!)]
+2023-07-17 00:47:06.725 DEBUG 62423 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-07-17 00:47:06.725 DEBUG 62423 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Writing [Result(code=201, message=fail, data=null)]
+2023-07-17 00:47:06.738 DEBUG 62423 --- [SpringContextShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@7ee55e70, started on Mon Jul 17 00:47:04 BST 2023, parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@37efd131
+2023-07-17 00:47:06.741  INFO 62423 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'

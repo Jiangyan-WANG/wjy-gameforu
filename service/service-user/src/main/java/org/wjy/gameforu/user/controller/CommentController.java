@@ -66,8 +66,8 @@ public class CommentController {
     @GetMapping("get/{gid}")
     public Result get(@PathVariable Integer gid) {
         QueryWrapper<Comment> wrapper = new QueryWrapper<>();
-        wrapper.eq("gid", gid);
         wrapper.orderByAsc("commentTime");
+        wrapper.eq("gid", gid);
         //TODO modify to pagination search
         List<Comment> list = commentService.list(wrapper);
         return Result.ok(list);

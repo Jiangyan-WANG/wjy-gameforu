@@ -12,5 +12,4 @@ import com.baomidou.mybatisplus.extension.service.IService;
  * @since 2023-07-07
  */
 public interface ReplyCommentService extends IService<ReplyComment> {
-
 }
