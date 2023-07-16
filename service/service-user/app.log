@@ -1,150 +1,573 @@
-2023-07-16 21:47:53.672  INFO 58651 --- [main] o.w.g.test.FollowerControllerTest        : The following profiles are active: dev
-2023-07-16 21:47:53.678 DEBUG 58651 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@6d2260db
-2023-07-16 21:47:55.528  INFO 58651 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2023-07-16 21:47:55.550 DEBUG 58651 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2023-07-16 21:47:55.666 DEBUG 58651 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
-2023-07-16 21:47:55.759 DEBUG 58651 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2023-07-16 21:47:55.782 DEBUG 58651 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
-2023-07-16 21:47:55.935  INFO 58651 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
-2023-07-16 21:47:55.935  INFO 58651 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
-2023-07-16 21:47:55.951  INFO 58651 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 16 ms
-2023-07-16 21:47:55.984  INFO 58651 --- [main] o.w.g.test.FollowerControllerTest        : Started FollowerControllerTest in 8.669 seconds (JVM running for 10.302)
-2023-07-16 21:47:56.065 DEBUG 58651 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.wjy.gameforu.user.controller.FollowerController#follow(Integer, Integer)
-2023-07-16 21:47:56.165 DEBUG 58651 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
-2023-07-16 21:47:56.165 DEBUG 58651 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Writing [Result(code=201, message=fail, data=null)]
-2023-07-16 21:47:56.212 DEBUG 58651 --- [SpringContextShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@6d2260db, started on Sun Jul 16 21:47:53 BST 2023, parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@704f1591
-2023-07-16 21:47:56.214  INFO 58651 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2023-07-16 22:05:04.027  INFO 58890 --- [main] o.w.g.test.FollowerControllerTest        : The following profiles are active: dev
-2023-07-16 22:05:04.035 DEBUG 58890 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@1f2d2181
-2023-07-16 22:05:05.857  INFO 58890 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2023-07-16 22:05:05.879 DEBUG 58890 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2023-07-16 22:05:05.990 DEBUG 58890 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 4 mappings in 'requestMappingHandlerMapping'
-2023-07-16 22:05:06.094 DEBUG 58890 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2023-07-16 22:05:06.138 DEBUG 58890 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
-2023-07-16 22:05:06.354  INFO 58890 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
-2023-07-16 22:05:06.354  INFO 58890 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
-2023-07-16 22:05:06.376  INFO 58890 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 22 ms
-2023-07-16 22:05:06.414  INFO 58890 --- [main] o.w.g.test.FollowerControllerTest        : Started FollowerControllerTest in 8.659 seconds (JVM running for 10.139)
-2023-07-16 22:05:06.503 DEBUG 58890 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
-2023-07-16 22:05:06.507 DEBUG 58890 --- [main] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
-2023-07-16 22:05:06.551 DEBUG 58890 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.wjy.gameforu.user.controller.FollowerController#follow(Integer, Integer)
-2023-07-16 22:05:06.636 DEBUG 58890 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
-2023-07-16 22:05:06.637 DEBUG 58890 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Writing [Result(code=201, message=fail, data=null)]
-2023-07-16 22:05:06.663 DEBUG 58890 --- [SpringContextShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@1f2d2181, started on Sun Jul 16 22:05:04 BST 2023, parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@58fb7731
-2023-07-16 22:05:06.665  INFO 58890 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2023-07-16 22:05:33.897  INFO 58898 --- [main] o.w.g.test.FollowerControllerTest        : The following profiles are active: dev
-2023-07-16 22:05:33.904 DEBUG 58898 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@46292372
-2023-07-16 22:05:35.708  INFO 58898 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2023-07-16 22:05:35.731 DEBUG 58898 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2023-07-16 22:05:35.851 DEBUG 58898 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 4 mappings in 'requestMappingHandlerMapping'
-2023-07-16 22:05:35.960 DEBUG 58898 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2023-07-16 22:05:35.984 DEBUG 58898 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
-2023-07-16 22:05:36.221  INFO 58898 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
-2023-07-16 22:05:36.222  INFO 58898 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
-2023-07-16 22:05:36.244  INFO 58898 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 22 ms
-2023-07-16 22:05:36.275  INFO 58898 --- [main] o.w.g.test.FollowerControllerTest        : Started FollowerControllerTest in 8.596 seconds (JVM running for 9.956)
-2023-07-16 22:05:36.358 DEBUG 58898 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
-2023-07-16 22:05:36.362 DEBUG 58898 --- [main] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
-2023-07-16 22:05:36.412 DEBUG 58898 --- [SpringContextShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@46292372, started on Sun Jul 16 22:05:33 BST 2023, parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@dfddc9a
-2023-07-16 22:05:36.415  INFO 58898 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2023-07-16 22:06:38.214  INFO 58916 --- [main] o.w.g.test.FollowerControllerTest        : The following profiles are active: dev
-2023-07-16 22:06:38.223 DEBUG 58916 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@46292372
-2023-07-16 22:06:40.146  INFO 58916 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2023-07-16 22:06:40.167 DEBUG 58916 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2023-07-16 22:06:40.279 DEBUG 58916 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 4 mappings in 'requestMappingHandlerMapping'
-2023-07-16 22:06:40.376 DEBUG 58916 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2023-07-16 22:06:40.406 DEBUG 58916 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
-2023-07-16 22:06:40.574  INFO 58916 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
-2023-07-16 22:06:40.574  INFO 58916 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
-2023-07-16 22:06:40.594  INFO 58916 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 20 ms
-2023-07-16 22:06:40.630  INFO 58916 --- [main] o.w.g.test.FollowerControllerTest        : Started FollowerControllerTest in 9.137 seconds (JVM running for 11.39)
-2023-07-16 22:06:40.712 DEBUG 58916 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.wjy.gameforu.user.controller.FollowerController#unfollow(Integer)
-2023-07-16 22:06:40.808 DEBUG 58916 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
-2023-07-16 22:06:40.809 DEBUG 58916 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Writing [Result(code=201, message=fail, data=null)]
-2023-07-16 22:06:40.851 DEBUG 58916 --- [SpringContextShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@46292372, started on Sun Jul 16 22:06:38 BST 2023, parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@dfddc9a
-2023-07-16 22:06:40.853  INFO 58916 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2023-07-16 23:23:30.399  INFO 60379 --- [main] o.w.g.test.FollowerControllerTest        : The following profiles are active: dev
-2023-07-16 23:23:30.405 DEBUG 60379 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@49bf29c6
-2023-07-16 23:23:32.347  INFO 60379 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2023-07-16 23:23:32.373 DEBUG 60379 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2023-07-16 23:23:32.486 DEBUG 60379 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 4 mappings in 'requestMappingHandlerMapping'
-2023-07-16 23:23:32.584 DEBUG 60379 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2023-07-16 23:23:32.607 DEBUG 60379 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
-2023-07-16 23:23:32.774  INFO 60379 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
-2023-07-16 23:23:32.774  INFO 60379 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
-2023-07-16 23:23:32.790  INFO 60379 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 15 ms
-2023-07-16 23:23:32.825  INFO 60379 --- [main] o.w.g.test.FollowerControllerTest        : Started FollowerControllerTest in 8.676 seconds (JVM running for 10.008)
-2023-07-16 23:23:32.905 DEBUG 60379 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.wjy.gameforu.user.controller.FollowerController#follow(Integer, Integer)
-2023-07-16 23:23:32.996 DEBUG 60379 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
-2023-07-16 23:23:32.997 DEBUG 60379 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Writing [Result(code=201, message=fail, data=null)]
-2023-07-16 23:23:33.037 DEBUG 60379 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.wjy.gameforu.user.controller.FollowerController#unfollow(Integer)
-2023-07-16 23:23:33.038 DEBUG 60379 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
-2023-07-16 23:23:33.038 DEBUG 60379 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Writing [Result(code=201, message=fail, data=null)]
-2023-07-16 23:23:33.055 DEBUG 60379 --- [SpringContextShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@49bf29c6, started on Sun Jul 16 23:23:30 BST 2023, parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@616fe72b
-2023-07-16 23:23:33.057  INFO 60379 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2023-07-16 23:25:17.763  INFO 60420 --- [main] o.w.gameforu.test.PreferControllerTest   : The following profiles are active: dev
-2023-07-16 23:25:17.770 DEBUG 60420 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@49bf29c6
-2023-07-16 23:25:19.806  INFO 60420 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2023-07-16 23:25:19.828 DEBUG 60420 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2023-07-16 23:25:19.933 DEBUG 60420 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 4 mappings in 'requestMappingHandlerMapping'
-2023-07-16 23:25:20.034 DEBUG 60420 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2023-07-16 23:25:20.055 DEBUG 60420 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
-2023-07-16 23:25:20.192  INFO 60420 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
-2023-07-16 23:25:20.192  INFO 60420 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
-2023-07-16 23:25:20.209  INFO 60420 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 17 ms
-2023-07-16 23:25:20.244  INFO 60420 --- [main] o.w.gameforu.test.PreferControllerTest   : Started PreferControllerTest in 8.935 seconds (JVM running for 10.355)
-2023-07-16 23:25:20.324 DEBUG 60420 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.wjy.gameforu.user.controller.PreferController#setPrefer(Integer, Integer[])
-2023-07-16 23:25:20.344 DEBUG 60420 --- [main] .w.s.m.m.a.ServletInvocableHandlerMethod : Could not resolve parameter [0] in public org.wjy.gameforu.common.result.Result org.wjy.gameforu.user.controller.PreferController.setPrefer(java.lang.Integer,java.lang.Integer[]): Required Integer parameter 'uid' is not present
-2023-07-16 23:25:20.346 DEBUG 60420 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler org.wjy.gameforu.common.exception.GlobalExceptionHandler#error(Exception)
-2023-07-16 23:25:20.405 DEBUG 60420 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
-2023-07-16 23:25:20.406 DEBUG 60420 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Writing [Result(code=201, message=fail, data=null)]
-2023-07-16 23:25:20.420 DEBUG 60420 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required Integer parameter 'uid' is not present]
-2023-07-16 23:25:20.446 DEBUG 60420 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.wjy.gameforu.user.controller.PreferController#getPrefer(Integer)
-2023-07-16 23:25:20.476 DEBUG 60420 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
-2023-07-16 23:25:20.476 DEBUG 60420 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Writing [Result(code=200, message=success, data={})]
-2023-07-16 23:25:20.497 DEBUG 60420 --- [SpringContextShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@49bf29c6, started on Sun Jul 16 23:25:17 BST 2023, parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@616fe72b
-2023-07-16 23:25:20.500  INFO 60420 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2023-07-16 23:27:02.159  INFO 60464 --- [main] o.w.gameforu.test.PreferControllerTest   : The following profiles are active: dev
-2023-07-16 23:27:02.165 DEBUG 60464 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@5d332969
-2023-07-16 23:27:04.143  INFO 60464 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2023-07-16 23:27:04.167 DEBUG 60464 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2023-07-16 23:27:04.283 DEBUG 60464 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 4 mappings in 'requestMappingHandlerMapping'
-2023-07-16 23:27:04.380 DEBUG 60464 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2023-07-16 23:27:04.404 DEBUG 60464 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
-2023-07-16 23:27:04.570  INFO 60464 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
-2023-07-16 23:27:04.570  INFO 60464 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
-2023-07-16 23:27:04.590  INFO 60464 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 19 ms
-2023-07-16 23:27:04.646  INFO 60464 --- [main] o.w.gameforu.test.PreferControllerTest   : Started PreferControllerTest in 8.877 seconds (JVM running for 11.038)
-2023-07-16 23:27:04.777 DEBUG 60464 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.wjy.gameforu.user.controller.PreferController#setPrefer(Integer, Integer[])
-2023-07-16 23:27:04.793 DEBUG 60464 --- [main] .w.s.m.m.a.ServletInvocableHandlerMethod : Could not resolve parameter [0] in public org.wjy.gameforu.common.result.Result org.wjy.gameforu.user.controller.PreferController.setPrefer(java.lang.Integer,java.lang.Integer[]): Required Integer parameter 'uid' is not present
-2023-07-16 23:27:04.795 DEBUG 60464 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler org.wjy.gameforu.common.exception.GlobalExceptionHandler#error(Exception)
-2023-07-16 23:27:04.848 DEBUG 60464 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
-2023-07-16 23:27:04.849 DEBUG 60464 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Writing [Result(code=201, message=fail, data=null)]
-2023-07-16 23:27:04.864 DEBUG 60464 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required Integer parameter 'uid' is not present]
-2023-07-16 23:27:04.896 DEBUG 60464 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.wjy.gameforu.user.controller.PreferController#getPrefer(Integer)
-2023-07-16 23:27:04.925 DEBUG 60464 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
-2023-07-16 23:27:04.925 DEBUG 60464 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Writing [Result(code=200, message=success, data={})]
-2023-07-16 23:27:04.944  INFO 60464 --- [main] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [org.wjy.gameforu.test.FollowerControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
-2023-07-16 23:27:04.948  INFO 60464 --- [main] .b.t.a.w.s.WebMvcTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
-2023-07-16 23:27:04.948  INFO 60464 --- [main] .b.t.a.w.s.WebMvcTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@66e21568, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@7f73ce28, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@611b35d6, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@2282400e, org.springframework.test.context.support.DirtiesContextTestExecutionListener@543d5863, org.springframework.test.context.transaction.TransactionalTestExecutionListener@35dece42, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@dd3f8aa, org.springframework.test.context.event.EventPublishingTestExecutionListener@3d615b2e, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@3a1f2a1, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@40ce9049, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@52ca2652, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@65c5bf0e, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@697d6ded, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@5d05f453]
-2023-07-16 23:27:05.125  INFO 60464 --- [main] o.w.g.test.FollowerControllerTest        : The following profiles are active: dev
-2023-07-16 23:27:05.130 DEBUG 60464 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@48581a3b
-2023-07-16 23:27:05.644  INFO 60464 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2023-07-16 23:27:05.668 DEBUG 60464 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2023-07-16 23:27:05.697 DEBUG 60464 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 4 mappings in 'requestMappingHandlerMapping'
-2023-07-16 23:27:05.763 DEBUG 60464 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2023-07-16 23:27:05.781 DEBUG 60464 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
-2023-07-16 23:27:05.898  INFO 60464 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
-2023-07-16 23:27:05.898  INFO 60464 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
-2023-07-16 23:27:05.911  INFO 60464 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 13 ms
-2023-07-16 23:27:05.941  INFO 60464 --- [main] o.w.g.test.FollowerControllerTest        : Started FollowerControllerTest in 0.989 seconds (JVM running for 12.334)
-2023-07-16 23:27:05.951 DEBUG 60464 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.wjy.gameforu.user.controller.FollowerController#follow(Integer, Integer)
-2023-07-16 23:27:05.956 DEBUG 60464 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
-2023-07-16 23:27:05.957 DEBUG 60464 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Writing [Result(code=201, message=fail, data=null)]
-2023-07-16 23:27:05.970 DEBUG 60464 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.wjy.gameforu.user.controller.FollowerController#unfollow(Integer)
-2023-07-16 23:27:05.972 DEBUG 60464 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
-2023-07-16 23:27:05.972 DEBUG 60464 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Writing [Result(code=201, message=fail, data=null)]
-2023-07-16 23:27:05.991 DEBUG 60464 --- [SpringContextShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@48581a3b, started on Sun Jul 16 23:27:05 BST 2023, parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@733fb462
-2023-07-16 23:27:05.991 DEBUG 60464 --- [SpringContextShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@5d332969, started on Sun Jul 16 23:27:02 BST 2023, parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@340da44c
-2023-07-16 23:27:05.995  INFO 60464 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2023-07-16 23:27:05.995  INFO 60464 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2023-07-17 00:11:48.093  INFO 61524 --- [main] o.w.gameforu.test.CommentControllerTest  : The following profiles are active: dev
+2023-07-17 00:11:48.104 DEBUG 61524 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@7ee55e70
+2023-07-17 00:11:49.577  WARN 61524 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'preferController': Unsatisfied dependency expressed through field 'preferService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.wjy.gameforu.user.service.PreferService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2023-07-17 00:11:49.580  INFO 61524 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-07-17 00:11:49.618 ERROR 61524 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field preferService in org.wjy.gameforu.user.controller.PreferController required a bean of type 'org.wjy.gameforu.user.service.PreferService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'org.wjy.gameforu.user.service.PreferService' in your configuration.
+
+2023-07-17 00:11:49.625 ERROR 61524 --- [main] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@6fdbe764] to prepare test instance [org.wjy.gameforu.test.CommentControllerTest@37b56ac7]
+
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:132) ~[spring-test-5.2.11.RELEASE.jar:5.2.11.RELEASE]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:123) ~[spring-test-5.2.11.RELEASE.jar:5.2.11.RELEASE]
+	at org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener.postProcessFields(MockitoTestExecutionListener.java:95) ~[spring-boot-test-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener.injectFields(MockitoTestExecutionListener.java:79) ~[spring-boot-test-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener.prepareTestInstance(MockitoTestExecutionListener.java:54) ~[spring-boot-test-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:244) ~[spring-test-5.2.11.RELEASE.jar:5.2.11.RELEASE]
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:98) [spring-test-5.2.11.RELEASE.jar:5.2.11.RELEASE]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$5(ClassBasedTestDescriptor.java:341) [junit-jupiter-engine-5.6.3.jar:5.6.3]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:346) [junit-jupiter-engine-5.6.3.jar:5.6.3]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$6(ClassBasedTestDescriptor.java:341) [junit-jupiter-engine-5.6.3.jar:5.6.3]
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193) ~[na:1.8.0_362]
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:175) ~[na:1.8.0_362]
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1384) ~[na:1.8.0_362]
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:482) ~[na:1.8.0_362]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472) ~[na:1.8.0_362]
+	at java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:313) ~[na:1.8.0_362]
+	at java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:743) ~[na:1.8.0_362]
+	at java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:742) ~[na:1.8.0_362]
+	at java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:647) ~[na:1.8.0_362]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:340) [junit-jupiter-engine-5.6.3.jar:5.6.3]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:263) [junit-jupiter-engine-5.6.3.jar:5.6.3]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$2(ClassBasedTestDescriptor.java:256) [junit-jupiter-engine-5.6.3.jar:5.6.3]
+	at java.util.Optional.orElseGet(Optional.java:267) ~[na:1.8.0_362]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$3(ClassBasedTestDescriptor.java:255) [junit-jupiter-engine-5.6.3.jar:5.6.3]
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:29) ~[junit-jupiter-engine-5.6.3.jar:5.6.3]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:108) ~[junit-jupiter-engine-5.6.3.jar:5.6.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.6.3.jar:1.6.3]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:107) ~[junit-jupiter-engine-5.6.3.jar:5.6.3]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:71) ~[junit-jupiter-engine-5.6.3.jar:5.6.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$1(NodeTestTask.java:107) ~[junit-platform-engine-1.6.3.jar:1.6.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.6.3.jar:1.6.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:107) ~[junit-platform-engine-1.6.3.jar:1.6.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:75) ~[junit-platform-engine-1.6.3.jar:1.6.3]
+	at java.util.ArrayList.forEach(ArrayList.java:1259) ~[na:1.8.0_362]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38) ~[junit-platform-engine-1.6.3.jar:1.6.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139) ~[junit-platform-engine-1.6.3.jar:1.6.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.6.3.jar:1.6.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125) ~[junit-platform-engine-1.6.3.jar:1.6.3]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135) ~[junit-platform-engine-1.6.3.jar:1.6.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123) ~[junit-platform-engine-1.6.3.jar:1.6.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.6.3.jar:1.6.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122) ~[junit-platform-engine-1.6.3.jar:1.6.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80) ~[junit-platform-engine-1.6.3.jar:1.6.3]
+	at java.util.ArrayList.forEach(ArrayList.java:1259) ~[na:1.8.0_362]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38) ~[junit-platform-engine-1.6.3.jar:1.6.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139) ~[junit-platform-engine-1.6.3.jar:1.6.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.6.3.jar:1.6.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125) ~[junit-platform-engine-1.6.3.jar:1.6.3]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135) ~[junit-platform-engine-1.6.3.jar:1.6.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123) ~[junit-platform-engine-1.6.3.jar:1.6.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.6.3.jar:1.6.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122) ~[junit-platform-engine-1.6.3.jar:1.6.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80) ~[junit-platform-engine-1.6.3.jar:1.6.3]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32) ~[junit-platform-engine-1.6.3.jar:1.6.3]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.6.3.jar:1.6.3]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51) ~[junit-platform-engine-1.6.3.jar:1.6.3]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:248) ~[junit-platform-launcher-1.6.3.jar:1.6.3]
+	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$5(DefaultLauncher.java:211) ~[junit-platform-launcher-1.6.3.jar:1.6.3]
+	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:226) ~[junit-platform-launcher-1.6.3.jar:1.6.3]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:199) ~[junit-platform-launcher-1.6.3.jar:1.6.3]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:132) ~[junit-platform-launcher-1.6.3.jar:1.6.3]
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:71) ~[junit5-rt.jar:na]
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38) ~[junit-rt.jar:na]
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11) ~[idea_rt.jar:na]
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35) ~[junit-rt.jar:na]
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:235) ~[junit-rt.jar:na]
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:54) ~[junit-rt.jar:na]
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'preferController': Unsatisfied dependency expressed through field 'preferService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.wjy.gameforu.user.service.PreferService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:643) ~[spring-beans-5.2.11.RELEASE.jar:5.2.11.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119) ~[spring-beans-5.2.11.RELEASE.jar:5.2.11.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.2.11.RELEASE.jar:5.2.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1420) ~[spring-beans-5.2.11.RELEASE.jar:5.2.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593) ~[spring-beans-5.2.11.RELEASE.jar:5.2.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516) ~[spring-beans-5.2.11.RELEASE.jar:5.2.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324) ~[spring-beans-5.2.11.RELEASE.jar:5.2.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.2.11.RELEASE.jar:5.2.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) ~[spring-beans-5.2.11.RELEASE.jar:5.2.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.11.RELEASE.jar:5.2.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897) ~[spring-beans-5.2.11.RELEASE.jar:5.2.11.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879) ~[spring-context-5.2.11.RELEASE.jar:5.2.11.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551) ~[spring-context-5.2.11.RELEASE.jar:5.2.11.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758) ~[spring-boot-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750) ~[spring-boot-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:405) ~[spring-boot-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) ~[spring-boot-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120) ~[spring-boot-test-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.2.11.RELEASE.jar:5.2.11.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-5.2.11.RELEASE.jar:5.2.11.RELEASE]
+	... 66 common frames omitted
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.wjy.gameforu.user.service.PreferService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1717) ~[spring-beans-5.2.11.RELEASE.jar:5.2.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1273) ~[spring-beans-5.2.11.RELEASE.jar:5.2.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1227) ~[spring-beans-5.2.11.RELEASE.jar:5.2.11.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640) ~[spring-beans-5.2.11.RELEASE.jar:5.2.11.RELEASE]
+	... 85 common frames omitted
+
+2023-07-17 00:11:49.769  INFO 61524 --- [main] o.w.gameforu.test.CommentControllerTest  : The following profiles are active: dev
+2023-07-17 00:11:49.773 DEBUG 61524 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@78a515e4
+2023-07-17 00:11:49.985  WARN 61524 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'preferController': Unsatisfied dependency expressed through field 'preferService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.wjy.gameforu.user.service.PreferService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2023-07-17 00:11:49.986  INFO 61524 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-07-17 00:11:50.016 ERROR 61524 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field preferService in org.wjy.gameforu.user.controller.PreferController required a bean of type 'org.wjy.gameforu.user.service.PreferService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'org.wjy.gameforu.user.service.PreferService' in your configuration.
+
+2023-07-17 00:11:50.018 ERROR 61524 --- [main] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@6fdbe764] to prepare test instance [org.wjy.gameforu.test.CommentControllerTest@3d20e575]
+
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:132) ~[spring-test-5.2.11.RELEASE.jar:5.2.11.RELEASE]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:123) ~[spring-test-5.2.11.RELEASE.jar:5.2.11.RELEASE]
+	at org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener.postProcessFields(MockitoTestExecutionListener.java:95) ~[spring-boot-test-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener.injectFields(MockitoTestExecutionListener.java:79) ~[spring-boot-test-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener.prepareTestInstance(MockitoTestExecutionListener.java:54) ~[spring-boot-test-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:244) ~[spring-test-5.2.11.RELEASE.jar:5.2.11.RELEASE]
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:98) [spring-test-5.2.11.RELEASE.jar:5.2.11.RELEASE]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$5(ClassBasedTestDescriptor.java:341) [junit-jupiter-engine-5.6.3.jar:5.6.3]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:346) [junit-jupiter-engine-5.6.3.jar:5.6.3]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$6(ClassBasedTestDescriptor.java:341) [junit-jupiter-engine-5.6.3.jar:5.6.3]
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193) ~[na:1.8.0_362]
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:175) ~[na:1.8.0_362]
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1384) ~[na:1.8.0_362]
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:482) ~[na:1.8.0_362]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472) ~[na:1.8.0_362]
+	at java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:313) ~[na:1.8.0_362]
+	at java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:743) ~[na:1.8.0_362]
+	at java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:742) ~[na:1.8.0_362]
+	at java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:647) ~[na:1.8.0_362]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:340) [junit-jupiter-engine-5.6.3.jar:5.6.3]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:263) [junit-jupiter-engine-5.6.3.jar:5.6.3]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$2(ClassBasedTestDescriptor.java:256) [junit-jupiter-engine-5.6.3.jar:5.6.3]
+	at java.util.Optional.orElseGet(Optional.java:267) ~[na:1.8.0_362]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$3(ClassBasedTestDescriptor.java:255) [junit-jupiter-engine-5.6.3.jar:5.6.3]
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:29) ~[junit-jupiter-engine-5.6.3.jar:5.6.3]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:108) ~[junit-jupiter-engine-5.6.3.jar:5.6.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.6.3.jar:1.6.3]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:107) ~[junit-jupiter-engine-5.6.3.jar:5.6.3]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:71) ~[junit-jupiter-engine-5.6.3.jar:5.6.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$1(NodeTestTask.java:107) ~[junit-platform-engine-1.6.3.jar:1.6.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.6.3.jar:1.6.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:107) ~[junit-platform-engine-1.6.3.jar:1.6.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:75) ~[junit-platform-engine-1.6.3.jar:1.6.3]
+	at java.util.ArrayList.forEach(ArrayList.java:1259) ~[na:1.8.0_362]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38) ~[junit-platform-engine-1.6.3.jar:1.6.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139) ~[junit-platform-engine-1.6.3.jar:1.6.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.6.3.jar:1.6.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125) ~[junit-platform-engine-1.6.3.jar:1.6.3]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135) ~[junit-platform-engine-1.6.3.jar:1.6.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123) ~[junit-platform-engine-1.6.3.jar:1.6.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.6.3.jar:1.6.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122) ~[junit-platform-engine-1.6.3.jar:1.6.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80) ~[junit-platform-engine-1.6.3.jar:1.6.3]
+	at java.util.ArrayList.forEach(ArrayList.java:1259) ~[na:1.8.0_362]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38) ~[junit-platform-engine-1.6.3.jar:1.6.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139) ~[junit-platform-engine-1.6.3.jar:1.6.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.6.3.jar:1.6.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125) ~[junit-platform-engine-1.6.3.jar:1.6.3]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135) ~[junit-platform-engine-1.6.3.jar:1.6.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123) ~[junit-platform-engine-1.6.3.jar:1.6.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.6.3.jar:1.6.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122) ~[junit-platform-engine-1.6.3.jar:1.6.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80) ~[junit-platform-engine-1.6.3.jar:1.6.3]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32) ~[junit-platform-engine-1.6.3.jar:1.6.3]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.6.3.jar:1.6.3]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51) ~[junit-platform-engine-1.6.3.jar:1.6.3]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:248) ~[junit-platform-launcher-1.6.3.jar:1.6.3]
+	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$5(DefaultLauncher.java:211) ~[junit-platform-launcher-1.6.3.jar:1.6.3]
+	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:226) ~[junit-platform-launcher-1.6.3.jar:1.6.3]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:199) ~[junit-platform-launcher-1.6.3.jar:1.6.3]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:132) ~[junit-platform-launcher-1.6.3.jar:1.6.3]
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:71) ~[junit5-rt.jar:na]
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38) ~[junit-rt.jar:na]
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11) ~[idea_rt.jar:na]
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35) ~[junit-rt.jar:na]
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:235) ~[junit-rt.jar:na]
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:54) ~[junit-rt.jar:na]
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'preferController': Unsatisfied dependency expressed through field 'preferService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.wjy.gameforu.user.service.PreferService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:643) ~[spring-beans-5.2.11.RELEASE.jar:5.2.11.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119) ~[spring-beans-5.2.11.RELEASE.jar:5.2.11.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.2.11.RELEASE.jar:5.2.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1420) ~[spring-beans-5.2.11.RELEASE.jar:5.2.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593) ~[spring-beans-5.2.11.RELEASE.jar:5.2.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516) ~[spring-beans-5.2.11.RELEASE.jar:5.2.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324) ~[spring-beans-5.2.11.RELEASE.jar:5.2.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.2.11.RELEASE.jar:5.2.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) ~[spring-beans-5.2.11.RELEASE.jar:5.2.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.11.RELEASE.jar:5.2.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897) ~[spring-beans-5.2.11.RELEASE.jar:5.2.11.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879) ~[spring-context-5.2.11.RELEASE.jar:5.2.11.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551) ~[spring-context-5.2.11.RELEASE.jar:5.2.11.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758) ~[spring-boot-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750) ~[spring-boot-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:405) ~[spring-boot-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) ~[spring-boot-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120) ~[spring-boot-test-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.2.11.RELEASE.jar:5.2.11.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-5.2.11.RELEASE.jar:5.2.11.RELEASE]
+	... 66 common frames omitted
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.wjy.gameforu.user.service.PreferService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1717) ~[spring-beans-5.2.11.RELEASE.jar:5.2.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1273) ~[spring-beans-5.2.11.RELEASE.jar:5.2.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1227) ~[spring-beans-5.2.11.RELEASE.jar:5.2.11.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640) ~[spring-beans-5.2.11.RELEASE.jar:5.2.11.RELEASE]
+	... 85 common frames omitted
+
+2023-07-17 00:11:50.166  INFO 61524 --- [main] o.w.gameforu.test.CommentControllerTest  : The following profiles are active: dev
+2023-07-17 00:11:50.169 DEBUG 61524 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@93824eb
+2023-07-17 00:11:50.390  WARN 61524 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'preferController': Unsatisfied dependency expressed through field 'preferService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.wjy.gameforu.user.service.PreferService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2023-07-17 00:11:50.392  INFO 61524 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-07-17 00:11:50.419 ERROR 61524 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field preferService in org.wjy.gameforu.user.controller.PreferController required a bean of type 'org.wjy.gameforu.user.service.PreferService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'org.wjy.gameforu.user.service.PreferService' in your configuration.
+
+2023-07-17 00:11:50.421 ERROR 61524 --- [main] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@6fdbe764] to prepare test instance [org.wjy.gameforu.test.CommentControllerTest@73041b7d]
+
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:132) ~[spring-test-5.2.11.RELEASE.jar:5.2.11.RELEASE]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:123) ~[spring-test-5.2.11.RELEASE.jar:5.2.11.RELEASE]
+	at org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener.postProcessFields(MockitoTestExecutionListener.java:95) ~[spring-boot-test-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener.injectFields(MockitoTestExecutionListener.java:79) ~[spring-boot-test-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener.prepareTestInstance(MockitoTestExecutionListener.java:54) ~[spring-boot-test-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:244) ~[spring-test-5.2.11.RELEASE.jar:5.2.11.RELEASE]
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:98) [spring-test-5.2.11.RELEASE.jar:5.2.11.RELEASE]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$5(ClassBasedTestDescriptor.java:341) [junit-jupiter-engine-5.6.3.jar:5.6.3]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:346) [junit-jupiter-engine-5.6.3.jar:5.6.3]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$6(ClassBasedTestDescriptor.java:341) [junit-jupiter-engine-5.6.3.jar:5.6.3]
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193) ~[na:1.8.0_362]
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:175) ~[na:1.8.0_362]
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1384) ~[na:1.8.0_362]
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:482) ~[na:1.8.0_362]
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472) ~[na:1.8.0_362]
+	at java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:313) ~[na:1.8.0_362]
+	at java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:743) ~[na:1.8.0_362]
+	at java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:742) ~[na:1.8.0_362]
+	at java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:647) ~[na:1.8.0_362]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:340) [junit-jupiter-engine-5.6.3.jar:5.6.3]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:263) [junit-jupiter-engine-5.6.3.jar:5.6.3]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$2(ClassBasedTestDescriptor.java:256) [junit-jupiter-engine-5.6.3.jar:5.6.3]
+	at java.util.Optional.orElseGet(Optional.java:267) ~[na:1.8.0_362]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$3(ClassBasedTestDescriptor.java:255) [junit-jupiter-engine-5.6.3.jar:5.6.3]
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:29) ~[junit-jupiter-engine-5.6.3.jar:5.6.3]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:108) ~[junit-jupiter-engine-5.6.3.jar:5.6.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.6.3.jar:1.6.3]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:107) ~[junit-jupiter-engine-5.6.3.jar:5.6.3]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:71) ~[junit-jupiter-engine-5.6.3.jar:5.6.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$1(NodeTestTask.java:107) ~[junit-platform-engine-1.6.3.jar:1.6.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.6.3.jar:1.6.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:107) ~[junit-platform-engine-1.6.3.jar:1.6.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:75) ~[junit-platform-engine-1.6.3.jar:1.6.3]
+	at java.util.ArrayList.forEach(ArrayList.java:1259) ~[na:1.8.0_362]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38) ~[junit-platform-engine-1.6.3.jar:1.6.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139) ~[junit-platform-engine-1.6.3.jar:1.6.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.6.3.jar:1.6.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125) ~[junit-platform-engine-1.6.3.jar:1.6.3]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135) ~[junit-platform-engine-1.6.3.jar:1.6.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123) ~[junit-platform-engine-1.6.3.jar:1.6.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.6.3.jar:1.6.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122) ~[junit-platform-engine-1.6.3.jar:1.6.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80) ~[junit-platform-engine-1.6.3.jar:1.6.3]
+	at java.util.ArrayList.forEach(ArrayList.java:1259) ~[na:1.8.0_362]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38) ~[junit-platform-engine-1.6.3.jar:1.6.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139) ~[junit-platform-engine-1.6.3.jar:1.6.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.6.3.jar:1.6.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125) ~[junit-platform-engine-1.6.3.jar:1.6.3]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135) ~[junit-platform-engine-1.6.3.jar:1.6.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123) ~[junit-platform-engine-1.6.3.jar:1.6.3]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73) ~[junit-platform-engine-1.6.3.jar:1.6.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122) ~[junit-platform-engine-1.6.3.jar:1.6.3]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80) ~[junit-platform-engine-1.6.3.jar:1.6.3]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32) ~[junit-platform-engine-1.6.3.jar:1.6.3]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57) ~[junit-platform-engine-1.6.3.jar:1.6.3]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51) ~[junit-platform-engine-1.6.3.jar:1.6.3]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:248) ~[junit-platform-launcher-1.6.3.jar:1.6.3]
+	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$5(DefaultLauncher.java:211) ~[junit-platform-launcher-1.6.3.jar:1.6.3]
+	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:226) ~[junit-platform-launcher-1.6.3.jar:1.6.3]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:199) ~[junit-platform-launcher-1.6.3.jar:1.6.3]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:132) ~[junit-platform-launcher-1.6.3.jar:1.6.3]
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:71) ~[junit5-rt.jar:na]
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38) ~[junit-rt.jar:na]
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11) ~[idea_rt.jar:na]
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35) ~[junit-rt.jar:na]
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:235) ~[junit-rt.jar:na]
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:54) ~[junit-rt.jar:na]
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'preferController': Unsatisfied dependency expressed through field 'preferService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.wjy.gameforu.user.service.PreferService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:643) ~[spring-beans-5.2.11.RELEASE.jar:5.2.11.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119) ~[spring-beans-5.2.11.RELEASE.jar:5.2.11.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.2.11.RELEASE.jar:5.2.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1420) ~[spring-beans-5.2.11.RELEASE.jar:5.2.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593) ~[spring-beans-5.2.11.RELEASE.jar:5.2.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516) ~[spring-beans-5.2.11.RELEASE.jar:5.2.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324) ~[spring-beans-5.2.11.RELEASE.jar:5.2.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.2.11.RELEASE.jar:5.2.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) ~[spring-beans-5.2.11.RELEASE.jar:5.2.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.11.RELEASE.jar:5.2.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897) ~[spring-beans-5.2.11.RELEASE.jar:5.2.11.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879) ~[spring-context-5.2.11.RELEASE.jar:5.2.11.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551) ~[spring-context-5.2.11.RELEASE.jar:5.2.11.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758) ~[spring-boot-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750) ~[spring-boot-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:405) ~[spring-boot-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) ~[spring-boot-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120) ~[spring-boot-test-2.3.6.RELEASE.jar:2.3.6.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.2.11.RELEASE.jar:5.2.11.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-5.2.11.RELEASE.jar:5.2.11.RELEASE]
+	... 66 common frames omitted
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.wjy.gameforu.user.service.PreferService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1717) ~[spring-beans-5.2.11.RELEASE.jar:5.2.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1273) ~[spring-beans-5.2.11.RELEASE.jar:5.2.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1227) ~[spring-beans-5.2.11.RELEASE.jar:5.2.11.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640) ~[spring-beans-5.2.11.RELEASE.jar:5.2.11.RELEASE]
+	... 85 common frames omitted
+
+2023-07-17 00:12:17.251  INFO 61535 --- [main] o.w.gameforu.test.CommentControllerTest  : The following profiles are active: dev
+2023-07-17 00:12:17.258 DEBUG 61535 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@7ee55e70
+2023-07-17 00:12:19.381  INFO 61535 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-07-17 00:12:19.432 DEBUG 61535 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-07-17 00:12:19.642 DEBUG 61535 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 5 mappings in 'requestMappingHandlerMapping'
+2023-07-17 00:12:19.793 DEBUG 61535 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-07-17 00:12:19.828 DEBUG 61535 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-07-17 00:12:20.057  INFO 61535 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2023-07-17 00:12:20.057  INFO 61535 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-07-17 00:12:20.081  INFO 61535 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 24 ms
+2023-07-17 00:12:20.130  INFO 61535 --- [main] o.w.gameforu.test.CommentControllerTest  : Started CommentControllerTest in 9.157 seconds (JVM running for 10.888)
+2023-07-17 00:12:20.240 DEBUG 61535 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2023-07-17 00:12:20.250 DEBUG 61535 --- [main] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2023-07-17 00:12:20.299 DEBUG 61535 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2023-07-17 00:12:20.302 DEBUG 61535 --- [main] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2023-07-17 00:12:20.313 DEBUG 61535 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2023-07-17 00:12:20.316 DEBUG 61535 --- [main] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2023-07-17 00:12:20.349 DEBUG 61535 --- [SpringContextShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@7ee55e70, started on Mon Jul 17 00:12:17 BST 2023, parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@37efd131
+2023-07-17 00:12:20.354  INFO 61535 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2023-07-17 00:13:17.512  INFO 61556 --- [main] o.w.gameforu.test.CommentControllerTest  : The following profiles are active: dev
+2023-07-17 00:13:17.519 DEBUG 61556 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@7ee55e70
+2023-07-17 00:13:20.634  INFO 61556 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-07-17 00:13:20.696 DEBUG 61556 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-07-17 00:13:20.897 DEBUG 61556 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 5 mappings in 'requestMappingHandlerMapping'
+2023-07-17 00:13:21.027 DEBUG 61556 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-07-17 00:13:21.054 DEBUG 61556 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-07-17 00:13:21.265  INFO 61556 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2023-07-17 00:13:21.265  INFO 61556 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-07-17 00:13:21.291  INFO 61556 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 26 ms
+2023-07-17 00:13:21.380  INFO 61556 --- [main] o.w.gameforu.test.CommentControllerTest  : Started CommentControllerTest in 10.372 seconds (JVM running for 12.007)
+2023-07-17 00:13:21.538 DEBUG 61556 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.wjy.gameforu.user.controller.CommentController#get(Integer)
+2023-07-17 00:13:21.678 DEBUG 61556 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler org.wjy.gameforu.common.exception.GlobalExceptionHandler#error(Exception)
+2023-07-17 00:13:21.791 DEBUG 61556 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-07-17 00:13:21.794 DEBUG 61556 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Writing [Result(code=201, message=fail, data=null)]
+2023-07-17 00:13:21.826 DEBUG 61556 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.baomidou.mybatisplus.core.exceptions.MybatisPlusException: can not find lambda cache for this entity [org.wjy.gameforu.model.entity.Comment]]
+2023-07-17 00:13:21.873 DEBUG 61556 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2023-07-17 00:13:21.877 DEBUG 61556 --- [main] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2023-07-17 00:13:21.899 DEBUG 61556 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.wjy.gameforu.user.controller.CommentController#addComment(Integer, Integer, GameCommentVo)
+2023-07-17 00:13:21.906 DEBUG 61556 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler org.wjy.gameforu.common.exception.GlobalExceptionHandler#error(Exception)
+2023-07-17 00:13:21.909 DEBUG 61556 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-07-17 00:13:21.909 DEBUG 61556 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Writing [Result(code=201, message=fail, data=null)]
+2023-07-17 00:13:21.910 DEBUG 61556 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.wjy.gameforu.common.result.Result org.wjy.gameforu.user.controller.CommentController.addComment(java.lang.Integer,java.lang.Integer,org.wjy.gameforu.vo.GameCommentVo)]
+2023-07-17 00:13:21.990 DEBUG 61556 --- [SpringContextShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@7ee55e70, started on Mon Jul 17 00:13:17 BST 2023, parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@37efd131
+2023-07-17 00:13:21.995  INFO 61556 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2023-07-17 00:13:46.513  INFO 61588 --- [main] o.w.gameforu.test.CommentControllerTest  : The following profiles are active: dev
+2023-07-17 00:13:46.522 DEBUG 61588 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@7ee55e70
+2023-07-17 00:13:48.438  INFO 61588 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-07-17 00:13:48.460 DEBUG 61588 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-07-17 00:13:48.575 DEBUG 61588 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 5 mappings in 'requestMappingHandlerMapping'
+2023-07-17 00:13:48.685 DEBUG 61588 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-07-17 00:13:48.709 DEBUG 61588 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-07-17 00:13:48.864  INFO 61588 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2023-07-17 00:13:48.864  INFO 61588 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-07-17 00:13:48.882  INFO 61588 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 18 ms
+2023-07-17 00:13:48.921  INFO 61588 --- [main] o.w.gameforu.test.CommentControllerTest  : Started CommentControllerTest in 8.833 seconds (JVM running for 10.309)
+2023-07-17 00:13:49.006 DEBUG 61588 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.wjy.gameforu.user.controller.CommentController#get(Integer)
+2023-07-17 00:13:49.077 DEBUG 61588 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler org.wjy.gameforu.common.exception.GlobalExceptionHandler#error(Exception)
+2023-07-17 00:13:49.137 DEBUG 61588 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-07-17 00:13:49.138 DEBUG 61588 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Writing [Result(code=201, message=fail, data=null)]
+2023-07-17 00:13:49.152 DEBUG 61588 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.baomidou.mybatisplus.core.exceptions.MybatisPlusException: can not find lambda cache for this entity [org.wjy.gameforu.model.entity.Comment]]
+2023-07-17 00:13:49.180 DEBUG 61588 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.wjy.gameforu.user.controller.CommentController#delete(Integer)
+2023-07-17 00:13:49.216 DEBUG 61588 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-07-17 00:13:49.216 DEBUG 61588 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Writing [Result(code=201, message=fail, data=null)]
+2023-07-17 00:13:49.230 DEBUG 61588 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.wjy.gameforu.user.controller.CommentController#addComment(Integer, Integer, GameCommentVo)
+2023-07-17 00:13:49.236 DEBUG 61588 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler org.wjy.gameforu.common.exception.GlobalExceptionHandler#error(Exception)
+2023-07-17 00:13:49.238 DEBUG 61588 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-07-17 00:13:49.239 DEBUG 61588 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Writing [Result(code=201, message=fail, data=null)]
+2023-07-17 00:13:49.239 DEBUG 61588 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.wjy.gameforu.common.result.Result org.wjy.gameforu.user.controller.CommentController.addComment(java.lang.Integer,java.lang.Integer,org.wjy.gameforu.vo.GameCommentVo)]
+2023-07-17 00:13:49.282 DEBUG 61588 --- [SpringContextShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@7ee55e70, started on Mon Jul 17 00:13:46 BST 2023, parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@37efd131
+2023-07-17 00:13:49.294  INFO 61588 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2023-07-17 00:14:51.204  INFO 61603 --- [main] o.w.gameforu.test.CommentControllerTest  : The following profiles are active: dev
+2023-07-17 00:14:51.212 DEBUG 61603 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@7ee55e70
+2023-07-17 00:14:53.074  INFO 61603 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-07-17 00:14:53.097 DEBUG 61603 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-07-17 00:14:53.203 DEBUG 61603 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 5 mappings in 'requestMappingHandlerMapping'
+2023-07-17 00:14:53.320 DEBUG 61603 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-07-17 00:14:53.347 DEBUG 61603 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-07-17 00:14:53.540  INFO 61603 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2023-07-17 00:14:53.540  INFO 61603 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-07-17 00:14:53.567  INFO 61603 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 26 ms
+2023-07-17 00:14:53.624  INFO 61603 --- [main] o.w.gameforu.test.CommentControllerTest  : Started CommentControllerTest in 9.174 seconds (JVM running for 10.536)
+2023-07-17 00:14:53.745 DEBUG 61603 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.wjy.gameforu.user.controller.CommentController#get(Integer)
+2023-07-17 00:14:53.850 DEBUG 61603 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler org.wjy.gameforu.common.exception.GlobalExceptionHandler#error(Exception)
+2023-07-17 00:14:53.912 DEBUG 61603 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-07-17 00:14:53.913 DEBUG 61603 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Writing [Result(code=201, message=fail, data=null)]
+2023-07-17 00:14:53.929 DEBUG 61603 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.baomidou.mybatisplus.core.exceptions.MybatisPlusException: can not find lambda cache for this entity [org.wjy.gameforu.model.entity.Comment]]
+2023-07-17 00:14:53.958 DEBUG 61603 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.wjy.gameforu.user.controller.CommentController#delete(Integer)
+2023-07-17 00:14:53.992 DEBUG 61603 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-07-17 00:14:53.995 DEBUG 61603 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Writing [Result(code=201, message=fail, data=null)]
+2023-07-17 00:14:54.017 DEBUG 61603 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.wjy.gameforu.user.controller.CommentController#addComment(Integer, Integer, GameCommentVo)
+2023-07-17 00:14:54.025 DEBUG 61603 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler org.wjy.gameforu.common.exception.GlobalExceptionHandler#error(Exception)
+2023-07-17 00:14:54.027 DEBUG 61603 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-07-17 00:14:54.027 DEBUG 61603 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Writing [Result(code=201, message=fail, data=null)]
+2023-07-17 00:14:54.028 DEBUG 61603 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.wjy.gameforu.common.result.Result org.wjy.gameforu.user.controller.CommentController.addComment(java.lang.Integer,java.lang.Integer,org.wjy.gameforu.vo.GameCommentVo)]
+2023-07-17 00:14:54.048 DEBUG 61603 --- [SpringContextShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@7ee55e70, started on Mon Jul 17 00:14:51 BST 2023, parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@37efd131
+2023-07-17 00:14:54.052  INFO 61603 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2023-07-17 00:24:54.301  INFO 61789 --- [main] o.w.gameforu.test.CommentControllerTest  : The following profiles are active: dev
+2023-07-17 00:24:54.308 DEBUG 61789 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@126be319
+2023-07-17 00:24:56.659  INFO 61789 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-07-17 00:24:56.688 DEBUG 61789 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-07-17 00:24:56.807 DEBUG 61789 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 5 mappings in 'requestMappingHandlerMapping'
+2023-07-17 00:24:56.896 DEBUG 61789 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-07-17 00:24:56.922 DEBUG 61789 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-07-17 00:24:57.067  INFO 61789 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2023-07-17 00:24:57.068  INFO 61789 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-07-17 00:24:57.086  INFO 61789 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 18 ms
+2023-07-17 00:24:57.122  INFO 61789 --- [main] o.w.gameforu.test.CommentControllerTest  : Started CommentControllerTest in 9.219 seconds (JVM running for 10.756)
+2023-07-17 00:24:57.339 DEBUG 61789 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.wjy.gameforu.user.controller.CommentController#addComment(Integer, Integer, GameCommentVo)
+2023-07-17 00:24:57.433 DEBUG 61789 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [GameCommentVo(gameComment=very good game!)]
+2023-07-17 00:24:57.474 DEBUG 61789 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-07-17 00:24:57.474 DEBUG 61789 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Writing [Result(code=201, message=fail, data=null)]
+2023-07-17 00:24:57.513 DEBUG 61789 --- [SpringContextShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@126be319, started on Mon Jul 17 00:24:54 BST 2023, parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@293a5f75
+2023-07-17 00:24:57.516  INFO 61789 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2023-07-17 00:25:24.216  INFO 61800 --- [main] o.w.gameforu.test.CommentControllerTest  : The following profiles are active: dev
+2023-07-17 00:25:24.222 DEBUG 61800 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@126be319
+2023-07-17 00:25:25.948  INFO 61800 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-07-17 00:25:25.975 DEBUG 61800 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-07-17 00:25:26.091 DEBUG 61800 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 5 mappings in 'requestMappingHandlerMapping'
+2023-07-17 00:25:26.186 DEBUG 61800 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-07-17 00:25:26.208 DEBUG 61800 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-07-17 00:25:26.347  INFO 61800 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2023-07-17 00:25:26.348  INFO 61800 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-07-17 00:25:26.364  INFO 61800 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 16 ms
+2023-07-17 00:25:26.398  INFO 61800 --- [main] o.w.gameforu.test.CommentControllerTest  : Started CommentControllerTest in 8.44 seconds (JVM running for 10.022)
+2023-07-17 00:25:26.477 DEBUG 61800 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.wjy.gameforu.user.controller.CommentController#get(Integer)
+2023-07-17 00:25:26.546 DEBUG 61800 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler org.wjy.gameforu.common.exception.GlobalExceptionHandler#error(Exception)
+2023-07-17 00:25:26.606 DEBUG 61800 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-07-17 00:25:26.607 DEBUG 61800 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Writing [Result(code=201, message=fail, data=null)]
+2023-07-17 00:25:26.624 DEBUG 61800 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.baomidou.mybatisplus.core.exceptions.MybatisPlusException: can not find lambda cache for this entity [org.wjy.gameforu.model.entity.Comment]]
+2023-07-17 00:25:26.660 DEBUG 61800 --- [SpringContextShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@126be319, started on Mon Jul 17 00:25:24 BST 2023, parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@293a5f75
+2023-07-17 00:25:26.665  INFO 61800 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2023-07-17 00:28:47.915  INFO 61891 --- [main] o.w.gameforu.test.CommentControllerTest  : The following profiles are active: dev
+2023-07-17 00:28:47.922 DEBUG 61891 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@126be319
+2023-07-17 00:28:50.360  INFO 61891 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-07-17 00:28:50.385 DEBUG 61891 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-07-17 00:28:50.503 DEBUG 61891 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 5 mappings in 'requestMappingHandlerMapping'
+2023-07-17 00:28:50.598 DEBUG 61891 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-07-17 00:28:50.631 DEBUG 61891 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-07-17 00:28:50.822  INFO 61891 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2023-07-17 00:28:50.823  INFO 61891 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-07-17 00:28:50.843  INFO 61891 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 20 ms
+2023-07-17 00:28:50.887  INFO 61891 --- [main] o.w.gameforu.test.CommentControllerTest  : Started CommentControllerTest in 9.258 seconds (JVM running for 10.895)
+2023-07-17 00:28:50.994 DEBUG 61891 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.wjy.gameforu.user.controller.CommentController#get(Integer)
+2023-07-17 00:28:51.142 DEBUG 61891 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-07-17 00:28:51.143 DEBUG 61891 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Writing [Result(code=200, message=success, data=[])]
+2023-07-17 00:28:51.200 DEBUG 61891 --- [SpringContextShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@126be319, started on Mon Jul 17 00:28:47 BST 2023, parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@293a5f75
+2023-07-17 00:28:51.203  INFO 61891 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2023-07-17 00:31:38.948  INFO 61949 --- [main] o.w.gameforu.test.CommentControllerTest  : The following profiles are active: dev
+2023-07-17 00:31:38.954 DEBUG 61949 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@126be319
+2023-07-17 00:31:40.909  INFO 61949 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-07-17 00:31:40.932 DEBUG 61949 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-07-17 00:31:41.041 DEBUG 61949 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 5 mappings in 'requestMappingHandlerMapping'
+2023-07-17 00:31:41.140 DEBUG 61949 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-07-17 00:31:41.165 DEBUG 61949 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-07-17 00:31:41.322  INFO 61949 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2023-07-17 00:31:41.322  INFO 61949 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-07-17 00:31:41.341  INFO 61949 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 19 ms
+2023-07-17 00:31:41.386  INFO 61949 --- [main] o.w.gameforu.test.CommentControllerTest  : Started CommentControllerTest in 8.667 seconds (JVM running for 10.072)
+2023-07-17 00:31:41.482 DEBUG 61949 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.wjy.gameforu.user.controller.CommentController#get(Integer)
+2023-07-17 00:31:41.565 DEBUG 61949 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler org.wjy.gameforu.common.exception.GlobalExceptionHandler#error(Exception)
+2023-07-17 00:31:41.628 DEBUG 61949 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-07-17 00:31:41.629 DEBUG 61949 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Writing [Result(code=201, message=fail, data=null)]
+2023-07-17 00:31:41.641 DEBUG 61949 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.baomidou.mybatisplus.core.exceptions.MybatisPlusException: can not find lambda cache for this entity [org.wjy.gameforu.model.entity.Comment]]
+2023-07-17 00:31:41.682 DEBUG 61949 --- [SpringContextShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@126be319, started on Mon Jul 17 00:31:38 BST 2023, parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@293a5f75
+2023-07-17 00:31:41.686  INFO 61949 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2023-07-17 00:32:44.893  INFO 61972 --- [main] o.w.gameforu.test.CommentControllerTest  : The following profiles are active: dev
+2023-07-17 00:32:44.899 DEBUG 61972 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@126be319
+2023-07-17 00:32:46.669  INFO 61972 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-07-17 00:32:46.691 DEBUG 61972 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-07-17 00:32:46.795 DEBUG 61972 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 5 mappings in 'requestMappingHandlerMapping'
+2023-07-17 00:32:46.896 DEBUG 61972 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-07-17 00:32:46.921 DEBUG 61972 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-07-17 00:32:47.076  INFO 61972 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2023-07-17 00:32:47.077  INFO 61972 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-07-17 00:32:47.090  INFO 61972 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 13 ms
+2023-07-17 00:32:47.124  INFO 61972 --- [main] o.w.gameforu.test.CommentControllerTest  : Started CommentControllerTest in 8.494 seconds (JVM running for 9.913)
+2023-07-17 00:32:47.216 DEBUG 61972 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.wjy.gameforu.user.controller.CommentController#get(Integer)
+2023-07-17 00:32:47.322 DEBUG 61972 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-07-17 00:32:47.322 DEBUG 61972 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Writing [Result(code=200, message=success, data=[])]
+2023-07-17 00:32:47.381 DEBUG 61972 --- [SpringContextShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@126be319, started on Mon Jul 17 00:32:44 BST 2023, parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@293a5f75
+2023-07-17 00:32:47.387  INFO 61972 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2023-07-17 00:33:48.261  INFO 61986 --- [main] o.w.gameforu.test.CommentControllerTest  : The following profiles are active: dev
+2023-07-17 00:33:48.267 DEBUG 61986 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@7ee55e70
+2023-07-17 00:33:50.171  INFO 61986 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-07-17 00:33:50.200 DEBUG 61986 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-07-17 00:33:50.318 DEBUG 61986 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 5 mappings in 'requestMappingHandlerMapping'
+2023-07-17 00:33:50.410 DEBUG 61986 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-07-17 00:33:50.430 DEBUG 61986 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-07-17 00:33:50.563  INFO 61986 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2023-07-17 00:33:50.563  INFO 61986 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-07-17 00:33:50.578  INFO 61986 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 14 ms
+2023-07-17 00:33:50.608  INFO 61986 --- [main] o.w.gameforu.test.CommentControllerTest  : Started CommentControllerTest in 8.76 seconds (JVM running for 10.613)
+2023-07-17 00:33:50.680 DEBUG 61986 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.wjy.gameforu.user.controller.CommentController#get(Integer)
+2023-07-17 00:33:50.775 DEBUG 61986 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-07-17 00:33:50.775 DEBUG 61986 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Writing [Result(code=200, message=success, data=[])]
+2023-07-17 00:33:50.820 DEBUG 61986 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.wjy.gameforu.user.controller.CommentController#delete(Integer)
+2023-07-17 00:33:50.822 DEBUG 61986 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-07-17 00:33:50.822 DEBUG 61986 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Writing [Result(code=201, message=fail, data=null)]
+2023-07-17 00:33:50.942 DEBUG 61986 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.wjy.gameforu.user.controller.CommentController#addComment(Integer, Integer, GameCommentVo)
+2023-07-17 00:33:50.983 DEBUG 61986 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [GameCommentVo(gameComment=very good game!)]
+2023-07-17 00:33:50.987 DEBUG 61986 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-07-17 00:33:50.987 DEBUG 61986 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Writing [Result(code=201, message=fail, data=null)]
+2023-07-17 00:33:51.001 DEBUG 61986 --- [SpringContextShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@7ee55e70, started on Mon Jul 17 00:33:48 BST 2023, parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@37efd131
+2023-07-17 00:33:51.004  INFO 61986 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'

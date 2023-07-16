@@ -9,7 +9,6 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.web.servlet.MockMvc;
 import org.wjy.gameforu.ServiceUserApplication;
 import org.wjy.gameforu.user.controller.PreferController;
-import org.wjy.gameforu.user.service.FollowerService;
 import org.wjy.gameforu.user.service.PreferService;
 
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
