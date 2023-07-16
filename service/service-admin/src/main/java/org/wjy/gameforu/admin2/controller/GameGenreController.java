@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @since 2023-07-07
  */
 @RestController
-@RequestMapping("/admin2/game-genre")
+@RequestMapping("/gamegenre/admin")
 public class GameGenreController {
 
 }

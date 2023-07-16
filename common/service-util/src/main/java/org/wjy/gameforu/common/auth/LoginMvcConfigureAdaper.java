@@ -36,7 +36,10 @@ public class LoginMvcConfigureAdaper extends WebMvcConfigurationSupport  {
 //        excludePath.add("/swagger-resources/**");
         registry.addInterceptor(new UserLoginInterceptor(redisTemplate))
                 .addPathPatterns("/**")
-                .excludePathPatterns("/*/permission/login/**", "/error", "/*/search/**");
+                .excludePathPatterns("/*/permission/login/**",
+                        "/error",
+                        "/*/search/**",
+                        "/*/user/**");
         super.addInterceptors(registry);
     }
 

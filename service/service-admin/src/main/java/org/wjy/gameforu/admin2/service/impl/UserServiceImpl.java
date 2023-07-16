@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.util.StringUtils;
 import org.wjy.gameforu.common.utils.JwtHelper;
 import org.wjy.gameforu.common.utils.MD5;
+import org.wjy.gameforu.model.entity.GameGenre;
 import org.wjy.gameforu.model.entity.Role;
 import org.wjy.gameforu.model.entity.User;
 import org.wjy.gameforu.model.entity.UserRole;
@@ -89,6 +90,14 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
 
     @Override
     public Boolean setRoles(Integer id, List<Integer> roleIds) {
+        //delete previous role
+        LambdaQueryWrapper<UserRole> wrapper = new LambdaQueryWrapper<>();
+        wrapper.eq(UserRole::getUid, id);
+        userRoleService.remove(wrapper);
+        if(roleIds==null){
+            return true;
+        }
+
         List<UserRole> userRoleList = new ArrayList<>();
         for (Integer roleId : roleIds) {
             UserRole userRole = new UserRole();

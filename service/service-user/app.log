@@ -1,0 +1,65 @@
+2023-07-16 21:47:53.672  INFO 58651 --- [main] o.w.g.test.FollowerControllerTest        : The following profiles are active: dev
+2023-07-16 21:47:53.678 DEBUG 58651 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@6d2260db
+2023-07-16 21:47:55.528  INFO 58651 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-07-16 21:47:55.550 DEBUG 58651 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-07-16 21:47:55.666 DEBUG 58651 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2023-07-16 21:47:55.759 DEBUG 58651 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-07-16 21:47:55.782 DEBUG 58651 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-07-16 21:47:55.935  INFO 58651 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2023-07-16 21:47:55.935  INFO 58651 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-07-16 21:47:55.951  INFO 58651 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 16 ms
+2023-07-16 21:47:55.984  INFO 58651 --- [main] o.w.g.test.FollowerControllerTest        : Started FollowerControllerTest in 8.669 seconds (JVM running for 10.302)
+2023-07-16 21:47:56.065 DEBUG 58651 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.wjy.gameforu.user.controller.FollowerController#follow(Integer, Integer)
+2023-07-16 21:47:56.165 DEBUG 58651 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-07-16 21:47:56.165 DEBUG 58651 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Writing [Result(code=201, message=fail, data=null)]
+2023-07-16 21:47:56.212 DEBUG 58651 --- [SpringContextShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@6d2260db, started on Sun Jul 16 21:47:53 BST 2023, parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@704f1591
+2023-07-16 21:47:56.214  INFO 58651 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2023-07-16 22:05:04.027  INFO 58890 --- [main] o.w.g.test.FollowerControllerTest        : The following profiles are active: dev
+2023-07-16 22:05:04.035 DEBUG 58890 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@1f2d2181
+2023-07-16 22:05:05.857  INFO 58890 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-07-16 22:05:05.879 DEBUG 58890 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-07-16 22:05:05.990 DEBUG 58890 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 4 mappings in 'requestMappingHandlerMapping'
+2023-07-16 22:05:06.094 DEBUG 58890 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-07-16 22:05:06.138 DEBUG 58890 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-07-16 22:05:06.354  INFO 58890 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2023-07-16 22:05:06.354  INFO 58890 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-07-16 22:05:06.376  INFO 58890 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 22 ms
+2023-07-16 22:05:06.414  INFO 58890 --- [main] o.w.g.test.FollowerControllerTest        : Started FollowerControllerTest in 8.659 seconds (JVM running for 10.139)
+2023-07-16 22:05:06.503 DEBUG 58890 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2023-07-16 22:05:06.507 DEBUG 58890 --- [main] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2023-07-16 22:05:06.551 DEBUG 58890 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.wjy.gameforu.user.controller.FollowerController#follow(Integer, Integer)
+2023-07-16 22:05:06.636 DEBUG 58890 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-07-16 22:05:06.637 DEBUG 58890 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Writing [Result(code=201, message=fail, data=null)]
+2023-07-16 22:05:06.663 DEBUG 58890 --- [SpringContextShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@1f2d2181, started on Sun Jul 16 22:05:04 BST 2023, parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@58fb7731
+2023-07-16 22:05:06.665  INFO 58890 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2023-07-16 22:05:33.897  INFO 58898 --- [main] o.w.g.test.FollowerControllerTest        : The following profiles are active: dev
+2023-07-16 22:05:33.904 DEBUG 58898 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@46292372
+2023-07-16 22:05:35.708  INFO 58898 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-07-16 22:05:35.731 DEBUG 58898 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-07-16 22:05:35.851 DEBUG 58898 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 4 mappings in 'requestMappingHandlerMapping'
+2023-07-16 22:05:35.960 DEBUG 58898 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-07-16 22:05:35.984 DEBUG 58898 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-07-16 22:05:36.221  INFO 58898 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2023-07-16 22:05:36.222  INFO 58898 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-07-16 22:05:36.244  INFO 58898 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 22 ms
+2023-07-16 22:05:36.275  INFO 58898 --- [main] o.w.g.test.FollowerControllerTest        : Started FollowerControllerTest in 8.596 seconds (JVM running for 9.956)
+2023-07-16 22:05:36.358 DEBUG 58898 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2023-07-16 22:05:36.362 DEBUG 58898 --- [main] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2023-07-16 22:05:36.412 DEBUG 58898 --- [SpringContextShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@46292372, started on Sun Jul 16 22:05:33 BST 2023, parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@dfddc9a
+2023-07-16 22:05:36.415  INFO 58898 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2023-07-16 22:06:38.214  INFO 58916 --- [main] o.w.g.test.FollowerControllerTest        : The following profiles are active: dev
+2023-07-16 22:06:38.223 DEBUG 58916 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@46292372
+2023-07-16 22:06:40.146  INFO 58916 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-07-16 22:06:40.167 DEBUG 58916 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-07-16 22:06:40.279 DEBUG 58916 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 4 mappings in 'requestMappingHandlerMapping'
+2023-07-16 22:06:40.376 DEBUG 58916 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-07-16 22:06:40.406 DEBUG 58916 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-07-16 22:06:40.574  INFO 58916 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2023-07-16 22:06:40.574  INFO 58916 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-07-16 22:06:40.594  INFO 58916 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 20 ms
+2023-07-16 22:06:40.630  INFO 58916 --- [main] o.w.g.test.FollowerControllerTest        : Started FollowerControllerTest in 9.137 seconds (JVM running for 11.39)
+2023-07-16 22:06:40.712 DEBUG 58916 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.wjy.gameforu.user.controller.FollowerController#unfollow(Integer)
+2023-07-16 22:06:40.808 DEBUG 58916 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-07-16 22:06:40.809 DEBUG 58916 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Writing [Result(code=201, message=fail, data=null)]
+2023-07-16 22:06:40.851 DEBUG 58916 --- [SpringContextShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@46292372, started on Sun Jul 16 22:06:38 BST 2023, parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@dfddc9a
+2023-07-16 22:06:40.853  INFO 58916 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'

@@ -42,6 +42,9 @@ public class GenreServiceImpl extends ServiceImpl<GenreMapper, Genre> implements
         wrapper.eq(GameGenre::getGid,gid);
         gameGenreService.remove(wrapper);
 
+        if(genids==null){
+            return;
+        }
         //2 set new genres
 
         List<GameGenre> gameGenreList = new ArrayList<>();

@@ -132,7 +132,7 @@ public class UserController {
     @ApiOperation("set roles")
     @PostMapping("setRoles")
     public Result setRoles(@RequestParam Integer id,
-                           @RequestParam List<Integer> roleIds){
+                           @RequestParam(required = false) List<Integer> roleIds){
         Boolean is_succeed = userService.setRoles(id, roleIds);
         if(is_succeed){
             return Result.ok(null);
