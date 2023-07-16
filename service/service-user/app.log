@@ -594,3 +594,23 @@ Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No q
 2023-07-17 00:47:06.725 DEBUG 62423 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Writing [Result(code=201, message=fail, data=null)]
 2023-07-17 00:47:06.738 DEBUG 62423 --- [SpringContextShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@7ee55e70, started on Mon Jul 17 00:47:04 BST 2023, parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@37efd131
 2023-07-17 00:47:06.741  INFO 62423 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2023-07-17 00:57:41.675  INFO 63002 --- [main] o.wjy.gameforu.test.ScoreControllerTest  : The following profiles are active: dev
+2023-07-17 00:57:41.682 DEBUG 63002 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@49bf29c6
+2023-07-17 00:57:43.601  INFO 63002 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-07-17 00:57:43.624 DEBUG 63002 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2023-07-17 00:57:43.737 DEBUG 63002 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 4 mappings in 'requestMappingHandlerMapping'
+2023-07-17 00:57:43.841 DEBUG 63002 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2023-07-17 00:57:43.867 DEBUG 63002 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2023-07-17 00:57:44.023  INFO 63002 --- [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2023-07-17 00:57:44.023  INFO 63002 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2023-07-17 00:57:44.041  INFO 63002 --- [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 17 ms
+2023-07-17 00:57:44.079  INFO 63002 --- [main] o.wjy.gameforu.test.ScoreControllerTest  : Started ScoreControllerTest in 8.738 seconds (JVM running for 9.928)
+2023-07-17 00:57:44.173 DEBUG 63002 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.wjy.gameforu.user.controller.ScoreController#get(Integer)
+2023-07-17 00:57:44.269 DEBUG 63002 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-07-17 00:57:44.270 DEBUG 63002 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Writing [Result(code=200, message=success, data=[])]
+2023-07-17 00:57:44.418 DEBUG 63002 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.wjy.gameforu.user.controller.ScoreController#addComment(Integer, Integer, GameScoreVo)
+2023-07-17 00:57:44.463 DEBUG 63002 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [GameScoreVo(score=10)]
+2023-07-17 00:57:44.466 DEBUG 63002 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2023-07-17 00:57:44.466 DEBUG 63002 --- [main] m.m.a.RequestResponseBodyMethodProcessor : Writing [Result(code=201, message=fail, data=null)]
+2023-07-17 00:57:44.479 DEBUG 63002 --- [SpringContextShutdownHook] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@49bf29c6, started on Mon Jul 17 00:57:41 BST 2023, parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@616fe72b
+2023-07-17 00:57:44.482  INFO 63002 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
