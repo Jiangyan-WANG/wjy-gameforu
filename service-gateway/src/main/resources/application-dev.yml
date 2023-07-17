@@ -25,6 +25,6 @@ spring:
             - Path=/*/permission/**
 
         - id: service-user
-            uri: lb://service-user
-            predicates:
-              - Path=/*/user/**
+          uri: lb://service-user
+          predicates:
+            - Path=/*/user/**

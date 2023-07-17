@@ -24,7 +24,11 @@ public class GameServiceImpl extends ServiceImpl<GameMapper, Game> implements Ga
     @Override
     public IPage selectGamePage(Page<Game> pageParam, GameQueryVo gameQueryVo) {
         //1 get condition
-        String gameName = gameQueryVo.getGameName().trim();
+
+        String gameName = gameQueryVo.getGameName();
+        if(gameName!=null){
+            gameName=gameName.trim();
+        }
 
         //mp conditional object
         LambdaQueryWrapper<Game> wrapper = new LambdaQueryWrapper<>();

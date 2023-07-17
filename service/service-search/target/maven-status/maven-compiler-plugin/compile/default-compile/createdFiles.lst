@@ -1,7 +1,0 @@
-org/wjy/gameforu/repository/GameApiRepository.class
-org/wjy/gameforu/receiver/GameReceiver.class
-org/wjy/gameforu/controller/GameApiController.class
-org/wjy/gameforu/service/impl/GameApiServiceImpl.class
-org/wjy/gameforu/ServiceSearchApplication.class
-org/wjy/gameforu/service/GameApiService.class
-org/wjy/gameforu/controller/GameSearchController.class

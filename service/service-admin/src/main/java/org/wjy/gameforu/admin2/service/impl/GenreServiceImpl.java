@@ -62,6 +62,9 @@ public class GenreServiceImpl extends ServiceImpl<GenreMapper, Genre> implements
     public IPage selectGenrePage(Page<Genre> pageParams, GenreQueryVo genreQueryVo) {
         //1 get condition
         String genrename = genreQueryVo.getGenrename();
+        if(genrename!=null){
+            genrename=genrename.trim();
+        }
         //2 get wrapper
 //        LambdaQueryWrapper<Genre> wrapper = new LambdaQueryWrapper<>();
         // use QueryWrapper here to get asc order
