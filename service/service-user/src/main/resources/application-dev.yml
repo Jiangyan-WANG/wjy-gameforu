@@ -14,19 +14,6 @@ spring:
     username: root
     password: 123456
 
-  rabbitmq:
-    host: 192.168.54.2
-    port: 5672
-    username: guest
-    password: guest
-    publisher-confirm-type: CORRELATED  #confirm if message sent to exchange successfully
-    publisher-returns: true
-    listener:
-      simple:
-        prefetch: 1
-        concurrency: 3
-        acknowledge-mode: manual   #consummer confirm manually
-
   jackson:
     date-format: yyyy-MM-dd HH:mm:ss
     time-zone: GMT+8

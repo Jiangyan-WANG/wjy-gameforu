@@ -68,7 +68,8 @@ public class ReplyCommentController {
     @GetMapping("get/{cid}")
     public Result get(@PathVariable Integer cid) {
         QueryWrapper<ReplyComment> wrapper = new QueryWrapper<>();
-        wrapper.orderByAsc("commentTime");
+        // here the column should be the column name in the tables
+        wrapper.orderByAsc("reply_time");
         wrapper.eq("cid", cid);
         //TODO modify to pagination search
         List<ReplyComment> list = replyCommentService.list(wrapper);

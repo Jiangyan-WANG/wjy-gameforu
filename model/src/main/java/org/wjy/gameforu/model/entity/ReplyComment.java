@@ -30,7 +30,7 @@ public class ReplyComment implements Serializable {
 
     private String content;
 
+    // replyTime relates to reply_time in tables
     private LocalDateTime replyTime;
-
 
 }
