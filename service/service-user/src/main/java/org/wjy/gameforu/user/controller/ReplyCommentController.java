@@ -8,15 +8,20 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import org.wjy.gameforu.admin2.service.UserService;
 import org.wjy.gameforu.common.result.Result;
 import org.wjy.gameforu.model.entity.Comment;
 import org.wjy.gameforu.model.entity.ReplyComment;
+import org.wjy.gameforu.model.entity.User;
 import org.wjy.gameforu.user.service.CommentService;
 import org.wjy.gameforu.user.service.ReplyCommentService;
 import org.wjy.gameforu.vo.GameCommentVo;
 import org.wjy.gameforu.vo.ReplyCommentVo;
 
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * <p>
@@ -34,6 +39,9 @@ public class ReplyCommentController {
 
     @Autowired
     ReplyCommentService replyCommentService;
+
+    @Autowired
+    UserService userService;
 
     @ApiOperation("add reply")
     @PostMapping("reply/{uid}/{cid}")
@@ -69,11 +77,19 @@ public class ReplyCommentController {
     public Result get(@PathVariable Integer cid) {
         QueryWrapper<ReplyComment> wrapper = new QueryWrapper<>();
         // here the column should be the column name in the tables
-        wrapper.orderByAsc("reply_time");
+        wrapper.orderByDesc("reply_time");
         wrapper.eq("cid", cid);
         //TODO modify to pagination search
-        List<ReplyComment> list = replyCommentService.list(wrapper);
-        return Result.ok(list);
+        List<ReplyComment> replyCommentList = replyCommentService.list(wrapper);
+        List<User> userList = new ArrayList<>();
+        for (ReplyComment replyComment : replyCommentList) {
+            User user = userService.getById(replyComment.getUid());
+            userList.add(user);
+        }
+        Map<String,Object> resMap = new HashMap<>();
+        resMap.put("replyCommentList",replyCommentList);
+        resMap.put("userList",userList);
+        return Result.ok(resMap);
     }
 }
 

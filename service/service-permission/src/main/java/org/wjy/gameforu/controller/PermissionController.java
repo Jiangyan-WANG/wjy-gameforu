@@ -11,6 +11,7 @@ import org.wjy.gameforu.common.auth.AuthContextHolder;
 import org.wjy.gameforu.common.constant.RedisConst;
 import org.wjy.gameforu.common.result.Result;
 import org.wjy.gameforu.model.entity.User;
+import org.wjy.gameforu.model.entity.UserInfo;
 import org.wjy.gameforu.vo.LoginDataVo;
 import org.wjy.gameforu.vo.UserInfoResponseVo;
 
@@ -59,7 +60,16 @@ public class PermissionController {
             redisTemplate.opsForValue().set(RedisConst.USER_LOGIN_KEY_PREFIX+user.getId(),
                     userInfoResponseVo);
 
-            return Result.ok(token);
+            // construct return data
+            UserInfo userInfo = new UserInfo();
+            userInfo.setId(user.getId());
+            userInfo.setUsername(user.getUsername());
+            userInfo.setPhonenumber(user.getPhonenumber());
+            userInfo.setEmail(user.getEmail());
+            userInfo.setCreateTime(user.getCreateTime());
+            userInfo.setToken(token);
+
+            return Result.ok(userInfo);
         }else{
             return Result.fail(null);
         }

@@ -11,6 +11,8 @@ import org.wjy.gameforu.common.result.Result;
 import org.wjy.gameforu.model.entity.Follower;
 import org.wjy.gameforu.user.service.FollowerService;
 
+import java.util.Map;
+
 /**
  * <p>
  *  前端控制器
@@ -58,6 +60,12 @@ public class FollowerController {
         }else{
             return Result.fail(null);
         }
+    }
+
+    @GetMapping("follow/dynamic/{uid}")
+    public Result dynamic(@PathVariable Integer uid){
+        Map<String, Object> resmap = followerService.getDynamicsByUid(uid);
+        return Result.ok(resmap);
     }
 }
 
