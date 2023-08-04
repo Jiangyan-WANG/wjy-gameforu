@@ -1,5 +1,6 @@
 package org.wjy.gameforu.controller;
 
+import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
@@ -90,4 +91,26 @@ public class PermissionController {
 
         return Result.ok(userInfoResponseVo);
     }
+
+    @ApiOperation("register")
+    @PostMapping("register")
+    public Result register(@RequestBody LoginDataVo registerVo){
+        // query by username
+        LambdaQueryWrapper<User> newUserLqw = new LambdaQueryWrapper<>();
+        newUserLqw.eq(User::getUsername, registerVo.getUsername());
+        //
+        User one = userService.getOne(newUserLqw);
+        if(one == null){
+            return Result.fail(null);
+        }
+
+        User newUser = new User();
+        newUser.setUsername(registerVo.getUsername());
+        newUser.setPassword(registerVo.getPassword());
+        userService.save(newUser);
+
+        User addedUser = userService.getOne(newUserLqw);
+        return Result.ok(addedUser);
+
+     }
 }
