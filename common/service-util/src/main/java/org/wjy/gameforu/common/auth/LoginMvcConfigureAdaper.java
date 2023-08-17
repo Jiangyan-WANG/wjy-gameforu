@@ -7,8 +7,6 @@ import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport;
 
 import javax.annotation.Resource;
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * config for interceptor
@@ -39,7 +37,8 @@ public class LoginMvcConfigureAdaper extends WebMvcConfigurationSupport  {
                 .excludePathPatterns("/*/permission/login/**",
                         "/error",
                         "/*/search/**",
-                        "/*/user/**");
+                        "/*/user/**"
+                        );
         super.addInterceptors(registry);
     }
 

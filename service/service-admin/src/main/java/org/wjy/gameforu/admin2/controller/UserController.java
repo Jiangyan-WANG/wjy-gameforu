@@ -87,6 +87,7 @@ public class UserController {
     @ApiOperation("update user")
     @PutMapping("update")
     public Result update(@RequestBody User user){
+        user.setPassword(MD5.encrypt(user.getPassword()));
         boolean is_succeed = userService.updateById(user);
         if(is_succeed){
             return Result.ok(null);

@@ -65,7 +65,7 @@ public class TagController {
         }
     }
 
-    @ApiOperation("search comment by gameid")
+    @ApiOperation("search tag by gameid")
     @GetMapping("get/{gid}")
     public Result get(@PathVariable Integer gid) {
         QueryWrapper<Tag> wrapper = new QueryWrapper<>();

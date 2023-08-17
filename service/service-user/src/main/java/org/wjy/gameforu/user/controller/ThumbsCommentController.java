@@ -1,6 +1,7 @@
 package org.wjy.gameforu.user.controller;
 
 
+import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -38,7 +39,7 @@ public class ThumbsCommentController {
 
     @ApiOperation("add thumbs")
     @PostMapping("thumbs/{uid}/{cid}")
-    public Result addComment(@PathVariable Integer uid,
+    public Result thumbs(@PathVariable Integer uid,
                              @PathVariable Integer cid,
                              @RequestBody ThumbsVo thumbsVo){
 
@@ -46,11 +47,29 @@ public class ThumbsCommentController {
         thumbsComment.setUid(uid);
         thumbsComment.setCid(cid);
         thumbsComment.setUp(thumbsVo.getThumbs()==1);
-        boolean is_succeed = thumbsCommentService.save(thumbsComment);
-        if(is_succeed){
-            return Result.ok(null);
-        }else{
-            return Result.fail(null);
+
+        // check if thumbs comment exist
+        LambdaQueryWrapper<ThumbsComment> thumbsCommentLambdaQueryWrapper = new LambdaQueryWrapper<>();
+        thumbsCommentLambdaQueryWrapper.eq(ThumbsComment::getUid,uid).eq(ThumbsComment::getCid,cid);
+        ThumbsComment existedThumbsComment = thumbsCommentService.getOne(thumbsCommentLambdaQueryWrapper);
+        if(existedThumbsComment!=null){
+            if(thumbsComment.getUp()==existedThumbsComment.getUp()){
+                thumbsCommentService.removeById(existedThumbsComment.getId());
+                return Result.ok(0);
+            } else{
+                thumbsCommentService.removeById(existedThumbsComment.getId());
+                thumbsCommentService.save(thumbsComment);
+                return Result.ok(2);
+            }
+        }
+        else{
+            boolean is_success = thumbsCommentService.save(thumbsComment);
+            if(is_success){
+                return Result.ok(1);
+            }
+            else{
+                return Result.fail(-1);
+            }
         }
     }
 
@@ -74,6 +93,24 @@ public class ThumbsCommentController {
         //TODO modify to pagination search
         List<ThumbsComment> list = thumbsCommentService.list(wrapper);
         return Result.ok(list);
+    }
+
+    @ApiOperation("get thumb comment info")
+    @GetMapping("get/{uid}/{cid}")
+    public Result getInfo(@PathVariable Integer uid,
+                      @PathVariable Integer cid){
+        LambdaQueryWrapper<ThumbsComment> thumbsCommentLambdaQueryWrapper = new LambdaQueryWrapper<>();
+        thumbsCommentLambdaQueryWrapper.eq(ThumbsComment::getUid,uid).eq(ThumbsComment::getCid,cid);
+        ThumbsComment existedThumbComment = thumbsCommentService.getOne(thumbsCommentLambdaQueryWrapper);
+        if(existedThumbComment!=null){
+            if(existedThumbComment.getUp()){
+                return Result.ok(1);
+            } else{
+                return Result.ok(0);
+            }
+        }else{
+            return Result.ok(-1);
+        }
     }
 }
 

@@ -39,6 +39,8 @@ public class Game implements Serializable {
 
     private Integer userscore;
 
+    private Integer scoreusercount;
+
     private String owners;
 
     @TableField("initialPrice")

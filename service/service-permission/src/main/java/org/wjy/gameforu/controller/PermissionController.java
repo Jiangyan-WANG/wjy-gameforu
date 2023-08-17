@@ -11,6 +11,7 @@ import org.wjy.gameforu.admin2.service.UserService;
 import org.wjy.gameforu.common.auth.AuthContextHolder;
 import org.wjy.gameforu.common.constant.RedisConst;
 import org.wjy.gameforu.common.result.Result;
+import org.wjy.gameforu.common.utils.MD5;
 import org.wjy.gameforu.model.entity.User;
 import org.wjy.gameforu.model.entity.UserInfo;
 import org.wjy.gameforu.vo.LoginDataVo;
@@ -65,6 +66,7 @@ public class PermissionController {
             UserInfo userInfo = new UserInfo();
             userInfo.setId(user.getId());
             userInfo.setUsername(user.getUsername());
+            userInfo.setPassword(loginDataVo.getPassword());
             userInfo.setPhonenumber(user.getPhonenumber());
             userInfo.setEmail(user.getEmail());
             userInfo.setCreateTime(user.getCreateTime());
@@ -100,13 +102,13 @@ public class PermissionController {
         newUserLqw.eq(User::getUsername, registerVo.getUsername());
         //
         User one = userService.getOne(newUserLqw);
-        if(one == null){
+        if(one != null){
             return Result.fail(null);
         }
 
         User newUser = new User();
         newUser.setUsername(registerVo.getUsername());
-        newUser.setPassword(registerVo.getPassword());
+        newUser.setPassword(MD5.encrypt(registerVo.getPassword()));
         userService.save(newUser);
 
         User addedUser = userService.getOne(newUserLqw);

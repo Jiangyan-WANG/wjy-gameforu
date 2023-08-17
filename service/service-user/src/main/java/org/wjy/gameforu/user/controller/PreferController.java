@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.*;
 
 import org.wjy.gameforu.common.result.Result;
 import org.wjy.gameforu.user.service.PreferService;
+import org.wjy.gameforu.vo.SetPreferVo;
 
 import java.util.Map;
 
@@ -37,15 +38,16 @@ public class PreferController {
     }
 
     @ApiOperation("set prefer")
-    @PostMapping("setprefer")
-    public Result setPrefer(@RequestParam Integer uid,
-                            @RequestParam(required = false) Integer[] preferIds){
-        Boolean is_succeed = preferService.setPrefer(uid, preferIds);
+    @PostMapping("setprefer/{uid}")
+    public Result setPrefer(@PathVariable Integer uid,
+            @RequestBody(required = false) SetPreferVo setPreferVo){
+        Boolean is_succeed = preferService.setPrefer(uid, setPreferVo.getPreferIdsArray());
         if(is_succeed){
             return Result.ok(null);
         }else{
             return Result.fail(null);
         }
     }
+
 }
 
