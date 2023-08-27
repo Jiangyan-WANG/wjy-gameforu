@@ -52,6 +52,12 @@ public class Game implements Serializable {
 
     private String logourl;
 
+    private String keyword1;
+
+    private String keyword2;
+
+    private String keyword3;
+
     private LocalDateTime addTime;
 
 

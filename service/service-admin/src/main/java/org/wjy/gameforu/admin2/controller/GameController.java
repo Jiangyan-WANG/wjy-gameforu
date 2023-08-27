@@ -1,5 +1,6 @@
 package org.wjy.gameforu.admin2.controller;
 
+import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import io.swagger.annotations.Api;
@@ -208,6 +209,15 @@ public class GameController {
         }else{
             return Result.fail(null);
         }
+    }
+
+    @GetMapping("top/{n}")
+    public Result topN(@PathVariable Integer n){
+        LambdaQueryWrapper<Game> gameLambdaQueryWrapper = new LambdaQueryWrapper<>();
+        gameLambdaQueryWrapper.orderByDesc(Game::getUserscore);
+        gameLambdaQueryWrapper.last("limit 0,"+n);
+        List<Game> topNGame = gameService.list(gameLambdaQueryWrapper);
+        return Result.ok(topNGame);
     }
 
     public void sendToAddMq(Integer game_id){

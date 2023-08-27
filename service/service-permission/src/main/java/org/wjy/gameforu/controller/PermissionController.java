@@ -109,10 +109,10 @@ public class PermissionController {
         User newUser = new User();
         newUser.setUsername(registerVo.getUsername());
         newUser.setPassword(MD5.encrypt(registerVo.getPassword()));
-        userService.save(newUser);
-
-        User addedUser = userService.getOne(newUserLqw);
-        return Result.ok(addedUser);
-
+        boolean is_succeed = userService.save(newUser);
+        if(is_succeed){
+            return login(registerVo);
+        }
+        return  Result.fail("register fail, please try again!");
      }
 }

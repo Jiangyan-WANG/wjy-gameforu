@@ -127,6 +127,5 @@ public class FollowerController {
         }
         return Result.ok(myFollowerUser);
     }
-
 }
 
