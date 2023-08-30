@@ -1,5 +1,6 @@
 package org.wjy.gameforu.admin2.controller;
 
+import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import io.swagger.annotations.Api;
@@ -33,8 +34,8 @@ public class ProposedGameController {
 
     @ApiOperation("add proposed game")
     @PostMapping("add")
-    public Result add(@RequestBody ProposedGame role){
-        Boolean is_succeed = proposedGameService.save(role);
+    public Result add(@RequestBody ProposedGame proposedGame){
+        Boolean is_succeed = proposedGameService.save(proposedGame);
         if(is_succeed){
             return Result.ok(null);
         }else{
@@ -43,7 +44,7 @@ public class ProposedGameController {
     }
 
     //3 delete role by id
-    @ApiOperation("delete role")
+    @ApiOperation("delete proposedGame")
     @DeleteMapping("remove/{id}")
     public Result delete(@PathVariable Integer id){
         boolean is_succeed = proposedGameService.removeById(id);
@@ -67,10 +68,10 @@ public class ProposedGameController {
     }
 
     //5 update role
-    @ApiOperation("update role")
+    @ApiOperation("update")
     @PutMapping("update")
-    public Result update(@RequestBody ProposedGame role){
-        boolean is_succeed = proposedGameService.updateById(role);
+    public Result update(@RequestBody ProposedGame proposedGame){
+        boolean is_succeed = proposedGameService.updateById(proposedGame);
         if(is_succeed) {
             return Result.ok(null);
         }else{
@@ -86,5 +87,21 @@ public class ProposedGameController {
         return Result.ok(role);
     }
 
+    @PutMapping("needadd")
+    public Result needAdd(){
+        LambdaQueryWrapper<ProposedGame> proposedGameLambdaQueryWrapper = new LambdaQueryWrapper<>();
+        proposedGameLambdaQueryWrapper.eq(ProposedGame::getAdded,false);
+        List<ProposedGame> needAddGames = proposedGameService.list(proposedGameLambdaQueryWrapper);
+        return Result.ok(needAddGames);
+    }
+
+    @GetMapping("getmyproposed/{uid}")
+    public Result getMyProposed(@PathVariable Integer uid){
+        LambdaQueryWrapper<ProposedGame> proposedGameLambdaQueryWrapper = new LambdaQueryWrapper<>();
+        proposedGameLambdaQueryWrapper.eq(ProposedGame::getUid,uid);
+        proposedGameLambdaQueryWrapper.orderByDesc(ProposedGame::getProposedTime);
+        List<ProposedGame> myProposedGames = proposedGameService.list(proposedGameLambdaQueryWrapper);
+        return Result.ok(myProposedGames);
+    }
 }
 

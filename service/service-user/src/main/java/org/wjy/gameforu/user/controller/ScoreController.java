@@ -6,6 +6,7 @@ import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.ibatis.io.ResolverUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -95,6 +96,19 @@ public class ScoreController {
         //TODO modify to pagination search
         List<Score> list = scoreService.list(wrapper);
         return Result.ok(list);
+    }
+
+    @GetMapping("/get/{uid}/{gid}")
+    public Result getUserGameScore(@PathVariable Integer uid,
+                                   @PathVariable Integer gid){
+        LambdaQueryWrapper<Score> scoreLambdaQueryWrapper = new LambdaQueryWrapper<>();
+        scoreLambdaQueryWrapper.eq(Score::getUid,uid);
+        scoreLambdaQueryWrapper.eq(Score::getGid,gid);
+        Score score = scoreService.getOne(scoreLambdaQueryWrapper);
+        if(score==null){
+            return Result.ok(0);
+        }
+        return Result.ok(score.getScore());
     }
 }
 

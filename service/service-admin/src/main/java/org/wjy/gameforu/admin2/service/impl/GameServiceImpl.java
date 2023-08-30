@@ -51,4 +51,30 @@ public class GameServiceImpl extends ServiceImpl<GameMapper, Game> implements Ga
         Game game = baseMapper.selectOne(wrapper);
         return game.getId();
     }
+
+    @Override
+    public IPage selectGamePageWithScoreFilter(Page<Game> pageParam, GameQueryVo gameQueryVo, Integer low, Integer high) {
+        //1 get condition
+
+        String gameName = gameQueryVo.getGameName();
+        if(gameName!=null){
+            gameName=gameName.trim();
+        }
+
+        //mp conditional object
+        LambdaQueryWrapper<Game> wrapper = new LambdaQueryWrapper<>();
+        //2 if condition not null, wrap search condition
+        if(!StringUtils.isEmpty(gameName)){
+            // method ref，condition. likely search
+            // username like ?, gameName in sql
+            wrapper.like(Game::getGamename, gameName);
+        }
+        //过滤器评分
+        wrapper.ge(Game::getUserscore,low);
+        wrapper.le(Game::getUserscore,high);
+        // pagination
+        IPage<Game> gamePage = baseMapper.selectPage(pageParam, wrapper);
+        //3 else return all
+        return gamePage ;
+    }
 }

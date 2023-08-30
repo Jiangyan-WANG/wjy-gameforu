@@ -8,13 +8,19 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import org.wjy.gameforu.admin2.service.GameService;
 import org.wjy.gameforu.admin2.service.UserService;
 import org.wjy.gameforu.common.result.Result;
+import org.wjy.gameforu.model.entity.Comment;
 import org.wjy.gameforu.model.entity.Follower;
+import org.wjy.gameforu.model.entity.Game;
 import org.wjy.gameforu.model.entity.User;
+import org.wjy.gameforu.user.service.CommentService;
 import org.wjy.gameforu.user.service.FollowerService;
+import org.wjy.gameforu.vo.FollowsDynamicResult;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
@@ -39,6 +45,12 @@ public class FollowerController {
 
     @Autowired
     private UserService userService;
+
+    @Autowired
+    private GameService gameService;
+
+    @Autowired
+    private CommentService commentService;
 
     /**
      *
@@ -126,6 +138,38 @@ public class FollowerController {
             myFollowerUser.add(userService.getById(myFollowerId));
         }
         return Result.ok(myFollowerUser);
+    }
+
+    @GetMapping("dynamics/{uid}")
+    public Result getFollowsDynamic(@PathVariable Integer uid){
+        // 查询关注用户
+        List<User> myFollows = (List<User>) getMyFollows(uid).getData();
+        if(myFollows==null){
+            return Result.ok(null);
+        }
+        // 查询关注用户最近发表的评论列表
+        List<User> users = new ArrayList<>();
+        List<Comment> comments = new ArrayList<>();
+        List<Game> games = new ArrayList<>();
+        for (User myFollow : myFollows) {
+            LambdaQueryWrapper<Comment> commentLambdaQueryWrapper = new LambdaQueryWrapper<>();
+            commentLambdaQueryWrapper.orderByDesc(Comment::getCommentTime);
+            commentLambdaQueryWrapper.eq(Comment::getUid,myFollow.getId());
+            List<Comment> listComments = commentService.list(commentLambdaQueryWrapper);
+            for (Comment listComment : listComments) {
+                Game game = gameService.getById(listComment.getGid());
+                users.add(myFollow);
+                comments.add(listComment);
+                games.add(game);
+            }
+        }
+
+        FollowsDynamicResult followsDynamicResult = new FollowsDynamicResult();
+        followsDynamicResult.setUsers(users);
+        followsDynamicResult.setComments(comments);
+        followsDynamicResult.setGames(games);
+
+        return Result.ok(followsDynamicResult);
     }
 }
 

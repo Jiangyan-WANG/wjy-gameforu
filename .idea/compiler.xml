@@ -17,6 +17,7 @@
         <module name="model" />
         <module name="service-game-client" />
         <module name="service-util" />
+        <module name="service-recommender" />
       </profile>
     </annotationProcessing>
   </component>
@@ -30,6 +31,7 @@
       <module name="service-game-client" options="-parameters" />
       <module name="service-gateway" options="-parameters" />
       <module name="service-permission" options="-parameters" />
+      <module name="service-recommender" options="-parameters" />
       <module name="service-search" options="-parameters" />
       <module name="service-user" options="-parameters" />
       <module name="service-util" options="-parameters" />

@@ -24,4 +24,6 @@ public interface GameService extends IService<Game> {
     IPage selectGamePage(Page<Game> pageParam, GameQueryVo gameQueryVo);
 
     Integer getIdByAppid(Integer appid);
+
+    IPage<Game> selectGamePageWithScoreFilter(Page<Game> pageParam, GameQueryVo gameQueryVo, Integer low, Integer high);
 }

@@ -145,6 +145,23 @@ public class GameController {
         return Result.ok(pageModel);
     }
 
+    @GetMapping("{current}/{limit}/{low}/{high}")
+    public Result  pageList(@PathVariable Integer current,
+                            @PathVariable Integer limit,
+                            @PathVariable Integer low,
+                            @PathVariable Integer high,
+                            GameQueryVo gameQueryVo) {
+
+        //1 create page
+        Page<Game> pageParam = new Page<>(current,limit);
+
+        //2 service to search, return Page object
+
+        IPage<Game> pageModel = gameService.selectGamePageWithScoreFilter(pageParam, gameQueryVo, low, high);
+
+        return Result.ok(pageModel);
+    }
+
     //2 select by id
     @ApiOperation("search by id")
     @GetMapping("get/{id}")

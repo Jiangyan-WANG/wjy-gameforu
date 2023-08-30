@@ -169,6 +169,35 @@ public class Swagger2Config {
                 .globalOperationParameters(pars);
         return searchApi;
     }
+
+    /**
+     * api config for recommender
+     * @return
+     */
+    @Bean
+    public Docket recommenderApiConfig(){
+        List<Parameter> pars = new ArrayList<>();
+        ParameterBuilder tokenPar = new ParameterBuilder();
+        tokenPar.name("recommenderId")
+                .description("用户token")
+                .defaultValue("1")
+                .modelRef(new ModelRef("string"))
+                .parameterType("header")
+                .required(false)
+                .build();
+        pars.add(tokenPar.build());
+
+        Docket recommenderApi = new Docket(DocumentationType.SWAGGER_2)
+                .groupName("recommenderApi")
+                .apiInfo(recommenderApiInfo())
+                .select()
+                // only show path with /admin/
+                .apis(RequestHandlerSelectors.basePackage("org.wjy.gameforu"))
+                .paths(PathSelectors.regex("/.*/recommender/.*"))
+                .build()
+                .globalOperationParameters(pars);
+        return recommenderApi;
+    }
     /**
      * api info
      * @return
@@ -220,7 +249,8 @@ public class Swagger2Config {
                 .version("1.0")
                 .contact(new Contact("J Wang", "", "jxw1466@alumni.bham.ac.uk"))
                 .build();
-    }/**
+    }
+    /**
      * api search
      * @return
      */
@@ -232,4 +262,19 @@ public class Swagger2Config {
                 .contact(new Contact("J Wang", "", "jxw1466@alumni.bham.ac.uk"))
                 .build();
     }
+
+    /**
+     * api search
+     * @return
+     */
+    private ApiInfo recommenderApiInfo(){
+        return new ApiInfoBuilder()
+                .title("后台管理系统-API文档")
+                .description("本文档描述了GameForU后台系统服务接口定义")
+                .version("1.0")
+                .contact(new Contact("J Wang", "", "jxw1466@alumni.bham.ac.uk"))
+                .build();
+    }
+
+
 }

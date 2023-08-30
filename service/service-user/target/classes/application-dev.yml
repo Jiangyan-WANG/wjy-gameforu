@@ -10,7 +10,8 @@ spring:
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://192.168.54.2:33306/gameforu_dev?characterEncoding=utf-8&useSSL=false
+    url: jdbc:mysql://192.168.0.172:33306/gameforu_dev?characterEncoding=utf-8&useSSL=false
+#    url: jdbc:mysql://192.168.54.2:33306/gameforu_dev?characterEncoding=utf-8&useSSL=false
     username: root
     password: 123456
 
@@ -19,7 +20,8 @@ spring:
     time-zone: GMT+8
 
   redis: #docker in linux
-    host: 192.168.54.2
+    host: 192.168.0.172
+#    host: 192.168.54.2
     port: 6379
     database: 0
     timeout: 1800000
