@@ -15,6 +15,7 @@ import org.wjy.gameforu.common.result.Result;
 import org.wjy.gameforu.model.entity.Comment;
 import org.wjy.gameforu.model.entity.Game;
 import org.wjy.gameforu.model.entity.Score;
+import org.wjy.gameforu.model.entity.UserGameRating;
 import org.wjy.gameforu.user.service.CommentService;
 import org.wjy.gameforu.user.service.ScoreService;
 import org.wjy.gameforu.vo.GameCommentVo;

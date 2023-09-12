@@ -17,10 +17,10 @@ import org.wjy.gameforu.common.result.Result;
 import org.wjy.gameforu.model.external.SteamGame;
 import org.wjy.gameforu.mq.constant.MqConst;
 import org.wjy.gameforu.mq.service.RabbitService;
+import org.wjy.gameforu.vo.GameIdsVo;
 import org.wjy.gameforu.vo.GameQueryVo;
 
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /**
  * <p>
@@ -210,6 +210,16 @@ public class GameController {
         }else{
             return Result.fail(null);
         }
+    }
+
+    @PostMapping("getByIds")
+    public Result getByids(@RequestBody GameIdsVo gameIdsVo){
+        List<Game> res = new ArrayList<>();
+        for (Integer id : gameIdsVo.getGids()) {
+            Game game = gameService.getById(id);
+            res.add(game);
+        }
+        return Result.ok(res);
     }
 
     //6 batched delete

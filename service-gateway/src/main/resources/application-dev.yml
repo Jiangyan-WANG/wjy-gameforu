@@ -33,3 +33,4 @@ spring:
           uri: lb://service-recommender
           predicates:
             - Path=/*/recommender/**
+

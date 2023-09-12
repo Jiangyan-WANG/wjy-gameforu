@@ -91,7 +91,7 @@ public class UserGameRatingController {
 
             if(!avgScore.containsKey(rating.getUid())){
                 avgScore.put(rating.getUid(), getAvgScore(scores));
-                diffScore.put(rating.getUid(),getDiffScore(scores));
+                diffScore.put(rating.getUid(), getDiffScore(scores));
             }
 
             //点赞列表
@@ -101,43 +101,52 @@ public class UserGameRatingController {
 
             if(!avgThumb.containsKey(rating.getUid())){
                 avgThumb.put(rating.getUid(), getAvgThumbsGame(thumbsGames));
-                diffThumb.put(rating.getUid(),getDiffThumbsGame(thumbsGames));
+                diffThumb.put(rating.getUid(), getDiffThumbsGame(thumbsGames));
             }
 
             //计算标准化分数与点赞分，并求rating
             //score
+            rating.setRating(0d);
             scoreLambdaQueryWrapper.eq(Score::getGid,rating.getGid());
             Score score = scoreService.getOne(scoreLambdaQueryWrapper);
-            rating.setRating(
-                    (
-                            score.getScore()-avgScore.get(score.getUid())
-                    )/
-                            diffScore.get(score.getUid() * 0.7)
-            );
+            if(score!=null){
+
+                rating.setRating(
+                        (
+                                score.getScore()-avgScore.get(score.getUid())
+                        )/
+                                diffScore.get(score.getUid()) * 0.7
+                );
+            }
 
             //thumbs
             thumbsGameLambdaQueryWrapper.eq(ThumbsGame::getGid,rating.getGid());
             ThumbsGame thumbsGame = thumbsGameService.getOne(thumbsGameLambdaQueryWrapper);
-            rating.setRating(rating.getRating() +
-                            (
-                                    thumbsGame.getUp()?1:-1-avgScore.get(thumbsGame.getUid())
-                            )/
-                                    diffScore.get(thumbsGame.getUid()) * 0.3
-                    );
-            userGameRatingService.updateById(rating);
+            if(thumbsGame != null){
+                rating.setRating(rating.getRating() +
+                                (
+                                        (thumbsGame.getUp()?1:-1)-avgScore.get(thumbsGame.getUid())
+                                )/
+                                        diffScore.get(thumbsGame.getUid()) * 0.3
+                        );
 
+            }
+            userGameRatingService.updateById(rating);
         }
 
-        return null;
+        //归一化
+        NormOne();
+
+        return Result.ok(null);
     }
 
     public Double getAvgScore(List<Score> scores){
-        if(scores == null) return 0d;
+        if(scores == null || scores.stream().count()==0) return 0d;
         return scores.stream().mapToDouble(Score::getScore).average().getAsDouble();
     }
 
     public Double getDiffScore(List<Score> scores){
-        if(scores == null || scores.stream().count()==1) return 9d;
+        if(scores == null || scores.stream().count()<=1) return 9d;
         Double diffScore = scores.stream().mapToDouble(Score::getScore).max().getAsDouble() -
                 scores.stream().mapToDouble(Score::getScore).min().getAsDouble();
         if(diffScore==0) return 9d;
@@ -145,19 +154,34 @@ public class UserGameRatingController {
     }
 
     public Double getAvgThumbsGame(List<ThumbsGame> thumbsGames){
-        if(thumbsGames == null) return 0d;
+        if(thumbsGames == null || thumbsGames.stream().count()==0) return 0d;
         return thumbsGames.stream().map(item->item.getUp()?1:-1).collect(Collectors.toList()).stream()
                 .mapToDouble(Integer::doubleValue).
                 average().getAsDouble();
     }
 
     public Double getDiffThumbsGame(List<ThumbsGame> thumbsGames){
-        if(thumbsGames == null || thumbsGames.stream().count()==1) return 2d;
+        if(thumbsGames == null || thumbsGames.stream().count()<=1) return 2d;
         List<Integer> intThumbsGames = thumbsGames.stream().map(item -> item.getUp() ? 1 : -1).collect(Collectors.toList());
         Double diffThumbsGames = intThumbsGames.stream().mapToDouble(Integer::doubleValue).max().getAsDouble()-
                 intThumbsGames.stream().mapToDouble(Integer::doubleValue).min().getAsDouble();
         if(diffThumbsGames==0) return 2d;
         return diffThumbsGames;
+    }
+
+    public void NormOne(){
+        List<UserGameRating> ratings = userGameRatingService.list();
+        if(ratings == null || ratings.stream().count() <= 1) return;
+        double maxRating = ratings.stream().mapToDouble(UserGameRating::getRating).max().getAsDouble();
+        double minRating = ratings.stream().mapToDouble(UserGameRating::getRating).min().getAsDouble();
+        for (UserGameRating rating : ratings) {
+            double ratingScore = rating.getRating();
+            rating.setRating(
+                    (ratingScore-minRating)
+                    / (maxRating-minRating)
+            );
+            userGameRatingService.updateById(rating);
+        }
     }
 }
 
